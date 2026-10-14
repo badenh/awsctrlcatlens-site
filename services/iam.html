@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+  <meta name="fetched-at" content="2026-10-11T01:47:30+00:00">
+  <title>iam — Services — awsctrlcatlens</title>
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-11">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-bar">
+      <a href="/" class="site-title">awsctrlcatlens</a>
+    </div>
+    <p class="site-provenance">
+      Machine-generated analytical view, last data snapshot seal: 2026-10-11T01:47:30+00:00, last site build: 2026-10-11.
+    </p>
+    <div data-staleness-slot hidden role="alert"></div>
+<form class="site-search" role="search" action="/">
+      <input type="search" data-search-input placeholder="Search raw controls, canonical controls, aliases, services, regions, frameworks ..." autocomplete="off">
+      <ul data-search-results hidden></ul>
+    </form><nav aria-label="breadcrumb"><ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/services/">Services</a></li><li><span aria-current="page">iam</span></li></ol></nav>  </header>
+  <main><h1>iam</h1>
+<p><span class="badge">49</span> canonical controls apply to this service.</p>
+
+<section class="chart-row">
+<figure class="bar-chart" aria-label="Distribution of items by count"><figcaption class="bar-chart-title">Severity</figcaption>  <ol>    <li>
+<span class="bar-chart-label">CRITICAL</span>      <span class="bar-chart-bar" style="--pct: 42.11%"></span>
+      <span class="bar-chart-count">8</span>
+    </li>    <li>
+<span class="bar-chart-label">HIGH</span>      <span class="bar-chart-bar" style="--pct: 21.05%"></span>
+      <span class="bar-chart-count">4</span>
+    </li>    <li>
+<span class="bar-chart-label">MEDIUM</span>      <span class="bar-chart-bar" style="--pct: 94.74%"></span>
+      <span class="bar-chart-count">18</span>
+    </li>    <li>
+<span class="bar-chart-label">LOW</span>      <span class="bar-chart-bar" style="--pct: 100.0%"></span>
+      <span class="bar-chart-count">19</span>
+    </li>    <li>
+<span class="bar-chart-label">NONE</span>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
+      <span class="bar-chart-count">0</span>
+    </li>  </ol></figure><figure class="bar-chart" aria-label="Distribution of items by count"><figcaption class="bar-chart-title">Behavior</figcaption>  <ol>    <li>
+<span class="bar-chart-label">DETECTIVE</span>      <span class="bar-chart-bar" style="--pct: 100.0%"></span>
+      <span class="bar-chart-count">42</span>
+    </li>    <li>
+<span class="bar-chart-label">PROACTIVE</span>      <span class="bar-chart-bar" style="--pct: 11.9%"></span>
+      <span class="bar-chart-count">5</span>
+    </li>    <li>
+<span class="bar-chart-label">PREVENTIVE</span>      <span class="bar-chart-bar" style="--pct: 4.76%"></span>
+      <span class="bar-chart-count">2</span>
+    </li>    <li>
+<span class="bar-chart-label">NONE</span>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
+      <span class="bar-chart-count">0</span>
+    </li>  </ol></figure></section>
+
+<section class="filter-bar" data-filter-group data-filter-target="#control-list">
+  <h2>Filter</h2>
+  <p>Severity:
+    <button type="button" class="filter-chip" data-filter-chip="severity:critical">CRITICAL</button>
+    <button type="button" class="filter-chip" data-filter-chip="severity:high">HIGH</button>
+    <button type="button" class="filter-chip" data-filter-chip="severity:medium">MEDIUM</button>
+    <button type="button" class="filter-chip" data-filter-chip="severity:low">LOW</button>
+  </p>
+  <p>Behavior:
+    <button type="button" class="filter-chip" data-filter-chip="behavior:preventive">PREVENTIVE</button>
+    <button type="button" class="filter-chip" data-filter-chip="behavior:detective">DETECTIVE</button>
+    <button type="button" class="filter-chip" data-filter-chip="behavior:proactive">PROACTIVE</button>
+  </p>
+</section>
+
+<ul id="control-list" class="control-list">
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01391.html">Checks if AWS IAM OIDC providers have tags</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01419.html">Checks if AWS IAM SAML providers have tags</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00343.html">Checks if AWS IAM SSL/TLS server certificates stored in IAM are expired</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01203.html">Checks if AWS IAM server certificates have tags</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00870.html">Checks if AWS Identity and Access Management (IAM) Policy description field exists</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00121.html">Checks if AWS Identity and Access Management (IAM) policies grant permissions to all actions on individual AWS resources</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01371.html">Checks if none of your AWS Identity and Access Management (IAM) users have policies attached</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01293.html">Checks if the account password policy for AWS Identity and Access Management (IAM) users meets the specified requirements indicated in the parameters</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01069.html">Checks if the inline policy feature is not in use</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00895.html">Checks if the root user access key is available</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00142.html">Checks if your AWS account is enabled to use multi-factor authentication (MFA) hardware device to sign in with root credentials</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00265.html">Checks whether IAM groups have at least one IAM user</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00235.html">Checks whether IAM users are members of at least one IAM group</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01122.html">Checks whether the default version of AWS Identity and Access Management (IAM) policies do not have administrator access</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_01352.html">Disallow changes to IAM roles set up by AWS Control Tower and AWS CloudFormation</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00059.html">Disallow console access to IAM users without MFA</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00500.html">Disallow modification of an AWS IAM role that AWS Control Tower utilizes to manage AWS Backup resources</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
+  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00146.html">Enable MFA for the root user</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00027.html">Ensure IAM password policy expires passwords within 90 days or less</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00099.html">Ensure IAM password policy prevents password reuse</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00543.html">Ensure IAM password policy requires at least one lowercase letter</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01211.html">Ensure IAM password policy requires at least one number</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00105.html">Ensure IAM password policy requires at least one symbol</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00431.html">Ensure IAM password policy requires at least one uppercase letter</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01363.html">Ensure IAM password policy requires minimum password length of 14 or greater</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00053.html">Ensure a support role has been created to manage incidents with AWS Support</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01006.html">Expired SSL/TLS certificates managed in IAM should be removed</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00572.html">Hardware MFA should be enabled for the root user</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01014.html">IAM customer managed policies should not allow decryption actions on all KMS keys</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00494.html">IAM customer managed policies that you create should not allow wildcard actions for services</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00230.html">IAM identities should not have the AWSCloudShellFullAccess policy attached</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00925.html">IAM policies should not allow full &#34;*&#34; administrative privileges</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00226.html">IAM principals should not have IAM inline policies that allow decryption actions on all KMS keys</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00565.html">IAM roles should be tagged</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01422.html">IAM root user access key should not exist</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00834.html">IAM user credentials unused for 45 days should be removed</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00876.html">IAM users should be tagged</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01249.html">IAM users should not have IAM policies attached</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01115.html">IAM users&#39; access keys should be rotated every 90 days or less</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00042.html">MFA should be enabled for all IAM users</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00558.html">MFA should be enabled for all IAM users that have a console password</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00136.html">MFA should be enabled for the root user</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00222.html">Password policies for IAM users should have strong configurations</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00956.html">Require that AWS Identity and Access Management (IAM) customer-managed policies do not contain a statement that includes &#34;*&#34; in the Action and Resource elements</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:low behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00891.html">Require that AWS Identity and Access Management (IAM) customer-managed policies do not have wildcard service actions</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:low behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01003.html">Require that AWS Identity and Access Management (IAM) inline policies do not have wildcard service actions</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01143.html">Require that an AWS Identity and Access Management (IAM) inline policy does not have a statement that includes &#34;*&#34; in the Action and Resource elements</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:low behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00841.html">Require that an AWS Identity and Access Management (IAM) user does not have an inline or managed policy attached</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00745.html">Unused IAM user credentials should be removed</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+</ul>
+</main>
+  <aside></aside>
+  <footer class="site-footer">
+    <p class="footer-legal">
+      awsctrlcatlens is not affiliated with or endorsed by Amazon Web Services. All AWS
+      service and region names are trademarks of Amazon.com, Inc. or
+      its affiliates. 
+    </p>
+    <p class="footer-legal">Data derived from the public AWS Control Catalog
+      API and AWS Account service endpoints; analysis + presentation
+      are machine-generated and may contain errors based on inconsistency in original source data.
+    </p>
+    <p class="footer-copyright">
+      Pipeline, analysis, and site generator &copy; 2026 Baden Hughes.
+    </p>
+  </footer>
+  <script src="/assets/minisearch.min.js" defer></script>
+  <script src="/assets/search.js" defer></script>
+  <script src="/assets/enhance.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+  <meta name="fetched-at" content="2026-10-11T01:47:30+00:00">
+  <title>cloudtrail — Services — awsctrlcatlens</title>
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-11">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-bar">
+      <a href="/" class="site-title">awsctrlcatlens</a>
+    </div>
+    <p class="site-provenance">
+      Machine-generated analytical view, last data snapshot seal: 2026-10-11T01:47:30+00:00, last site build: 2026-10-11.
+    </p>
+    <div data-staleness-slot hidden role="alert"></div>
+<form class="site-search" role="search" action="/">
+      <input type="search" data-search-input placeholder="Search raw controls, canonical controls, aliases, services, regions, frameworks ..." autocomplete="off">
+      <ul data-search-results hidden></ul>
+    </form><nav aria-label="breadcrumb"><ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/services/">Services</a></li><li><span aria-current="page">cloudtrail</span></li></ol></nav>  </header>
+  <main><h1>cloudtrail</h1>
+<p><span class="badge">45</span> canonical controls apply to this service.</p>
+
+<section class="chart-row">
+<figure class="bar-chart" aria-label="Distribution of items by count"><figcaption class="bar-chart-title">Severity</figcaption>  <ol>    <li>
+<span class="bar-chart-label">CRITICAL</span>      <span class="bar-chart-bar" style="--pct: 30.0%"></span>
+      <span class="bar-chart-count">6</span>
+    </li>    <li>
+<span class="bar-chart-label">HIGH</span>      <span class="bar-chart-bar" style="--pct: 40.0%"></span>
+      <span class="bar-chart-count">8</span>
+    </li>    <li>
+<span class="bar-chart-label">MEDIUM</span>      <span class="bar-chart-bar" style="--pct: 55.0%"></span>
+      <span class="bar-chart-count">11</span>
+    </li>    <li>
+<span class="bar-chart-label">LOW</span>      <span class="bar-chart-bar" style="--pct: 100.0%"></span>
+      <span class="bar-chart-count">20</span>
+    </li>    <li>
+<span class="bar-chart-label">NONE</span>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
+      <span class="bar-chart-count">0</span>
+    </li>  </ol></figure><figure class="bar-chart" aria-label="Distribution of items by count"><figcaption class="bar-chart-title">Behavior</figcaption>  <ol>    <li>
+<span class="bar-chart-label">DETECTIVE</span>      <span class="bar-chart-bar" style="--pct: 100.0%"></span>
+      <span class="bar-chart-count">38</span>
+    </li>    <li>
+<span class="bar-chart-label">PREVENTIVE</span>      <span class="bar-chart-bar" style="--pct: 10.53%"></span>
+      <span class="bar-chart-count">4</span>
+    </li>    <li>
+<span class="bar-chart-label">PROACTIVE</span>      <span class="bar-chart-bar" style="--pct: 7.89%"></span>
+      <span class="bar-chart-count">3</span>
+    </li>    <li>
+<span class="bar-chart-label">NONE</span>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
+      <span class="bar-chart-count">0</span>
+    </li>  </ol></figure></section>
+
+<section class="filter-bar" data-filter-group data-filter-target="#control-list">
+  <h2>Filter</h2>
+  <p>Severity:
+    <button type="button" class="filter-chip" data-filter-chip="severity:critical">CRITICAL</button>
+    <button type="button" class="filter-chip" data-filter-chip="severity:high">HIGH</button>
+    <button type="button" class="filter-chip" data-filter-chip="severity:medium">MEDIUM</button>
+    <button type="button" class="filter-chip" data-filter-chip="severity:low">LOW</button>
+  </p>
+  <p>Behavior:
+    <button type="button" class="filter-chip" data-filter-chip="behavior:preventive">PREVENTIVE</button>
+    <button type="button" class="filter-chip" data-filter-chip="behavior:detective">DETECTIVE</button>
+    <button type="button" class="filter-chip" data-filter-chip="behavior:proactive">PROACTIVE</button>
+  </p>
+</section>
+
+<ul id="control-list" class="control-list">
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00161.html">A log metric filter and alarm should exist for usage of the &#34;root&#34; user</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00807.html">At least one CloudTrail trail should be enabled</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00819.html">Checks if AWS Cloud Trail event data stores have customer managed AWS KMS keys enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00719.html">Checks if AWS CloudTrail creates a signed digest file with logs</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00688.html">Checks if AWS CloudTrail event data stores have multi-region enabled when ingesting live events</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01032.html">Checks if AWS CloudTrail is configured to use the server side encryption (SSE) AWS Key Management Service (AWS KMS) encryption</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00896.html">Checks if AWS CloudTrail trails are configured to send logs to CloudWatch logs</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00529.html">Checks if an AWS CloudTrail multi-Region trail is enabled and logs all read S3 data events for your buckets</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00490.html">Checks if an AWS CloudTrail multi-Region trail is enabled and logs all write S3 data events for your buckets</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00081.html">Checks if at least one AWS CloudTrail trail is logging Amazon Simple Storage Service (Amazon S3) data events for all S3 buckets</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01467.html">Checks if the S3 bucket configurations for your AWS CloudTrail logs block public access</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00663.html">Checks if the S3 bucket configurations for your AWS CloudTrail logs have Amazon S3 server access logging enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01165.html">Checks that there is at least one AWS CloudTrail trail defined with security best practices</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01235.html">Checks that there is at least one multi-region AWS CloudTrail</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00740.html">CloudTrail Lake event data stores should be encrypted with customer managed AWS KMS keys</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00520.html">CloudTrail log file validation should be enabled</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00328.html">CloudTrail should be enabled and configured with at least one multi-Region trail that includes read and write management events</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::cloudformation::type::hook impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00091.html">CloudTrail should have encryption at-rest enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00143.html">CloudTrail trails should be integrated with Amazon CloudWatch Logs</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00783.html">CloudTrail trails should be tagged</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00080.html">Detect whether a shared AWS account in the Security organizational unit has at least one AWS CloudTrail trail enabled for a governed AWS Region.</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00779.html">Detect whether an AWS account has at least one AWS CloudTrail trail enabled for a governed AWS Region.</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00069.html">Disallow configuration changes to AWS CloudTrail</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
+  <li data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00309.html">Enable AWS CloudTrail in all available regions</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
+  <li data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_01492.html">Enable integrity validation for CloudTrail log file</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01155.html">Ensure a log metric filter and alarm exist for AWS Config configuration changes</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00731.html">Ensure a log metric filter and alarm exist for AWS Management Console authentication failures</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00640.html">Ensure a log metric filter and alarm exist for CloudTrail configuration changes</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00181.html">Ensure a log metric filter and alarm exist for IAM policy changes</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00274.html">Ensure a log metric filter and alarm exist for Management Console sign-in without MFA</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00684.html">Ensure a log metric filter and alarm exist for S3 bucket policy changes</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00194.html">Ensure a log metric filter and alarm exist for VPC changes</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01022.html">Ensure a log metric filter and alarm exist for changes to Network Access Control Lists (NACL)</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00985.html">Ensure a log metric filter and alarm exist for changes to network gateways</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01132.html">Ensure a log metric filter and alarm exist for disabling or scheduled deletion of customer created CMKs</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00458.html">Ensure a log metric filter and alarm exist for route table changes</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00227.html">Ensure a log metric filter and alarm exist for security group changes</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00794.html">Ensure a log metric filter and alarm exist for unauthorized API calls</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01119.html">Ensure the S3 bucket used to store CloudTrail logs is not publicly accessible</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00867.html">Integrate CloudTrail events with CloudWatch logs</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
+  <li data-filter-tags="severity:low behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00214.html">Require an AWS CloudTrail Lake event data store to enable encryption at rest with an AWS KMS key</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:low behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00535.html">Require an AWS CloudTrail trail to have an Amazon CloudWatch log group configuration</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01183.html">Require an AWS CloudTrail trail to have log file validation activated</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00951.html">S3 general purpose buckets should log object-level read events</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01266.html">S3 general purpose buckets should log object-level write events</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+</ul>
+</main>
+  <aside></aside>
+  <footer class="site-footer">
+    <p class="footer-legal">
+      awsctrlcatlens is not affiliated with or endorsed by Amazon Web Services. All AWS
+      service and region names are trademarks of Amazon.com, Inc. or
+      its affiliates. 
+    </p>
+    <p class="footer-legal">Data derived from the public AWS Control Catalog
+      API and AWS Account service endpoints; analysis + presentation
+      are machine-generated and may contain errors based on inconsistency in original source data.
+    </p>
+    <p class="footer-copyright">
+      Pipeline, analysis, and site generator &copy; 2026 Baden Hughes.
+    </p>
+  </footer>
+  <script src="/assets/minisearch.min.js" defer></script>
+  <script src="/assets/search.js" defer></script>
+  <script src="/assets/enhance.js" defer></script>
+</body>
+</html>

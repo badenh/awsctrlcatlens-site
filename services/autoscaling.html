@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+  <meta name="fetched-at" content="2026-10-11T01:47:30+00:00">
+  <title>autoscaling — Services — awsctrlcatlens</title>
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-11">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-bar">
+      <a href="/" class="site-title">awsctrlcatlens</a>
+    </div>
+    <p class="site-provenance">
+      Machine-generated analytical view, last data snapshot seal: 2026-10-11T01:47:30+00:00, last site build: 2026-10-11.
+    </p>
+    <div data-staleness-slot hidden role="alert"></div>
+<form class="site-search" role="search" action="/">
+      <input type="search" data-search-input placeholder="Search raw controls, canonical controls, aliases, services, regions, frameworks ..." autocomplete="off">
+      <ul data-search-results hidden></ul>
+    </form><nav aria-label="breadcrumb"><ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/services/">Services</a></li><li><span aria-current="page">autoscaling</span></li></ol></nav>  </header>
+  <main><h1>autoscaling</h1>
+<p><span class="badge">22</span> canonical controls apply to this service.</p>
+
+<section class="chart-row">
+<figure class="bar-chart" aria-label="Distribution of items by count"><figcaption class="bar-chart-title">Severity</figcaption>  <ol>    <li>
+<span class="bar-chart-label">CRITICAL</span>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
+      <span class="bar-chart-count">0</span>
+    </li>    <li>
+<span class="bar-chart-label">HIGH</span>      <span class="bar-chart-bar" style="--pct: 70.0%"></span>
+      <span class="bar-chart-count">7</span>
+    </li>    <li>
+<span class="bar-chart-label">MEDIUM</span>      <span class="bar-chart-bar" style="--pct: 100.0%"></span>
+      <span class="bar-chart-count">10</span>
+    </li>    <li>
+<span class="bar-chart-label">LOW</span>      <span class="bar-chart-bar" style="--pct: 50.0%"></span>
+      <span class="bar-chart-count">5</span>
+    </li>    <li>
+<span class="bar-chart-label">NONE</span>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
+      <span class="bar-chart-count">0</span>
+    </li>  </ol></figure><figure class="bar-chart" aria-label="Distribution of items by count"><figcaption class="bar-chart-title">Behavior</figcaption>  <ol>    <li>
+<span class="bar-chart-label">DETECTIVE</span>      <span class="bar-chart-bar" style="--pct: 100.0%"></span>
+      <span class="bar-chart-count">13</span>
+    </li>    <li>
+<span class="bar-chart-label">PROACTIVE</span>      <span class="bar-chart-bar" style="--pct: 69.23%"></span>
+      <span class="bar-chart-count">9</span>
+    </li>    <li>
+<span class="bar-chart-label">NONE</span>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
+      <span class="bar-chart-count">0</span>
+    </li>    <li>
+<span class="bar-chart-label">PREVENTIVE</span>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
+      <span class="bar-chart-count">0</span>
+    </li>  </ol></figure></section>
+
+<section class="filter-bar" data-filter-group data-filter-target="#control-list">
+  <h2>Filter</h2>
+  <p>Severity:
+    <button type="button" class="filter-chip" data-filter-chip="severity:critical">CRITICAL</button>
+    <button type="button" class="filter-chip" data-filter-chip="severity:high">HIGH</button>
+    <button type="button" class="filter-chip" data-filter-chip="severity:medium">MEDIUM</button>
+    <button type="button" class="filter-chip" data-filter-chip="severity:low">LOW</button>
+  </p>
+  <p>Behavior:
+    <button type="button" class="filter-chip" data-filter-chip="behavior:preventive">PREVENTIVE</button>
+    <button type="button" class="filter-chip" data-filter-chip="behavior:detective">DETECTIVE</button>
+    <button type="button" class="filter-chip" data-filter-chip="behavior:proactive">PROACTIVE</button>
+  </p>
+</section>
+
+<ul id="control-list" class="control-list">
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00627.html">Amazon EC2 Auto Scaling group should cover multiple Availability Zones</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00815.html">Amazon EC2 instances launched using Auto Scaling group launch configurations should not have Public IP addresses</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00784.html">Auto Scaling group launch configurations should configure EC2 instances to require Instance Metadata Service Version 2 (IMDSv2)</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01072.html">Auto Scaling groups should use multiple instance types in multiple Availability Zones</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01034.html">Auto scaling groups associated with a load balancer should use ELB health checks</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00802.html">Checks if Capacity Rebalancing is enabled for Amazon EC2 Auto Scaling groups that use multiple instance types</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00877.html">Checks if an Amazon Elastic Compute Cloud (EC2) Auto Scaling group is created from an EC2 launch template</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00047.html">Checks if the Auto Scaling group spans multiple Availability Zones</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00534.html">Checks if your Amazon EC2 Auto Scaling groups that are associated with an Elastic Load Balancer use Elastic Load Balancing health checks</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01195.html">Checks the number of network hops that the metadata token can travel</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01191.html">Checks whether only IMDSv2 is enabled</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00947.html">Detect whether public IP addresses for Amazon EC2 Auto Scaling are enabled through launch configurations</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01251.html">EC2 Auto Scaling groups should be tagged</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00581.html">Require an Amazon EBS volume configured through an Amazon EC2 Auto Scaling launch configuration to encrypt data at rest</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:low behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01423.html">Require an Amazon EC2 Auto Scaling group associated with an AWS Elastic Load Balancer (ELB) to have ELB health checks activated</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00722.html">Require an Amazon EC2 Auto Scaling group launch configuration to configure Amazon EC2 instances for IMDSv2</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00705.html">Require an Amazon EC2 Auto Scaling group to have EC2 launch templates configured</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00239.html">Require an Amazon EC2 Auto Scaling group to have multiple Availability Zones</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01430.html">Require an Amazon EC2 Auto Scaling group to use only AWS Nitro instance types when overriding a launch template</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook impl_type:aws::config::configrule "><a href="/controls/canon_00707.html">Require any Amazon EC2 Auto Scaling groups to use multiple instance types</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00797.html">Require only AWS Nitro instance types that support network traffic encryption between instances to be added to an Amazon EC2 Auto Scaling group, when overriding a launch template</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00823.html">Require that an Amazon EC2 Auto Scaling group launch configuration does not have Amazon EC2 instances with public IP addresses</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+</ul>
+</main>
+  <aside></aside>
+  <footer class="site-footer">
+    <p class="footer-legal">
+      awsctrlcatlens is not affiliated with or endorsed by Amazon Web Services. All AWS
+      service and region names are trademarks of Amazon.com, Inc. or
+      its affiliates. 
+    </p>
+    <p class="footer-legal">Data derived from the public AWS Control Catalog
+      API and AWS Account service endpoints; analysis + presentation
+      are machine-generated and may contain errors based on inconsistency in original source data.
+    </p>
+    <p class="footer-copyright">
+      Pipeline, analysis, and site generator &copy; 2026 Baden Hughes.
+    </p>
+  </footer>
+  <script src="/assets/minisearch.min.js" defer></script>
+  <script src="/assets/search.js" defer></script>
+  <script src="/assets/enhance.js" defer></script>
+</body>
+</html>

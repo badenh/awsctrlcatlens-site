@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+  <meta name="fetched-at" content="2026-10-11T01:47:30+00:00">
+  <title>redshift — Services — awsctrlcatlens</title>
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-11">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-bar">
+      <a href="/" class="site-title">awsctrlcatlens</a>
+    </div>
+    <p class="site-provenance">
+      Machine-generated analytical view, last data snapshot seal: 2026-10-11T01:47:30+00:00, last site build: 2026-10-11.
+    </p>
+    <div data-staleness-slot hidden role="alert"></div>
+<form class="site-search" role="search" action="/">
+      <input type="search" data-search-input placeholder="Search raw controls, canonical controls, aliases, services, regions, frameworks ..." autocomplete="off">
+      <ul data-search-results hidden></ul>
+    </form><nav aria-label="breadcrumb"><ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/services/">Services</a></li><li><span aria-current="page">redshift</span></li></ol></nav>  </header>
+  <main><h1>redshift</h1>
+<p><span class="badge">34</span> canonical controls apply to this service.</p>
+
+<section class="chart-row">
+<figure class="bar-chart" aria-label="Distribution of items by count"><figcaption class="bar-chart-title">Severity</figcaption>  <ol>    <li>
+<span class="bar-chart-label">CRITICAL</span>      <span class="bar-chart-bar" style="--pct: 8.33%"></span>
+      <span class="bar-chart-count">2</span>
+    </li>    <li>
+<span class="bar-chart-label">HIGH</span>      <span class="bar-chart-bar" style="--pct: 8.33%"></span>
+      <span class="bar-chart-count">2</span>
+    </li>    <li>
+<span class="bar-chart-label">MEDIUM</span>      <span class="bar-chart-bar" style="--pct: 100.0%"></span>
+      <span class="bar-chart-count">24</span>
+    </li>    <li>
+<span class="bar-chart-label">LOW</span>      <span class="bar-chart-bar" style="--pct: 25.0%"></span>
+      <span class="bar-chart-count">6</span>
+    </li>    <li>
+<span class="bar-chart-label">NONE</span>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
+      <span class="bar-chart-count">0</span>
+    </li>  </ol></figure><figure class="bar-chart" aria-label="Distribution of items by count"><figcaption class="bar-chart-title">Behavior</figcaption>  <ol>    <li>
+<span class="bar-chart-label">DETECTIVE</span>      <span class="bar-chart-bar" style="--pct: 100.0%"></span>
+      <span class="bar-chart-count">25</span>
+    </li>    <li>
+<span class="bar-chart-label">PROACTIVE</span>      <span class="bar-chart-bar" style="--pct: 36.0%"></span>
+      <span class="bar-chart-count">9</span>
+    </li>    <li>
+<span class="bar-chart-label">NONE</span>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
+      <span class="bar-chart-count">0</span>
+    </li>    <li>
+<span class="bar-chart-label">PREVENTIVE</span>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
+      <span class="bar-chart-count">0</span>
+    </li>  </ol></figure></section>
+
+<section class="filter-bar" data-filter-group data-filter-target="#control-list">
+  <h2>Filter</h2>
+  <p>Severity:
+    <button type="button" class="filter-chip" data-filter-chip="severity:critical">CRITICAL</button>
+    <button type="button" class="filter-chip" data-filter-chip="severity:high">HIGH</button>
+    <button type="button" class="filter-chip" data-filter-chip="severity:medium">MEDIUM</button>
+    <button type="button" class="filter-chip" data-filter-chip="severity:low">LOW</button>
+  </p>
+  <p>Behavior:
+    <button type="button" class="filter-chip" data-filter-chip="behavior:preventive">PREVENTIVE</button>
+    <button type="button" class="filter-chip" data-filter-chip="behavior:detective">DETECTIVE</button>
+    <button type="button" class="filter-chip" data-filter-chip="behavior:proactive">PROACTIVE</button>
+  </p>
+</section>
+
+<ul id="control-list" class="control-list">
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01181.html">Amazon Redshift clusters should have automatic snapshots enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01134.html">Amazon Redshift clusters should not use the default Admin username</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01174.html">Amazon Redshift should have automatic upgrades to major versions enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01348.html">Checks If Amazon Redshift subnet groups contain subnets from more than one Availability Zone</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01017.html">Checks if Amazon Redshift cluster has &#39;enhancedVpcRouting&#39; enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01441.html">Checks if Amazon Redshift cluster parameter groups have tags</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00945.html">Checks if Amazon Redshift clusters are logging audits to a specific bucket</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01271.html">Checks if Amazon Redshift clusters require TLS/SSL encryption to connect to SQL clients</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00906.html">Checks if a Redshift cluster has changed its database name from the default value</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00484.html">Checks if an Amazon Redshift cluster has changed the admin username from its default value</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01127.html">Checks if an Amazon Redshift cluster has multiple Availability Zones deployments enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00270.html">Checks if security groups associated with an Amazon Redshift cluster have inbound rules that allow unrestricted incoming traffic</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00482.html">Checks that Amazon Redshift automated snapshots are enabled for clusters</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00776.html">Connections to Amazon Redshift clusters should be encrypted in transit</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00089.html">Detect whether Amazon Redshift clusters are blocked from public access</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00038.html">Redshift cluster parameter groups should be tagged</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00656.html">Redshift cluster snapshots should be tagged</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01009.html">Redshift cluster subnet groups should be tagged</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00966.html">Redshift cluster subnet groups should have subnets from multiple Availability Zones</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00953.html">Redshift clusters should be encrypted at rest</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00894.html">Redshift clusters should be tagged</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01339.html">Redshift clusters should have Multi-AZ deployments enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01060.html">Redshift clusters should use enhanced VPC routing</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00957.html">Redshift event notification subscriptions should be tagged</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01383.html">Redshift security groups should allow ingress on the cluster port only from restricted origins</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook impl_type:aws::config::configrule "><a href="/controls/canon_00116.html">Require an Amazon Redshift cluster to be encrypted</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00171.html">Require an Amazon Redshift cluster to have a unique administrator username</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00013.html">Require an Amazon Redshift cluster to have a unique database name</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00322.html">Require an Amazon Redshift cluster to have audit logging configured</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00714.html">Require an Amazon Redshift cluster to have automatic snapshots configured</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00585.html">Require an Amazon Redshift cluster to have automatic upgrades to major versions configured</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00321.html">Require an Amazon Redshift cluster to have enhanced VPC routing</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:critical behavior:proactive impl_type:aws::cloudformation::type::hook impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00683.html">Require an Amazon Redshift cluster to prohibit public access</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00950.html">Require that an Amazon Redshift cluster parameter group is configured to use Secure Sockets Layer (SSL) for encryption of data in transit</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+</ul>
+</main>
+  <aside></aside>
+  <footer class="site-footer">
+    <p class="footer-legal">
+      awsctrlcatlens is not affiliated with or endorsed by Amazon Web Services. All AWS
+      service and region names are trademarks of Amazon.com, Inc. or
+      its affiliates. 
+    </p>
+    <p class="footer-legal">Data derived from the public AWS Control Catalog
+      API and AWS Account service endpoints; analysis + presentation
+      are machine-generated and may contain errors based on inconsistency in original source data.
+    </p>
+    <p class="footer-copyright">
+      Pipeline, analysis, and site generator &copy; 2026 Baden Hughes.
+    </p>
+  </footer>
+  <script src="/assets/minisearch.min.js" defer></script>
+  <script src="/assets/search.js" defer></script>
+  <script src="/assets/enhance.js" defer></script>
+</body>
+</html>

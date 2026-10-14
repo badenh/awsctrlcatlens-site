@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+  <meta name="fetched-at" content="2026-10-11T01:47:30+00:00">
+  <title>About — awsctrlcatlens</title>
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-11">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-bar">
+      <a href="/" class="site-title">awsctrlcatlens</a>
+    </div>
+    <p class="site-provenance">
+      Machine-generated analytical view, last data snapshot seal: 2026-10-11T01:47:30+00:00, last site build: 2026-10-11.
+    </p>
+    <div data-staleness-slot hidden role="alert"></div>
+<form class="site-search" role="search" action="/">
+      <input type="search" data-search-input placeholder="Search raw controls, canonical controls, aliases, services, regions, frameworks ..." autocomplete="off">
+      <ul data-search-results hidden></ul>
+    </form><nav aria-label="breadcrumb"><ol class="breadcrumb"><li><a href="/">Home</a></li><li><span aria-current="page">About</span></li></ol></nav>  </header>
+  <main><h1>How canonicalisation works</h1>
+
+<section>
+  <h2>Overview</h2>
+  <p>The AWS Control Catalog exposes a single control three times when the same
+  behaviour is implemented via Security Hub, AWS Config, and a CloudFormation
+  hook. awsctrlcatlens runs the AWS Control Catalog through a canonicalisation
+  pipeline that groups these cross-executor duplicates into one <em>canonical
+  control</em>, then exposes the three indexes (region, service, framework) that
+  AWS's own API does not expose natively.</p>
+  <p>The canonicalisation rule stack is applied in strict order; the first
+  rule that matches wins, subject to any vetoes.</p>
+</section>
+
+<section>
+  <h2>Merge rules (R0 &ndash; R3)</h2>
+  <table class="data-table">
+    <thead>
+      <tr><th>Rule</th><th>Name</th><th>Condition</th><th>Vetoes</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>R0</strong></td>
+        <td>Force</td>
+        <td>Pairs from a human-curated force list. Used sparingly to encode human-verified groupings the automated rules miss.</td>
+        <td>Bypassed</td>
+      </tr>
+      <tr>
+        <td><strong>R1</strong></td>
+        <td>Alias</td>
+        <td>Two variants share at least one entry in their <code>Aliases</code> list. Shared aliases are strong evidence from AWS.</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td><strong>R2</strong></td>
+        <td>Normalised exact name</td>
+        <td>Identical normalised control name after stop-prefix strip, stemmer, and paren-abbreviation strip. Exact normalised match trumps everything.</td>
+        <td>None</td>
+      </tr>
+      <tr>
+        <td><strong>R3</strong></td>
+        <td>Name + common-control Jaccard (Tier A)</td>
+        <td>Token-Jaccard of the normalised names &ge; 0.70 AND common-control-set Jaccard &ge; 0.70.</td>
+        <td>Apply</td>
+      </tr>
+      <tr>
+        <td><strong>R3</strong></td>
+        <td>Tier B (strong common controls)</td>
+        <td>Token-Jaccard &ge; 0.50 AND common-control-set Jaccard &ge; 0.90 &mdash; strong common-control evidence substitutes for weaker name match.</td>
+        <td>Apply</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Vetoes (V1 &ndash; V5)</h2>
+  <table class="data-table">
+    <thead>
+      <tr><th>Veto</th><th>Name</th><th>Fires when</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>V1</strong></td>
+        <td>Antagonist tokens</td>
+        <td>One variant has a token from an antagonist cluster (<code>global</code>/<code>regional</code>, <code>read</code>/<code>write</code>, <code>inbound</code>/<code>outbound</code>, <code>oidc</code>/<code>saml</code>, &hellip;), the other has a different token from the same cluster.</td>
+      </tr>
+      <tr>
+        <td><strong>V2</strong></td>
+        <td>Trailing-token mismatch</td>
+        <td>Long shared prefix plus distinct tails plus at least one content token in the tail symmetric difference. Catches CIS CloudTrail metric-filter families that would otherwise collapse incorrectly.</td>
+      </tr>
+      <tr>
+        <td><strong>V3</strong></td>
+        <td>Content-token asymmetry</td>
+        <td>Both variants have unique content tokens (tokens where the service or qualifier vocabulary bypasses the discriminative DF cap).</td>
+      </tr>
+      <tr>
+        <td><strong>V4</strong></td>
+        <td>Service disjoint</td>
+        <td>Both variants have an inferred AWS service and the intersection is empty under the service-alias table.</td>
+      </tr>
+      <tr>
+        <td><strong>V5</strong></td>
+        <td>Asymmetric qualifier</td>
+        <td>Either side has a unique token from service, qualifier, antagonist, or digit-token vocabulary.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Override cycle</h2>
+  <p>Human-verified decisions live in a curated overrides list. Entries are
+  either <em>force</em> pairs (always merge, R0) or <em>block</em> pairs (never
+  merge, short-circuits every rule). A triage workflow produces a review
+  queue of candidate pairs; applied decisions become new override entries.</p>
+</section>
+
+<section>
+  <h2>Registry and tombstones</h2>
+  <p>Canonical ids are stable across refreshes via a persisted id registry.
+  When a canonical's underlying variants disappear from the catalog, its id
+  is tombstoned &mdash; permanently reserved so it is never reused for a
+  different concept. Tombstoned canonicals render a minimal page (ARN list
+  and tombstoned-on date) at the same URL they used to live at, so external
+  deep-links stay resolvable.</p>
+  <p>The <code>noindex</code> meta on tombstone pages prevents search engines
+  from treating them as current content.</p>
+</section>
+
+<section>
+  <h2>Executor families</h2>
+  <p>Raw controls come from four distinct AWS executor surfaces. We tag
+  each variant with its executor family on the <a href="/raw/">raw controls</a>
+  listing and let readers filter by family.</p>
+  <table class="data-table">
+    <thead>
+      <tr><th>Family</th><th>Resource type</th><th class="num">~Raw</th><th>Behavior</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Config</td>
+        <td><code>AWS::Config::ConfigRule</code></td>
+        <td class="num">735</td>
+        <td>Largest family. Reactive detective evaluation against resources after they exist.</td>
+      </tr>
+      <tr>
+        <td>Security Hub</td>
+        <td><code>AWS::SecurityHub::SecurityControl</code></td>
+        <td class="num">575</td>
+        <td>Curated managed controls. Often wraps a Config rule under the hood but exposes a higher-level identifier.</td>
+      </tr>
+      <tr>
+        <td>CloudFormation Hook</td>
+        <td><code>AWS::CloudFormation::Type::HOOK</code></td>
+        <td class="num">235</td>
+        <td>Proactive controls. Enforced at stack-create / stack-update time; reject the resource before it is created.</td>
+      </tr>
+      <tr>
+        <td>Organizations</td>
+        <td><code>AWS::Organizations::Policy::*</code></td>
+        <td class="num">70</td>
+        <td>SCP, RCP, and declarative policies. Enforced at the IAM/API-call boundary across an entire AWS Organization or OU.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Service inference</h2>
+  <p>The AWS Control Catalog does not expose a service → controls index.
+  We infer service namespace from <code>GovernedResources[0]</code> of each
+  control's <code>GetControl</code> response — the CloudFormation
+  <code>AWS::&lt;Service&gt;::&lt;ResourceType&gt;</code> format gives us
+  the authoritative service name (e.g. <code>AWS::CloudTrail::Trail</code>
+  → <code>cloudtrail</code>). When <code>GovernedResources</code> is empty
+  (SCPs + root-user controls, ~71 cases), we fall back to parsing the
+  AWS Config rule identifier.</p>
+  <p>Service inference is machine-derived from the AWS payload and may
+  still miss edge cases.</p>
+</section>
+
+<section>
+  <h2>Opt-in regions</h2>
+  <p>AWS regions are marked <em>opt-in</em> when a new account must
+  explicitly enable them before resources can be deployed; the rest are
+  <em>default-enabled</em>. We fetch this via
+  <code>account:ListRegions</code> and tag opt-in regions with a badge
+  on the <a href="/regions/">regions landing page</a>. The authoritative
+  signal is AWS's own <code>RegionOptStatus</code> field:
+  <code>ENABLED_BY_DEFAULT</code> means default; anything else
+  (<code>DISABLED</code>, <code>ENABLED</code>, <code>ENABLING</code>,
+  <code>DISABLING</code>) means opt-in.</p>
+</section>
+
+<section>
+  <h2>Framework item repetition</h2>
+  <p>Every framework page shows a density stat
+  (<em>mapped-rows ÷ unique-canonicals</em>). When density &gt; 1, the same
+  canonical maps to multiple items in that framework. The repetition is
+  real AWS-authored mapping, driven by framework structure:</p>
+  <table class="data-table">
+    <thead>
+      <tr><th>Pattern</th><th>Example</th><th>Mechanism</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Maturity-tiered</td>
+        <td>ACSC Essential Eight</td>
+        <td>ML2 inherits ML1, ML3 inherits ML1 + ML2, so the same canonical appears at every tier.</td>
+      </tr>
+      <tr>
+        <td>Pillar-structured</td>
+        <td>AWS Well-Architected</td>
+        <td>Best practices overlap across pillars (REL / COST / SEC / OPS / PERF / SUS).</td>
+      </tr>
+      <tr>
+        <td>Family-structured</td>
+        <td>CMMC / NIST SP 800-171</td>
+        <td>One control satisfies requirements in multiple domains (Access Control, Audit, System &amp; Communications Protection).</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Hub metrics (Analysis page)</h2>
+  <p>Three per-canonical signals drive the <a href="/analysis/">analysis
+  charts</a>:</p>
+  <table class="data-table">
+    <thead>
+      <tr><th>Metric</th><th>Definition</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Degree</td>
+        <td>Count of unique neighbours a canonical has in the projection graph. An edge exists when two canonicals are directly related in AWS's mapping OR share one or more common controls.</td>
+      </tr>
+      <tr>
+        <td>Framework count</td>
+        <td>Count of distinct compliance frameworks the canonical appears in.</td>
+      </tr>
+      <tr>
+        <td>Composite score</td>
+        <td>Degree × framework count. Used as the single metric for the long-tail histograms. A handful of canonicals carry most of the cross-framework weight — these are the compliance-coverage leverage points.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Build determinism</h2>
+  <p>Every page in this site is a deterministic function of a single
+  snapshot of the AWS Control Catalog. Building the site twice from the
+  same snapshot produces byte-identical output; a <code>snapshot.json</code>
+  provenance file at the site root stamps the sealed-at timestamp of the
+  snapshot the build consumed.</p>
+</section>
+</main>
+  <aside></aside>
+  <footer class="site-footer">
+    <p class="footer-legal">
+      awsctrlcatlens is not affiliated with or endorsed by Amazon Web Services. All AWS
+      service and region names are trademarks of Amazon.com, Inc. or
+      its affiliates. 
+    </p>
+    <p class="footer-legal">Data derived from the public AWS Control Catalog
+      API and AWS Account service endpoints; analysis + presentation
+      are machine-generated and may contain errors based on inconsistency in original source data.
+    </p>
+    <p class="footer-copyright">
+      Pipeline, analysis, and site generator &copy; 2026 Baden Hughes.
+    </p>
+  </footer>
+  <script src="/assets/minisearch.min.js" defer></script>
+  <script src="/assets/search.js" defer></script>
+  <script src="/assets/enhance.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+  <meta name="fetched-at" content="2026-10-11T01:47:30+00:00">
+  <title>sagemaker — Services — awsctrlcatlens</title>
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-11">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-bar">
+      <a href="/" class="site-title">awsctrlcatlens</a>
+    </div>
+    <p class="site-provenance">
+      Machine-generated analytical view, last data snapshot seal: 2026-10-11T01:47:30+00:00, last site build: 2026-10-11.
+    </p>
+    <div data-staleness-slot hidden role="alert"></div>
+<form class="site-search" role="search" action="/">
+      <input type="search" data-search-input placeholder="Search raw controls, canonical controls, aliases, services, regions, frameworks ..." autocomplete="off">
+      <ul data-search-results hidden></ul>
+    </form><nav aria-label="breadcrumb"><ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/services/">Services</a></li><li><span aria-current="page">sagemaker</span></li></ol></nav>  </header>
+  <main><h1>sagemaker</h1>
+<p><span class="badge">45</span> canonical controls apply to this service.</p>
+
+<section class="chart-row">
+<figure class="bar-chart" aria-label="Distribution of items by count"><figcaption class="bar-chart-title">Severity</figcaption>  <ol>    <li>
+<span class="bar-chart-label">CRITICAL</span>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
+      <span class="bar-chart-count">0</span>
+    </li>    <li>
+<span class="bar-chart-label">HIGH</span>      <span class="bar-chart-bar" style="--pct: 37.04%"></span>
+      <span class="bar-chart-count">10</span>
+    </li>    <li>
+<span class="bar-chart-label">MEDIUM</span>      <span class="bar-chart-bar" style="--pct: 100.0%"></span>
+      <span class="bar-chart-count">27</span>
+    </li>    <li>
+<span class="bar-chart-label">LOW</span>      <span class="bar-chart-bar" style="--pct: 29.63%"></span>
+      <span class="bar-chart-count">8</span>
+    </li>    <li>
+<span class="bar-chart-label">NONE</span>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
+      <span class="bar-chart-count">0</span>
+    </li>  </ol></figure><figure class="bar-chart" aria-label="Distribution of items by count"><figcaption class="bar-chart-title">Behavior</figcaption>  <ol>    <li>
+<span class="bar-chart-label">DETECTIVE</span>      <span class="bar-chart-bar" style="--pct: 100.0%"></span>
+      <span class="bar-chart-count">42</span>
+    </li>    <li>
+<span class="bar-chart-label">PROACTIVE</span>      <span class="bar-chart-bar" style="--pct: 7.14%"></span>
+      <span class="bar-chart-count">3</span>
+    </li>    <li>
+<span class="bar-chart-label">NONE</span>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
+      <span class="bar-chart-count">0</span>
+    </li>    <li>
+<span class="bar-chart-label">PREVENTIVE</span>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
+      <span class="bar-chart-count">0</span>
+    </li>  </ol></figure></section>
+
+<section class="filter-bar" data-filter-group data-filter-target="#control-list">
+  <h2>Filter</h2>
+  <p>Severity:
+    <button type="button" class="filter-chip" data-filter-chip="severity:critical">CRITICAL</button>
+    <button type="button" class="filter-chip" data-filter-chip="severity:high">HIGH</button>
+    <button type="button" class="filter-chip" data-filter-chip="severity:medium">MEDIUM</button>
+    <button type="button" class="filter-chip" data-filter-chip="severity:low">LOW</button>
+  </p>
+  <p>Behavior:
+    <button type="button" class="filter-chip" data-filter-chip="behavior:preventive">PREVENTIVE</button>
+    <button type="button" class="filter-chip" data-filter-chip="behavior:detective">DETECTIVE</button>
+    <button type="button" class="filter-chip" data-filter-chip="behavior:proactive">PROACTIVE</button>
+  </p>
+</section>
+
+<ul id="control-list" class="control-list">
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00351.html">Amazon SageMaker notebook instances should not have direct internet access</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01448.html">Checks if AWS Key Management Service (AWS KMS) key is configured for an Amazon SageMaker endpoint configuration</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00223.html">Checks if Amazon SageMaker FeatureGroup resources contain a description</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01412.html">Checks if Amazon SageMaker Inference Experiments have tags</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00810.html">Checks if Amazon SageMaker app image configs have tags</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00350.html">Checks if Amazon SageMaker data quality job definitions have inter-container traffic encryption enabled when the instance count is 2 or greater</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00279.html">Checks if Amazon SageMaker data quality job definitions have network isolation enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00131.html">Checks if Amazon SageMaker domains have tags</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00469.html">Checks if Amazon SageMaker endpoint configurations have production variants `InitialInstanceCount` set to a value greater than 1</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01194.html">Checks if Amazon SageMaker images have a description</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00775.html">Checks if Amazon SageMaker images have tags</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00903.html">Checks if Amazon SageMaker model bias job definitions have inter-container traffic encryption enabled when the instance count is 2 or greater</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01233.html">Checks if Amazon SageMaker model bias job definitions have network isolation enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01276.html">Checks if Amazon SageMaker model explainability job definitions have inter-container traffic encryption enabled when instance count is 2 or greater</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01139.html">Checks if Amazon SageMaker model quality job definitions have inter-container traffic encryption enabled  when the instance count is 2 or greater</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00982.html">Checks if Amazon SageMaker models that use a PrimaryContainer pull container image from a private Docker registry in a VPC</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00077.html">Checks if Amazon SageMaker monitoring schedules have network isolation enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01310.html">Checks if SageMaker feature groups have KMS encryption for OfflineStore</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00767.html">Checks if SageMaker feature groups have KMS encryption for OnlineStore with standard storage</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00247.html">Checks if an AWS Key Management Service (AWS KMS) key is configured for an Amazon SageMaker notebook instance</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01395.html">Checks if an Amazon SageMaker domain uses a customer owned Amazon Virtual Private Cloud (VPC) for non-EFS traffic</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00231.html">Checks if an Amazon SageMaker model has network isolation enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00348.html">Checks if an Amazon SageMaker model uses an Amazon Virtual Private Cloud (Amazon VPC) for container traffic</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00453.html">Checks if an Amazon SageMaker notebook instance is launched within a VPC or within a list of approved subnets</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00763.html">Checks if the Amazon SageMaker RootAccess setting is enabled for Amazon SageMaker notebook instances</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01349.html">Require Amazon SageMaker notebook instances to be deployed within a custom Amazon VPC</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01199.html">Require Amazon SageMaker notebook instances to have root access disallowed</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01117.html">Require an Amazon SageMaker notebook instance to prevent direct internet access</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00924.html">SageMaker app image configurations should be tagged</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01135.html">SageMaker data quality job definitions should have inter-container traffic encryption enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00733.html">SageMaker data quality job definitions should have network isolation enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01157.html">SageMaker endpoint production variants should have an initial instance count greater than 1</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00648.html">SageMaker feature group offline stores should be encrypted with AWS KMS keys </a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00577.html">SageMaker images should be tagged</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00056.html">SageMaker model bias job definitions should have inter-container traffic encryption enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00479.html">SageMaker model bias job definitions should have network isolation enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01023.html">SageMaker model explainability job definitions should have inter-container traffic encryption enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01084.html">SageMaker model quality job definitions should have inter-container traffic encryption enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00418.html">SageMaker models should use private registry in VPC for multi-container inference pipelines</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00686.html">SageMaker models should use private registry in VPC for primary containers</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00182.html">SageMaker monitoring schedules should have network isolation enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01306.html">SageMaker notebook instances should be launched in a custom VPC</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00073.html">SageMaker notebook instances should run on supported platforms</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00381.html">This rule checks if SageMaker models with multi-container inference pipelines pull images from VPC-based private registry</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00217.html">Users should not have root access to SageMaker notebook instances</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+</ul>
+</main>
+  <aside></aside>
+  <footer class="site-footer">
+    <p class="footer-legal">
+      awsctrlcatlens is not affiliated with or endorsed by Amazon Web Services. All AWS
+      service and region names are trademarks of Amazon.com, Inc. or
+      its affiliates. 
+    </p>
+    <p class="footer-legal">Data derived from the public AWS Control Catalog
+      API and AWS Account service endpoints; analysis + presentation
+      are machine-generated and may contain errors based on inconsistency in original source data.
+    </p>
+    <p class="footer-copyright">
+      Pipeline, analysis, and site generator &copy; 2026 Baden Hughes.
+    </p>
+  </footer>
+  <script src="/assets/minisearch.min.js" defer></script>
+  <script src="/assets/search.js" defer></script>
+  <script src="/assets/enhance.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+  <meta name="fetched-at" content="2026-10-11T01:47:30+00:00">
+  <title>Checks if Amazon SageMaker Inference Experiments have tags — Controls — awsctrlcatlens</title>
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-11">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-bar">
+      <a href="/" class="site-title">awsctrlcatlens</a>
+    </div>
+    <p class="site-provenance">
+      Machine-generated analytical view, last data snapshot seal: 2026-10-11T01:47:30+00:00, last site build: 2026-10-11.
+    </p>
+    <div data-staleness-slot hidden role="alert"></div>
+<form class="site-search" role="search" action="/">
+      <input type="search" data-search-input placeholder="Search raw controls, canonical controls, aliases, services, regions, frameworks ..." autocomplete="off">
+      <ul data-search-results hidden></ul>
+    </form><nav aria-label="breadcrumb"><ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/controls/">Controls</a></li><li><span aria-current="page">canon_01412</span></li></ol></nav>  </header>
+  <main><h1>Checks if Amazon SageMaker Inference Experiments have tags</h1>
+
+<section class="metadata">
+  <p>
+    <code>canon_01412</code>
+    <span class="badge badge-severity-low">low</span>
+    <span class="badge badge-behavior-detective">detective</span>
+  </p>
+</section>
+
+<section class="merge-trail"><h3>Merge trail</h3><p>Canonical <code>canon_01412</code> was formed via <code>singleton</code>.</p></section>
+
+<section class="variants">
+  <h2>Variants</h2>
+  <ul class="variant-list">
+    <li>
+      <strong>Checks if Amazon SageMaker Inference Experiments have tags</strong>
+<span class="badge badge-impl">AWS::Config::ConfigRule</span>      <br>
+      <code>arn:aws:controlcatalog:::control/eum4gse6b02w718u4o5aukns8</code><button type="button" class="arn-copy" data-copy-arn="arn:aws:controlcatalog:::control/eum4gse6b02w718u4o5aukns8" hidden>Copy ARN</button>
+    </li>
+  </ul>
+</section>
+
+<section class="aliases">
+  <h2>Aliases</h2>
+  <ul>
+    <li><code>CONFIG.SAGEMAKER.DT.26</code></li>
+  </ul>
+</section>
+
+<section class="framework-items">
+  <h2>Framework mappings</h2>
+  <ul>
+    <li>
+      <strong>CRI-Profile-v2.2</strong>:
+      <a href="/crosswalk/cri-profile-v2-2/id-am-02-01.html">ID.AM-02.01</a>
+    </li>
+    <li>
+      <strong>CRI-Profile-v2.2</strong>:
+      <a href="/crosswalk/cri-profile-v2-2/id-am-05-01.html">ID.AM-05.01</a>
+    </li>
+  </ul>
+</section>
+
+<section class="strong-neighbours">
+  <h2>Strongly related canonicals</h2>
+  <p>Canonicals connected by direct related edges or by two or more shared
+  common controls (projection weight &ge; 2).</p>
+  <ul>
+    <li>
+      <a href="/controls/canon_00011.html">Checks if Amazon ECR repositories have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00021.html">Checks if Amazon IVS recording configurations have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00029.html">Checks if Amazon EC2 fleets have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00040.html">Checks if Amazon Lightsail buckets have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00070.html">Checks if Amazon Connect Customer Profiles object types have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00084.html">Checks if AWS ImageBuilder image recipe resources have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00090.html">Checks if AWS DataSync tasks have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00128.html">Checks if Amazon RDS option group resources have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00134.html">Checks if AWS ApiGateway REST API resources have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00135.html">Checks if AWS IoT provisioning templates have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00147.html">Checks if Amazon EC2 network insights access scope analyses have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00155.html">Checks if Classic Load Balancers have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00178.html">Checks if AWS DMS replication tasks have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00185.html">Checks if Amazon Elastic File System file systems have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00206.html">Checks if AWS Resilience Hub app resources have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00248.html">Checks if AWS Resilience Hub policy resources have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00253.html">Checks if Amazon EC2 network insights access scopes have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00256.html">Checks if AWS Batch scheduling policies have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00288.html">Checks if AWS App Runner services have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00298.html">Checks if AWS Transfer Family profiles have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00399.html">Batch scheduling policies should be tagged</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00403.html">Checks if Amazon Route 53 Resolver firewall domain lists have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00435.html">Checks if Amazon EventBridge Schema Registry resources have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00445.html">Checks if AWS Transfer Family certificates have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00448.html">AWS IoT Device Defender custom metrics have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00449.html">Checks if Amazon ECS capacity providers have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00464.html">Checks if AWS Amplify branches have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00475.html">Checks if Amazon EC2 VPN connections have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00487.html">Checks if AWS EventSchemas discoverer resources have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00488.html">Checks if Network Load Balancer listeners have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00497.html">IVS recording configurations should be tagged</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00507.html">Checks if AWS CodeBuild report groups have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00514.html">Checks if Amazon Route 53 Resolver resolver rules have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00523.html">Checks if Gateway Load Balancers have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00579.html">Checks if Amazon CloudWatch metric streams have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00597.html">Checks if AWS Transfer Family connectors have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00617.html">Checks if Amazon WorkSpaces connection aliases have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00619.html">Checks if Amazon CodeGuru Reviewer repository associations have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00630.html">Checks if AWS Device Farm instance profiles have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00675.html">Checks if AWS IoT TwinMaker component types have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00687.html">Checks if Application Load Balancer listeners have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00693.html">Checks if AWS IoT TwinMaker workspaces have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00703.html">Checks if Amazon CodeGuru Profiler profiling groups have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00736.html">Checks if Amazon EC2 network insights paths have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00742.html">Amplify branches should be tagged</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00747.html">Checks if AWS Step Functions state machines have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00750.html">Checks if Amazon MSK clusters have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00760.html">Checks if AWS Elemental MediaPackage packaging configuration resources have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00766.html">Checks if AWS Elemental MediaTailor playback configurations have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00791.html">Checks if Amazon HealthLake FHIRDatastores have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00809.html">Checks if Amazon Lightsail disks have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00812.html">Checks if Amazon EC2 traffic mirror sessions have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00820.html">App Runner services should be tagged</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00825.html">Checks if AWS Key Management Service (KMS) keys have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00846.html">Checks if Amazon EC2 capacity reservations have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00854.html">AWS IoT TwinMaker workspaces should be tagged</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00859.html">Checks if Network Load Balancers have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00863.html">Checks if AWS ApiGateway stage resources resources have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00881.html">Checks if AWS IoT job template resources resources have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00883.html">DataSync tasks should be tagged</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00917.html">Checks if Application Load Balancers have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00933.html">Checks if AWS DMS endpoints have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00936.html">IVS playback key pairs should be tagged</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00937.html">Checks if Amazon EC2 IPAM Scopes have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00958.html">Checks if AWS GroundStation dataflow endpoint group resources have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00970.html">Checks if Amazon Lightsail certificates have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01002.html">Checks if AWS Service Catalog portfolio resources have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01013.html">Checks if Amazon EC2 network insights analyses have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01016.html">Checks if Amazon Route 53 Recovery Readiness recovery groups have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01019.html">Checks if AWS Transfer Family workflows have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01043.html">Amazon AppFlow flows should be tagged</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01051.html">Compute resources properties in managed Batch compute environments should be tagged</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01063.html">Checks if Amazon EKS add-ons have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01076.html">EC2 DHCP option sets should be tagged</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01096.html">CodeGuru Profiler profiling groups should be tagged</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01109.html">Checks if Amazon Route 53 Recovery Readiness resource sets have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01110.html">Amazon Keyspaces keyspaces should be tagged</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01136.html">Checks if Amazon EC2 DHCP options have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01140.html">Checks if Amazon Route 53 Recovery Control clusters have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01141.html">Checks if Amazon AppFlow flows have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01172.html">Checks if Amazon AppIntegrations event integrations have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01190.html">Checks if Amazon Route 53 Recovery Readiness readiness checks have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01203.html">Checks if AWS IAM server certificates have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01204.html">Checks if EC2 Image Builder image pipelines have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01205.html">CodeGuru Reviewer repository associations should be tagged</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01224.html">EC2 traffic mirror sessions should be tagged</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01236.html">Checks if AWS KinesisVideo signaling channel resources have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01252.html">Checks if Amazon EC2 carrier gateways have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01278.html">Checks if Amazon Connect Customer Profiles domains have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01291.html">Checks if Amazon EC2 traffic mirror filters have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01305.html">Checks if Amazon Cognito user pools have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01327.html">Checks if Amazon Keyspaces (for Apache Cassandra) keyspaces have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01350.html">Checks if AWS Glue machine learning transforms have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01351.html">Checks if Amazon RDS event subscriptions have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01358.html">Checks if AWS Batch managed compute environments compute resources have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01366.html">Checks if Amazon EC2 managed prefix lists have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01391.html">Checks if AWS IAM OIDC providers have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01403.html">Transfer Family agreements should be tagged</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01413.html">Checks if Amazon IVS playback key pairs have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01416.html">Checks if Amazon EC2 transit gateway multicast domains have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01419.html">Checks if AWS IAM SAML providers have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01429.html">EC2 traffic mirror filters should be tagged</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01432.html">Checks if AWS Transfer Family agreements have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01434.html">Checks if Amazon Managed Service for Prometheus rule groups namepaces have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01447.html">Checks if AWS ECS Service has property PropagateTags with value of either SERVICE or TASK_DEFINITION</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01451.html">EC2 prefix lists should be tagged</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01473.html">Transfer Family connectors should be tagged</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01482.html">Checks if Amazon Kinesis Video Streams streams have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01488.html">Checks if Amazon EC2 client VPN endpoints have tags</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+  </ul>
+</section>
+
+</main>
+  <aside></aside>
+  <footer class="site-footer">
+    <p class="footer-legal">
+      awsctrlcatlens is not affiliated with or endorsed by Amazon Web Services. All AWS
+      service and region names are trademarks of Amazon.com, Inc. or
+      its affiliates. 
+    </p>
+    <p class="footer-legal">Data derived from the public AWS Control Catalog
+      API and AWS Account service endpoints; analysis + presentation
+      are machine-generated and may contain errors based on inconsistency in original source data.
+    </p>
+    <p class="footer-copyright">
+      Pipeline, analysis, and site generator &copy; 2026 Baden Hughes.
+    </p>
+  </footer>
+  <script src="/assets/minisearch.min.js" defer></script>
+  <script src="/assets/search.js" defer></script>
+  <script src="/assets/enhance.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+  <meta name="fetched-at" content="2026-10-11T01:47:30+00:00">
+  <title>Amazon SageMaker notebook instances should not have direct internet access — Controls — awsctrlcatlens</title>
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-11">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-bar">
+      <a href="/" class="site-title">awsctrlcatlens</a>
+    </div>
+    <p class="site-provenance">
+      Machine-generated analytical view, last data snapshot seal: 2026-10-11T01:47:30+00:00, last site build: 2026-10-11.
+    </p>
+    <div data-staleness-slot hidden role="alert"></div>
+<form class="site-search" role="search" action="/">
+      <input type="search" data-search-input placeholder="Search raw controls, canonical controls, aliases, services, regions, frameworks ..." autocomplete="off">
+      <ul data-search-results hidden></ul>
+    </form><nav aria-label="breadcrumb"><ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/controls/">Controls</a></li><li><span aria-current="page">canon_00351</span></li></ol></nav>  </header>
+  <main><h1>Amazon SageMaker notebook instances should not have direct internet access</h1>
+
+<section class="metadata">
+  <p>
+    <code>canon_00351</code>
+    <span class="badge badge-severity-high">high</span>
+    <span class="badge badge-behavior-detective">detective</span>
+  </p>
+</section>
+
+<section class="merge-trail"><h3>Merge trail</h3><p>Canonical <code>canon_00351</code> was formed via <code>R3_tier_b_strong_cc</code>.</p></section>
+
+<section class="variants">
+  <h2>Variants</h2>
+  <ul class="variant-list">
+    <li>
+      <strong>Amazon SageMaker notebook instances should not have direct internet access</strong>
+<span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span>      <br>
+      <code>arn:aws:controlcatalog:::control/4bb3tcgou1ylnhd6go25k977p</code><button type="button" class="arn-copy" data-copy-arn="arn:aws:controlcatalog:::control/4bb3tcgou1ylnhd6go25k977p" hidden>Copy ARN</button>
+    </li>
+    <li>
+      <strong>Detect whether an Amazon SageMaker notebook instance allows direct internet access</strong>
+<span class="badge badge-impl">AWS::Config::ConfigRule</span>      <br>
+      <code>arn:aws:controlcatalog:::control/66gfl06uj1v999z53szvu0exa</code><button type="button" class="arn-copy" data-copy-arn="arn:aws:controlcatalog:::control/66gfl06uj1v999z53szvu0exa" hidden>Copy ARN</button>
+    </li>
+  </ul>
+</section>
+
+<section class="aliases">
+  <h2>Aliases</h2>
+  <ul>
+    <li><code>AWS-GR_SAGEMAKER_NOTEBOOK_NO_DIRECT_INTERNET_ACCESS</code></li>
+    <li><code>SH.SageMaker.1</code></li>
+  </ul>
+</section>
+
+<section class="framework-items">
+  <h2>Framework mappings</h2>
+  <ul>
+    <li>
+      <strong>CRI-Profile-v2.2</strong>:
+      <a href="/crosswalk/cri-profile-v2-2/de-cm-01-03.html">DE.CM-01.03</a>
+    </li>
+    <li>
+      <strong>CRI-Profile-v2.2</strong>:
+      <a href="/crosswalk/cri-profile-v2-2/pr-ir-01-01.html">PR.IR-01.01</a>
+    </li>
+    <li>
+      <strong>ISO-IEC-27001:2013-Annex-A</strong>:
+      <a href="/crosswalk/iso-iec-27001_2013-annex-a/a-13-1-1.html">A.13.1.1</a>
+    </li>
+    <li>
+      <strong>PCI-DSS-v4.0</strong>:
+      <a href="/crosswalk/pci-dss-v4-0/1-4-4.html">1.4.4</a>
+    </li>
+  </ul>
+</section>
+
+<section class="strong-neighbours">
+  <h2>Strongly related canonicals</h2>
+  <p>Canonicals connected by direct related edges or by two or more shared
+  common controls (projection weight &ge; 2).</p>
+  <ul>
+    <li>
+      <a href="/controls/canon_01117.html">Require an Amazon SageMaker notebook instance to prevent direct internet access</a>
+      &middot; weight 3
+&middot; direct&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00076.html">Redshift Serverless workgroups should prohibit public access</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00089.html">Detect whether Amazon Redshift clusters are blocked from public access</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00145.html">Checks whether the compliance status of the AWS Systems Manager association compliance is COMPLIANT or NON_COMPLIANT after the association execution on the instance</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00153.html">Checks if the Bitbucket source repository URL contains sign-in credentials or not</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00177.html">Require that a public AWS DMS replication instance is not public</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00250.html">CodeBuild Bitbucket source repository URLs should not contain sensitive credentials</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00263.html">Require an AWS AppSync GraphQL API to be configured with private visibility</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00275.html">Checks if an account with Amazon EMR has block public access settings enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00325.html">Disallow internet access for an Amazon VPC instance managed by a customer</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00365.html">Disallow public access to RDS database instances</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00422.html">Require that the organization&#39;s Amazon SQS resources are accessible only by IAM principals that belong to the organization, or by an AWS service</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00473.html">Amazon DocumentDB manual cluster snapshots should not be public</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00485.html">Disallow Amazon Virtual Private Network (VPN) connections</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00542.html">Checks if Amazon Redshift Serverless workgroups do not allow public access</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00545.html">Database Migration Service replication instances should not be public</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00586.html">Disallow Internet connection via SSH</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00683.html">Require an Amazon Redshift cluster to prohibit public access</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00780.html">Disallow public read access to S3 buckets</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00786.html">Require an Amazon S3 bucket to have block public access settings configured</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00860.html">Disallow public write access to S3 buckets</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00864.html">Disallow public read access to log archive</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00913.html">Amazon EMR block public access setting should be enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00971.html">Security groups should not allow ingress from 0.0.0.0/0 or ::/0 to port 22</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01050.html">RDS DB Instances should prohibit public access, as determined by the PubliclyAccessible configuration</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01073.html">EC2 instances managed by Systems Manager should have an association compliance status of COMPLIANT</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01166.html">Disallow public write access to log archive</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01176.html">Disallow public sharing of Amazon Machine Images (AMIs)</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01272.html">Checks if Amazon MQ brokers are not publicly accessible</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01320.html">Require that the organization&#39;s AWS Secrets Manager resources are accessible only by IAM principals that belong to the organization or by an AWS service</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01414.html">Checks if Amazon S3 access points have block public access settings enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01453.html">Require an Amazon S3 access point to have a Block Public Access (BPA) configuration with all options set to true</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+  </ul>
+</section>
+
+</main>
+  <aside></aside>
+  <footer class="site-footer">
+    <p class="footer-legal">
+      awsctrlcatlens is not affiliated with or endorsed by Amazon Web Services. All AWS
+      service and region names are trademarks of Amazon.com, Inc. or
+      its affiliates. 
+    </p>
+    <p class="footer-legal">Data derived from the public AWS Control Catalog
+      API and AWS Account service endpoints; analysis + presentation
+      are machine-generated and may contain errors based on inconsistency in original source data.
+    </p>
+    <p class="footer-copyright">
+      Pipeline, analysis, and site generator &copy; 2026 Baden Hughes.
+    </p>
+  </footer>
+  <script src="/assets/minisearch.min.js" defer></script>
+  <script src="/assets/search.js" defer></script>
+  <script src="/assets/enhance.js" defer></script>
+</body>
+</html>

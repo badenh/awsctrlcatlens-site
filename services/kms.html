@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+  <meta name="fetched-at" content="2026-10-11T01:47:30+00:00">
+  <title>kms — Services — awsctrlcatlens</title>
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-11">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-bar">
+      <a href="/" class="site-title">awsctrlcatlens</a>
+    </div>
+    <p class="site-provenance">
+      Machine-generated analytical view, last data snapshot seal: 2026-10-11T01:47:30+00:00, last site build: 2026-10-11.
+    </p>
+    <div data-staleness-slot hidden role="alert"></div>
+<form class="site-search" role="search" action="/">
+      <input type="search" data-search-input placeholder="Search raw controls, canonical controls, aliases, services, regions, frameworks ..." autocomplete="off">
+      <ul data-search-results hidden></ul>
+    </form><nav aria-label="breadcrumb"><ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/services/">Services</a></li><li><span aria-current="page">kms</span></li></ol></nav>  </header>
+  <main><h1>kms</h1>
+<p><span class="badge">16</span> canonical controls apply to this service.</p>
+
+<section class="chart-row">
+<figure class="bar-chart" aria-label="Distribution of items by count"><figcaption class="bar-chart-title">Severity</figcaption>  <ol>    <li>
+<span class="bar-chart-label">CRITICAL</span>      <span class="bar-chart-bar" style="--pct: 57.14%"></span>
+      <span class="bar-chart-count">4</span>
+    </li>    <li>
+<span class="bar-chart-label">HIGH</span>      <span class="bar-chart-bar" style="--pct: 100.0%"></span>
+      <span class="bar-chart-count">7</span>
+    </li>    <li>
+<span class="bar-chart-label">MEDIUM</span>      <span class="bar-chart-bar" style="--pct: 57.14%"></span>
+      <span class="bar-chart-count">4</span>
+    </li>    <li>
+<span class="bar-chart-label">LOW</span>      <span class="bar-chart-bar" style="--pct: 14.29%"></span>
+      <span class="bar-chart-count">1</span>
+    </li>    <li>
+<span class="bar-chart-label">NONE</span>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
+      <span class="bar-chart-count">0</span>
+    </li>  </ol></figure><figure class="bar-chart" aria-label="Distribution of items by count"><figcaption class="bar-chart-title">Behavior</figcaption>  <ol>    <li>
+<span class="bar-chart-label">DETECTIVE</span>      <span class="bar-chart-bar" style="--pct: 100.0%"></span>
+      <span class="bar-chart-count">7</span>
+    </li>    <li>
+<span class="bar-chart-label">PREVENTIVE</span>      <span class="bar-chart-bar" style="--pct: 100.0%"></span>
+      <span class="bar-chart-count">7</span>
+    </li>    <li>
+<span class="bar-chart-label">PROACTIVE</span>      <span class="bar-chart-bar" style="--pct: 28.57%"></span>
+      <span class="bar-chart-count">2</span>
+    </li>    <li>
+<span class="bar-chart-label">NONE</span>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
+      <span class="bar-chart-count">0</span>
+    </li>  </ol></figure></section>
+
+<section class="filter-bar" data-filter-group data-filter-target="#control-list">
+  <h2>Filter</h2>
+  <p>Severity:
+    <button type="button" class="filter-chip" data-filter-chip="severity:critical">CRITICAL</button>
+    <button type="button" class="filter-chip" data-filter-chip="severity:high">HIGH</button>
+    <button type="button" class="filter-chip" data-filter-chip="severity:medium">MEDIUM</button>
+    <button type="button" class="filter-chip" data-filter-chip="severity:low">LOW</button>
+  </p>
+  <p>Behavior:
+    <button type="button" class="filter-chip" data-filter-chip="behavior:preventive">PREVENTIVE</button>
+    <button type="button" class="filter-chip" data-filter-chip="behavior:detective">DETECTIVE</button>
+    <button type="button" class="filter-chip" data-filter-chip="behavior:proactive">PROACTIVE</button>
+  </p>
+</section>
+
+<ul id="control-list" class="control-list">
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01409.html">AWS KMS key rotation should be enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00237.html">AWS KMS keys should not be deleted unintentionally</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00367.html">Checks if AWS Key Management Service (AWS KMS) keys are not scheduled for deletion in AWS KMS</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00825.html">Checks if AWS Key Management Service (KMS) keys have tags</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00622.html">Checks if automatic key rotation is enabled for each key and matches to the key ID of the customer created AWS KMS key</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00478.html">Checks if the AWS KMS key policy allows public access</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
+  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01334.html">KMS keys should not be publicly accessible</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
+  <li data-filter-tags="severity:high behavior:preventive impl_type:aws::cloudformation::type::hook impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00646.html">Require an AWS KMS key policy to have a statement that limits creation of AWS KMS grants to AWS services</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
+  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00201.html">Require any AWS KMS key to have rotation configured</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:high behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00685.html">Require that an AWS KMS asymmetric key with RSA key material used for encryption does not have a key length of 2048 bits</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
+  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00186.html">Require that an AWS KMS asymmetric key with RSA key material used for encryption has a key length greater than 2048 bits</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
+  <li data-filter-tags="severity:high behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00594.html">Require that an AWS KMS customer-managed key (CMK) is configured with imported key material</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
+  <li data-filter-tags="severity:high behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00620.html">Require that an AWS KMS customer-managed key (CMK) is configured with key material originating from AWS CloudHSM</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
+  <li data-filter-tags="severity:high behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_01221.html">Require that an AWS KMS customer-managed key (CMK) is configured with key material originating from an external key store (XKS)</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
+  <li data-filter-tags="severity:high behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_01059.html">Require that an AWS KMS key is configured with the bypass policy lockout safety check enabled</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
+  <li data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::resource_control_policy "><a href="/controls/canon_01398.html">Require that the organization&#39;s AWS Key Management Service resources are accessible only by IAM principals that belong to the organization, or by an AWS service</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::RESOURCE_CONTROL_POLICY</span></li>
+</ul>
+</main>
+  <aside></aside>
+  <footer class="site-footer">
+    <p class="footer-legal">
+      awsctrlcatlens is not affiliated with or endorsed by Amazon Web Services. All AWS
+      service and region names are trademarks of Amazon.com, Inc. or
+      its affiliates. 
+    </p>
+    <p class="footer-legal">Data derived from the public AWS Control Catalog
+      API and AWS Account service endpoints; analysis + presentation
+      are machine-generated and may contain errors based on inconsistency in original source data.
+    </p>
+    <p class="footer-copyright">
+      Pipeline, analysis, and site generator &copy; 2026 Baden Hughes.
+    </p>
+  </footer>
+  <script src="/assets/minisearch.min.js" defer></script>
+  <script src="/assets/search.js" defer></script>
+  <script src="/assets/enhance.js" defer></script>
+</body>
+</html>

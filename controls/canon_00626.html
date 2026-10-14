@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+  <meta name="fetched-at" content="2026-10-11T01:47:30+00:00">
+  <title>Secrets Manager secrets should be rotated within a specified number of days — Controls — awsctrlcatlens</title>
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-11">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-bar">
+      <a href="/" class="site-title">awsctrlcatlens</a>
+    </div>
+    <p class="site-provenance">
+      Machine-generated analytical view, last data snapshot seal: 2026-10-11T01:47:30+00:00, last site build: 2026-10-11.
+    </p>
+    <div data-staleness-slot hidden role="alert"></div>
+<form class="site-search" role="search" action="/">
+      <input type="search" data-search-input placeholder="Search raw controls, canonical controls, aliases, services, regions, frameworks ..." autocomplete="off">
+      <ul data-search-results hidden></ul>
+    </form><nav aria-label="breadcrumb"><ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/controls/">Controls</a></li><li><span aria-current="page">canon_00626</span></li></ol></nav>  </header>
+  <main><h1>Secrets Manager secrets should be rotated within a specified number of days</h1>
+
+<section class="metadata">
+  <p>
+    <code>canon_00626</code>
+    <span class="badge badge-severity-medium">medium</span>
+    <span class="badge badge-behavior-detective">detective</span>
+  </p>
+</section>
+
+<section class="merge-trail"><h3>Merge trail</h3><p>Canonical <code>canon_00626</code> was formed via <code>singleton</code>.</p></section>
+
+<section class="variants">
+  <h2>Variants</h2>
+  <ul class="variant-list">
+    <li>
+      <strong>Secrets Manager secrets should be rotated within a specified number of days</strong>
+<span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span>      <br>
+      <code>arn:aws:controlcatalog:::control/75co45x51mcpv6imev5ya08kd</code><button type="button" class="arn-copy" data-copy-arn="arn:aws:controlcatalog:::control/75co45x51mcpv6imev5ya08kd" hidden>Copy ARN</button>
+    </li>
+  </ul>
+</section>
+
+<section class="aliases">
+  <h2>Aliases</h2>
+  <ul>
+    <li><code>SH.SecretsManager.4</code></li>
+  </ul>
+</section>
+
+<section class="framework-items">
+  <h2>Framework mappings</h2>
+  <ul>
+    <li>
+      <strong>AWS-WAF-v10</strong>:
+      <a href="/crosswalk/aws-waf-v10/sec02-bp03.html">SEC02-BP03</a>
+    </li>
+    <li>
+      <strong>CRI-Profile-v2.2</strong>:
+      <a href="/crosswalk/cri-profile-v2-2/pr-aa-01-01.html">PR.AA-01.01</a>
+    </li>
+    <li>
+      <strong>PCI-DSS-v4.0</strong>:
+      <a href="/crosswalk/pci-dss-v4-0/8-3-10-1.html">8.3.10.1</a>
+    </li>
+    <li>
+      <strong>PCI-DSS-v4.0</strong>:
+      <a href="/crosswalk/pci-dss-v4-0/8-3-9.html">8.3.9</a>
+    </li>
+    <li>
+      <strong>PCI-DSS-v4.0</strong>:
+      <a href="/crosswalk/pci-dss-v4-0/8-6-3.html">8.6.3</a>
+    </li>
+  </ul>
+</section>
+
+<section class="strong-neighbours">
+  <h2>Strongly related canonicals</h2>
+  <p>Canonicals connected by direct related edges or by two or more shared
+  common controls (projection weight &ge; 2).</p>
+  <ul>
+    <li>
+      <a href="/controls/canon_00356.html">Checks if AWS Secrets Manager secrets have been rotated in the past 90 days by examining &#39;LastRotatedDate&#39; value of the secret</a>
+      &middot; weight 3
+&middot; direct&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00027.html">Ensure IAM password policy expires passwords within 90 days or less</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00222.html">Password policies for IAM users should have strong configurations</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00374.html">Checks if AWS Secrets Manager secrets rotated successfully according to the rotation schedule</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00391.html">Checks whether AWS Secret Manager secret has rotation enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00421.html">Secrets Manager secrets should have automatic rotation enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00907.html">Secrets Manager secrets configured with automatic rotation should rotate successfully</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01293.html">Checks if the account password policy for AWS Identity and Access Management (IAM) users meets the specified requirements indicated in the parameters</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+  </ul>
+</section>
+
+</main>
+  <aside></aside>
+  <footer class="site-footer">
+    <p class="footer-legal">
+      awsctrlcatlens is not affiliated with or endorsed by Amazon Web Services. All AWS
+      service and region names are trademarks of Amazon.com, Inc. or
+      its affiliates. 
+    </p>
+    <p class="footer-legal">Data derived from the public AWS Control Catalog
+      API and AWS Account service endpoints; analysis + presentation
+      are machine-generated and may contain errors based on inconsistency in original source data.
+    </p>
+    <p class="footer-copyright">
+      Pipeline, analysis, and site generator &copy; 2026 Baden Hughes.
+    </p>
+  </footer>
+  <script src="/assets/minisearch.min.js" defer></script>
+  <script src="/assets/search.js" defer></script>
+  <script src="/assets/enhance.js" defer></script>
+</body>
+</html>

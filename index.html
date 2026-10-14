@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+  <meta name="fetched-at" content="2026-10-11T01:47:30+00:00">
+  <title>awsctrlcatlens — AWS Control Catalog Lens</title>
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-11">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-bar">
+      <a href="/" class="site-title">awsctrlcatlens</a>
+    </div>
+    <p class="site-provenance">
+      Machine-generated analytical view, last data snapshot seal: 2026-10-11T01:47:30+00:00, last site build: 2026-10-11.
+    </p>
+    <div data-staleness-slot hidden role="alert"></div>
+  </header>
+  <main><section class="hero">
+  <h1>awsctrlcatlens</h1>
+  <p class="hero-lead">
+    awsctrlcatlens is an automatically-refreshed, machine-generated index over the <a href="https://docs.aws.amazon.com/controlcatalog/latest/userguide/what-is-controlcatalog.html">AWS Control Catalog</a>.
+    AWS exposes <em>a list of controls</em> through
+    <code>controlcatalog:ListControls</code>, but not the questions that security and compliance
+    engineers and cloud architects actually ask: <em>which controls apply in
+    this region, which controls govern this service, how do controls map to security frameworks,
+    which controls share a single intent but multiple sources?</em>
+  </p>
+  <p class="hero-lead">
+    This site answers those questions.
+  </p>
+  <p class="hero-lead">
+    Raw controls from <a href="https://docs.aws.amazon.com/securityhub/latest/userguide/what-are-securityhub-services.html">Security Hub</a>, 
+    <a href="https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html">AWS Config</a>,
+    <a href="https://docs.aws.amazon.com/cloudformation-cli/latest/hooks-userguide/what-is-cloudformation-hooks.html">CloudFormation Hooks</a>, 
+    and <a href="https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html">AWS Organizations SCPs</a> are canonicalised into a
+    single node by technical security outcome intent. 
+    All controls are cross-indexed by region, service, and
+    framework, and refreshed from the live <a href="https://docs.aws.amazon.com/controlcatalog/latest/APIReference/Welcome.html">AWS Control Catalog API</a> on a scheduled run.
+  </p>
+</section>
+
+<section class="search-bar">
+  <h2>Search</h2>
+  <form class="site-search landing-search" role="search" action="/">
+    <input type="search" data-search-input placeholder="Search raw controls, canonical controls, aliases, services, regions, frameworks ..." autocomplete="off">
+    <ul data-search-results hidden></ul>
+  </form>
+</section>
+
+<section class="index-grid entry-blocks row-cols-2">
+  <article class="entry-card entry-card-raw">
+    <h2>
+      <a href="/raw/">Raw controls</a>
+<span class="badge">1613</span>    </h2>
+    <p>Raw controls — the raw controls list from AWS API. Search by string, filter by executor family (Config / Security Hub / CFN Hook / Organizations) + severity + behavior.</p>
+  </article>
+  <article class="entry-card entry-card-canonical">
+    <h2>
+      <a href="/controls/">Canonical controls</a>
+<span class="badge">1497</span>    </h2>
+    <p>Canonical controls — one node per security outcome intent after collapsing Security Hub, Config, and CloudFormation Hook duplicates. Search by string, filter by severity + behavior.</p>
+  </article>
+</section>
+<section class="index-grid entry-blocks row-cols-3">
+  <article class="entry-card entry-card-regions">
+    <h2>
+      <a href="/regions/">Regions</a>
+<span class="badge">34</span>    </h2>
+    <p>Canonical controls grouped by AWS region. Opt-in regions annotated. Per-region severity + behavior breakdown. Region view not available from AWS API.</p>
+  </article>
+  <article class="entry-card entry-card-services">
+    <h2>
+      <a href="/services/">Services</a>
+<span class="badge">126</span>    </h2>
+    <p>Canonical controls grouped by AWS service namespace (derived from <code>GovernedResources</code>). Per-service severity + behaviour breakdown. Service view not available from AWS API.</p>
+  </article>
+  <article class="entry-card entry-card-frameworks">
+    <h2>
+      <a href="/frameworks/">Frameworks</a>
+<span class="badge">22</span>    </h2>
+    <p>Canonical controls grouped by compliance framework. Per-framework density stats + cross-item mapping explanation. Framework view not immediately available from AWS API without query aggregation.</p>
+  </article>
+</section>
+<section class="index-grid entry-blocks row-cols-3">
+  <article class="entry-card entry-card-analysis">
+    <h2>
+      <a href="/analysis/">Analysis</a>
+    </h2>
+    <p>Framework-overlap heat map, degree × framework-count scatter, long-tail histograms (linear + log), top-1% and top-5% impact leaderboards.</p>
+  </article>
+  <article class="entry-card entry-card-about">
+    <h2>
+      <a href="/about/">Methodology</a>
+    </h2>
+    <p>Canonicalisation rule and voting stack, executor families, service inference, opt-in regions, framework repetition, hub metrics, build determinism.</p>
+  </article>
+  <article class="entry-card entry-card-glossary">
+    <h2>
+      <a href="/glossary/">Glossary</a>
+    </h2>
+    <p>Definitions of every term used across the site: canonical, variant, veto, hub, Jaccard, degree, framework count, SCP, opt-in region, snapshot, and more.</p>
+  </article>
+</section>
+</main>
+  <aside></aside>
+  <footer class="site-footer">
+    <p class="footer-legal">
+      awsctrlcatlens is not affiliated with or endorsed by Amazon Web Services. All AWS
+      service and region names are trademarks of Amazon.com, Inc. or
+      its affiliates. 
+    </p>
+    <p class="footer-legal">Data derived from the public AWS Control Catalog
+      API and AWS Account service endpoints; analysis + presentation
+      are machine-generated and may contain errors based on inconsistency in original source data.
+    </p>
+    <p class="footer-copyright">
+      Pipeline, analysis, and site generator &copy; 2026 Baden Hughes.
+    </p>
+  </footer>
+  <script src="/assets/minisearch.min.js" defer></script>
+  <script src="/assets/search.js" defer></script>
+  <script src="/assets/enhance.js" defer></script>
+</body>
+</html>
