@@ -80,6 +80,7 @@ a:hover { text-decoration: underline; }
 }
 .site-footer p { margin: 0.3rem 0; }
 .site-footer .footer-legal { font-size: 0.8em; line-height: 1.4; }
+.site-footer .footer-about { font-size: 0.8em; line-height: 1.4; }
 .site-footer .footer-copyright { font-size: 0.8em; }
 
 .hero { margin-bottom: 1.5rem; }

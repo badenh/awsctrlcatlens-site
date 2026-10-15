@@ -112,7 +112,8 @@
     });
   }
 
-  // SITE-UX-08 — reveal staleness slot if fetched-at is >48h old.
+  // SITE-UX-08 — reveal staleness slot if fetched-at is older than the
+  // weekly refresh cadence plus grace. Weekly cron = 168h; grace = 24h → 192h.
   function stalenessBanner() {
     var meta = document.querySelector('meta[name="fetched-at"]');
     var slot = document.querySelector('[data-staleness-slot]');
@@ -120,10 +121,10 @@
     var fetched = new Date(meta.getAttribute('content') || '');
     if (isNaN(fetched.getTime())) { return; } // RESEARCH Q6 Pitfall 5
     var ageHours = (Date.now() - fetched.getTime()) / 3600000;
-    if (ageHours > 48) {
+    if (ageHours > 192) {
       slot.className = 'staleness-banner staleness-warning';
-      slot.textContent = 'Snapshot is ' + ageHours.toFixed(0) +
-        ' hours old (expected: ≤ 48). Daily refresh may have failed.';
+      slot.textContent = 'Snapshot is ' + (ageHours / 24).toFixed(1) +
+        ' days old (expected: ≤ 8). Weekly refresh may have failed.';
       slot.hidden = false;
     }
   }
