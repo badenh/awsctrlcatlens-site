@@ -568,59 +568,60 @@
   <figcaption class="muted">126 points. Dashed lines = median split (quadrants). X log-scaled; X median 6.0, Y median 17.0.</figcaption>
 </figure>
 
-  <h3>Top 20 by compression ratio</h3>
-  <p>Services with the strongest raw→canonical compression. High ratios indicate AWS publishes the same intent across executors for that service.</p>
+  <h3>Top 20 by raw volume</h3>
+  <p>Services with the largest raw control footprint. Scopes audit work by sheer catalog volume.</p>
   <table class="data-table">
     <thead><tr><th>Service</th><th class="num">Raw</th><th class="num">Canonical</th><th class="num">Ratio</th></tr></thead>
     <tbody>
-      <tr><td><a href="/services/networkfirewall.html">networkfirewall</a></td><td class="num">21</td><td class="num">14</td><td class="num">1.500×</td></tr>
-      <tr><td><a href="/services/events.html">events</a></td><td class="num">6</td><td class="num">4</td><td class="num">1.500×</td></tr>
-      <tr><td><a href="/services/account.html">account</a></td><td class="num">3</td><td class="num">2</td><td class="num">1.500×</td></tr>
-      <tr><td><a href="/services/appsync.html">appsync</a></td><td class="num">15</td><td class="num">11</td><td class="num">1.364×</td></tr>
-      <tr><td><a href="/services/dynamodb.html">dynamodb</a></td><td class="num">16</td><td class="num">12</td><td class="num">1.333×</td></tr>
-      <tr><td><a href="/services/elasticbeanstalk.html">elasticbeanstalk</a></td><td class="num">12</td><td class="num">9</td><td class="num">1.333×</td></tr>
-      <tr><td><a href="/services/acmpca.html">acmpca</a></td><td class="num">4</td><td class="num">3</td><td class="num">1.333×</td></tr>
-      <tr><td><a href="/services/macie.html">macie</a></td><td class="num">4</td><td class="num">3</td><td class="num">1.333×</td></tr>
-      <tr><td><a href="/services/ecr.html">ecr</a></td><td class="num">13</td><td class="num">10</td><td class="num">1.300×</td></tr>
-      <tr><td><a href="/services/apigatewayv2.html">apigatewayv2</a></td><td class="num">10</td><td class="num">8</td><td class="num">1.250×</td></tr>
-      <tr><td><a href="/services/fsx.html">fsx</a></td><td class="num">10</td><td class="num">8</td><td class="num">1.250×</td></tr>
-      <tr><td><a href="/services/elasticloadbalancing.html">elasticloadbalancing</a></td><td class="num">22</td><td class="num">18</td><td class="num">1.222×</td></tr>
-      <tr><td><a href="/services/opensearchservice.html">opensearchservice</a></td><td class="num">29</td><td class="num">24</td><td class="num">1.208×</td></tr>
-      <tr><td><a href="/services/logs.html">logs</a></td><td class="num">6</td><td class="num">5</td><td class="num">1.200×</td></tr>
-      <tr><td><a href="/services/wafregional.html">wafregional</a></td><td class="num">6</td><td class="num">5</td><td class="num">1.200×</td></tr>
-      <tr><td><a href="/services/emr.html">emr</a></td><td class="num">13</td><td class="num">11</td><td class="num">1.182×</td></tr>
-      <tr><td><a href="/services/apigateway.html">apigateway</a></td><td class="num">20</td><td class="num">17</td><td class="num">1.176×</td></tr>
+      <tr><td><a href="/services/ec2.html">ec2</a></td><td class="num">166</td><td class="num">160</td><td class="num">1.038×</td></tr>
+      <tr><td><a href="/services/rds.html">rds</a></td><td class="num">132</td><td class="num">126</td><td class="num">1.048×</td></tr>
+      <tr><td><a href="/services/s3.html">s3</a></td><td class="num">76</td><td class="num">70</td><td class="num">1.086×</td></tr>
+      <tr><td><a href="/services/iam.html">iam</a></td><td class="num">51</td><td class="num">49</td><td class="num">1.041×</td></tr>
+      <tr><td><a href="/services/sagemaker.html">sagemaker</a></td><td class="num">48</td><td class="num">45</td><td class="num">1.067×</td></tr>
+      <tr><td><a href="/services/cloudtrail.html">cloudtrail</a></td><td class="num">46</td><td class="num">45</td><td class="num">1.022×</td></tr>
+      <tr><td><a href="/services/ecs.html">ecs</a></td><td class="num">46</td><td class="num">41</td><td class="num">1.122×</td></tr>
       <tr><td><a href="/services/cloudfront.html">cloudfront</a></td><td class="num">42</td><td class="num">36</td><td class="num">1.167×</td></tr>
+      <tr><td><a href="/services/elasticloadbalancingv2.html">elasticloadbalancingv2</a></td><td class="num">37</td><td class="num">36</td><td class="num">1.028×</td></tr>
+      <tr><td><a href="/services/redshift.html">redshift</a></td><td class="num">37</td><td class="num">34</td><td class="num">1.088×</td></tr>
+      <tr><td><a href="/services/opensearchservice.html">opensearchservice</a></td><td class="num">29</td><td class="num">24</td><td class="num">1.208×</td></tr>
+      <tr><td><a href="/services/dms.html">dms</a></td><td class="num">26</td><td class="num">23</td><td class="num">1.130×</td></tr>
+      <tr><td><a href="/services/guardduty.html">guardduty</a></td><td class="num">25</td><td class="num">24</td><td class="num">1.042×</td></tr>
+      <tr><td><a href="/services/autoscaling.html">autoscaling</a></td><td class="num">24</td><td class="num">22</td><td class="num">1.091×</td></tr>
+      <tr><td><a href="/services/elasticache.html">elasticache</a></td><td class="num">24</td><td class="num">22</td><td class="num">1.091×</td></tr>
+      <tr><td><a href="/services/efs.html">efs</a></td><td class="num">23</td><td class="num">20</td><td class="num">1.150×</td></tr>
+      <tr><td><a href="/services/elasticloadbalancing.html">elasticloadbalancing</a></td><td class="num">22</td><td class="num">18</td><td class="num">1.222×</td></tr>
+      <tr><td><a href="/services/lambda.html">lambda</a></td><td class="num">22</td><td class="num">21</td><td class="num">1.048×</td></tr>
+      <tr><td><a href="/services/elasticsearch.html">elasticsearch</a></td><td class="num">21</td><td class="num">20</td><td class="num">1.050×</td></tr>
       <tr><td><a href="/services/neptune.html">neptune</a></td><td class="num">21</td><td class="num">18</td><td class="num">1.167×</td></tr>
-      <tr><td><a href="/services/dax.html">dax</a></td><td class="num">7</td><td class="num">6</td><td class="num">1.167×</td></tr>
     </tbody>
   </table>
 
   <details>
-    <summary>Top 20 by raw volume</summary>
+    <summary>Top 20 by compression ratio</summary>
+    <p>Services with the strongest raw→canonical compression. High ratios indicate AWS publishes the same intent across executors for that service.</p>
     <table class="data-table">
       <thead><tr><th>Service</th><th class="num">Raw</th><th class="num">Canonical</th><th class="num">Ratio</th></tr></thead>
       <tbody>
-        <tr><td><a href="/services/ec2.html">ec2</a></td><td class="num">166</td><td class="num">160</td><td class="num">1.038×</td></tr>
-        <tr><td><a href="/services/rds.html">rds</a></td><td class="num">132</td><td class="num">126</td><td class="num">1.048×</td></tr>
-        <tr><td><a href="/services/s3.html">s3</a></td><td class="num">76</td><td class="num">70</td><td class="num">1.086×</td></tr>
-        <tr><td><a href="/services/iam.html">iam</a></td><td class="num">51</td><td class="num">49</td><td class="num">1.041×</td></tr>
-        <tr><td><a href="/services/sagemaker.html">sagemaker</a></td><td class="num">48</td><td class="num">45</td><td class="num">1.067×</td></tr>
-        <tr><td><a href="/services/cloudtrail.html">cloudtrail</a></td><td class="num">46</td><td class="num">45</td><td class="num">1.022×</td></tr>
-        <tr><td><a href="/services/ecs.html">ecs</a></td><td class="num">46</td><td class="num">41</td><td class="num">1.122×</td></tr>
-        <tr><td><a href="/services/cloudfront.html">cloudfront</a></td><td class="num">42</td><td class="num">36</td><td class="num">1.167×</td></tr>
-        <tr><td><a href="/services/elasticloadbalancingv2.html">elasticloadbalancingv2</a></td><td class="num">37</td><td class="num">36</td><td class="num">1.028×</td></tr>
-        <tr><td><a href="/services/redshift.html">redshift</a></td><td class="num">37</td><td class="num">34</td><td class="num">1.088×</td></tr>
-        <tr><td><a href="/services/opensearchservice.html">opensearchservice</a></td><td class="num">29</td><td class="num">24</td><td class="num">1.208×</td></tr>
-        <tr><td><a href="/services/dms.html">dms</a></td><td class="num">26</td><td class="num">23</td><td class="num">1.130×</td></tr>
-        <tr><td><a href="/services/guardduty.html">guardduty</a></td><td class="num">25</td><td class="num">24</td><td class="num">1.042×</td></tr>
-        <tr><td><a href="/services/autoscaling.html">autoscaling</a></td><td class="num">24</td><td class="num">22</td><td class="num">1.091×</td></tr>
-        <tr><td><a href="/services/elasticache.html">elasticache</a></td><td class="num">24</td><td class="num">22</td><td class="num">1.091×</td></tr>
-        <tr><td><a href="/services/efs.html">efs</a></td><td class="num">23</td><td class="num">20</td><td class="num">1.150×</td></tr>
+        <tr><td><a href="/services/networkfirewall.html">networkfirewall</a></td><td class="num">21</td><td class="num">14</td><td class="num">1.500×</td></tr>
+        <tr><td><a href="/services/events.html">events</a></td><td class="num">6</td><td class="num">4</td><td class="num">1.500×</td></tr>
+        <tr><td><a href="/services/account.html">account</a></td><td class="num">3</td><td class="num">2</td><td class="num">1.500×</td></tr>
+        <tr><td><a href="/services/appsync.html">appsync</a></td><td class="num">15</td><td class="num">11</td><td class="num">1.364×</td></tr>
+        <tr><td><a href="/services/dynamodb.html">dynamodb</a></td><td class="num">16</td><td class="num">12</td><td class="num">1.333×</td></tr>
+        <tr><td><a href="/services/elasticbeanstalk.html">elasticbeanstalk</a></td><td class="num">12</td><td class="num">9</td><td class="num">1.333×</td></tr>
+        <tr><td><a href="/services/acmpca.html">acmpca</a></td><td class="num">4</td><td class="num">3</td><td class="num">1.333×</td></tr>
+        <tr><td><a href="/services/macie.html">macie</a></td><td class="num">4</td><td class="num">3</td><td class="num">1.333×</td></tr>
+        <tr><td><a href="/services/ecr.html">ecr</a></td><td class="num">13</td><td class="num">10</td><td class="num">1.300×</td></tr>
+        <tr><td><a href="/services/apigatewayv2.html">apigatewayv2</a></td><td class="num">10</td><td class="num">8</td><td class="num">1.250×</td></tr>
+        <tr><td><a href="/services/fsx.html">fsx</a></td><td class="num">10</td><td class="num">8</td><td class="num">1.250×</td></tr>
         <tr><td><a href="/services/elasticloadbalancing.html">elasticloadbalancing</a></td><td class="num">22</td><td class="num">18</td><td class="num">1.222×</td></tr>
-        <tr><td><a href="/services/lambda.html">lambda</a></td><td class="num">22</td><td class="num">21</td><td class="num">1.048×</td></tr>
-        <tr><td><a href="/services/elasticsearch.html">elasticsearch</a></td><td class="num">21</td><td class="num">20</td><td class="num">1.050×</td></tr>
+        <tr><td><a href="/services/opensearchservice.html">opensearchservice</a></td><td class="num">29</td><td class="num">24</td><td class="num">1.208×</td></tr>
+        <tr><td><a href="/services/logs.html">logs</a></td><td class="num">6</td><td class="num">5</td><td class="num">1.200×</td></tr>
+        <tr><td><a href="/services/wafregional.html">wafregional</a></td><td class="num">6</td><td class="num">5</td><td class="num">1.200×</td></tr>
+        <tr><td><a href="/services/emr.html">emr</a></td><td class="num">13</td><td class="num">11</td><td class="num">1.182×</td></tr>
+        <tr><td><a href="/services/apigateway.html">apigateway</a></td><td class="num">20</td><td class="num">17</td><td class="num">1.176×</td></tr>
+        <tr><td><a href="/services/cloudfront.html">cloudfront</a></td><td class="num">42</td><td class="num">36</td><td class="num">1.167×</td></tr>
         <tr><td><a href="/services/neptune.html">neptune</a></td><td class="num">21</td><td class="num">18</td><td class="num">1.167×</td></tr>
+        <tr><td><a href="/services/dax.html">dax</a></td><td class="num">7</td><td class="num">6</td><td class="num">1.167×</td></tr>
       </tbody>
     </table>
   </details>
@@ -692,7 +693,7 @@
     </table>
   </details>
 
-  <details>
+  <details open>
     <summary>Full 22×22 heat map</summary>
     <figure class="heat-map" aria-label="Framework Jaccard similarity heat map">
   <div class="heat-map-scroll">
