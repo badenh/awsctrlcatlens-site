@@ -31,7 +31,26 @@
     </form><nav aria-label="breadcrumb"><ol class="breadcrumb"><li><a href="/">Home</a></li><li><span aria-current="page">About</span></li></ol></nav>  </header>
   <main><h1>How canonicalisation works</h1>
 
-<section>
+<nav class="toc" aria-label="On this page">
+  <strong>On this page:</strong>
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#merge-rules">Merge rules (R0 – R3)</a></li>
+    <li><a href="#vetoes">Vetoes (V1 – V5)</a></li>
+    <li><a href="#override-cycle">Override cycle</a></li>
+    <li><a href="#registry">Registry and tombstones</a></li>
+    <li><a href="#executor-families">Executor families</a></li>
+    <li><a href="#service-inference">Service inference</a></li>
+    <li><a href="#opt-in-regions">Opt-in regions</a></li>
+    <li><a href="#framework-repetition">Framework item repetition</a></li>
+    <li><a href="#analysis-compression">Analysis page: compression</a></li>
+    <li><a href="#analysis-quadrants">Analysis page: quadrant scatters</a></li>
+    <li><a href="#analysis-hub-metrics">Analysis page: hub metrics</a></li>
+    <li><a href="#build-determinism">Build determinism</a></li>
+  </ul>
+</nav>
+
+<section id="overview">
   <h2>Overview</h2>
   <p>The AWS Control Catalog exposes a single control three times when the same
   behaviour is implemented via Security Hub, AWS Config, and a CloudFormation
@@ -47,7 +66,7 @@
   AWS support for the framework overall, nor the whole official framework.</p>
 </section>
 
-<section>
+<section id="merge-rules">
   <h2>Merge rules (R0 &ndash; R3)</h2>
   <table class="data-table">
     <thead>
@@ -88,7 +107,7 @@
   </table>
 </section>
 
-<section>
+<section id="vetoes">
   <h2>Vetoes (V1 &ndash; V5)</h2>
   <table class="data-table">
     <thead>
@@ -124,7 +143,7 @@
   </table>
 </section>
 
-<section>
+<section id="override-cycle">
   <h2>Override cycle</h2>
   <p>Human-verified decisions live in a curated overrides list. Entries are
   either <em>force</em> pairs (always merge, R0) or <em>block</em> pairs (never
@@ -132,7 +151,7 @@
   queue of candidate pairs; applied decisions become new override entries.</p>
 </section>
 
-<section>
+<section id="registry">
   <h2>Registry and tombstones</h2>
   <p>Canonical ids are stable across refreshes via a persisted id registry.
   When a canonical's underlying variants disappear from the catalog, its id
@@ -144,7 +163,7 @@
   from treating them as current content.</p>
 </section>
 
-<section>
+<section id="executor-families">
   <h2>Executor families</h2>
   <p>Raw controls come from four distinct AWS executor surfaces. We tag
   each variant with its executor family on the <a href="/raw/">raw controls</a>
@@ -182,7 +201,7 @@
   </table>
 </section>
 
-<section>
+<section id="service-inference">
   <h2>Service inference</h2>
   <p>The AWS Control Catalog does not expose a service → controls index.
   We infer service namespace from <code>GovernedResources[0]</code> of each
@@ -196,7 +215,7 @@
   still miss edge cases.</p>
 </section>
 
-<section>
+<section id="opt-in-regions">
   <h2>Opt-in regions</h2>
   <p>AWS regions are marked <em>opt-in</em> when a new account must
   explicitly enable them before resources can be deployed; the rest are
@@ -209,7 +228,7 @@
   <code>DISABLING</code>) means opt-in.</p>
 </section>
 
-<section>
+<section id="framework-repetition">
   <h2>Framework item repetition</h2>
   <p>Every framework page shows a density stat
   (<em>mapped-rows ÷ unique-canonicals</em>). When density &gt; 1, the same
@@ -239,7 +258,7 @@
   </table>
 </section>
 
-<section>
+<section id="analysis-compression">
   <h2>Analysis page: compression</h2>
   <p>The <a href="/analysis/">analysis page</a> opens with a raw→canonical
   compression breakdown. Six numbers answer "how much duplication does the
@@ -275,7 +294,7 @@
   </table>
 </section>
 
-<section>
+<section id="analysis-quadrants">
   <h2>Analysis page: quadrant scatters</h2>
   <p>Three median-split scatter plots. Each dashed cross sits at the data
   median — the four quadrants rank entities above/below median on both
@@ -305,7 +324,7 @@
   </table>
 </section>
 
-<section>
+<section id="analysis-hub-metrics">
   <h2>Analysis page: hub metrics</h2>
   <p>Three per-canonical signals also drive the heat map, scatter, and
   long-tail histograms on the <a href="/analysis/">analysis</a> page:</p>
@@ -330,7 +349,7 @@
   </table>
 </section>
 
-<section>
+<section id="build-determinism">
   <h2>Build determinism</h2>
   <p>Every page in this site is a deterministic function of a single
   snapshot of the AWS Control Catalog. Building the site twice from the

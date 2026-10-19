@@ -32,7 +32,13 @@
   <main><h1>Analysis</h1>
 <p>Cross-cutting views of the current snapshot: raw→canonical compression, framework overlap, hub detection, and the degree × framework-count distribution across every canonical control.</p>
 
-<section class="compression">
+<nav class="toc" aria-label="On this page">
+  <strong>On this page:</strong>
+  <ul>
+<li><a href="#compression">Raw → canonical compression</a></li><li><a href="#quadrants">Quadrant views</a></li><li><a href="#framework-overlap">Framework overlap</a></li><li><a href="#hub-scatter">Degree vs framework count</a></li>  </ul>
+</nav>
+
+<section class="compression" id="compression">
   <h2>Raw → canonical compression</h2>
   <p>How much the canonicalisation layer collapses the published catalog. The AWS Control Catalog exposes the same intent across multiple executors (Security Hub, Config, CloudFormation hook); the canonical layer joins cross-executor duplicates.</p>
 
@@ -211,7 +217,7 @@
 </section>
 
 
-<section class="quadrants">
+<section class="quadrants" id="quadrants">
   <h2>Quadrant views</h2>
   <p>Three scatter plots with median-split quadrants. Each dashed line sits at the data median — top-right quadrant = above-median on both axes.</p>
 
@@ -285,7 +291,7 @@
 </figure>
 </section>
 
-<section class="overlap-highlights">
+<section class="overlap-highlights" id="framework-overlap">
   <h2>Framework overlap</h2>
   <p>Pairwise Jaccard similarity across frameworks on canonical IDs. The matrix below is symmetric; the top-5 strongest pairs are called out for quick reference.</p>
 
@@ -364,7 +370,7 @@
   </details>
 </section>
 
-<section class="hub-scatter-section">
+<section class="hub-scatter-section" id="hub-scatter">
   <h2>Degree vs framework count</h2>
   <p>Every canonical plotted. Y = graph degree (related + common-control-bridged neighbour count). X = distinct frameworks the canonical appears in. Clusters top-right are the compliance-coverage leverage points.</p>
   <figure class="scatter" aria-label="Degree vs framework count scatter">

@@ -404,3 +404,24 @@ table.data-table th.num { text-align: right; font-variant-numeric: tabular-nums;
   .site-search input[type="search"] { font-size: 0.95rem; }
   .bar-chart li { grid-template-columns: minmax(4rem, 6rem) 1fr auto; font-size: 0.75rem; }
 }
+
+nav.toc {
+  margin: 1rem 0 1.5rem;
+  padding: 0.5rem 0.75rem;
+  background: #f6f6f6;
+  border-left: 3px solid #999;
+  font-size: 0.9rem;
+}
+nav.toc strong { display: block; margin-bottom: 0.25rem; }
+nav.toc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
+}
+nav.toc li { margin: 0; }
+nav.toc a { text-decoration: none; }
+nav.toc a:hover { text-decoration: underline; }
+:target { scroll-margin-top: 0.5rem; }
