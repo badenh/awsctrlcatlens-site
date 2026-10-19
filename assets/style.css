@@ -405,6 +405,39 @@ table.data-table th.num { text-align: right; font-variant-numeric: tabular-nums;
   .bar-chart li { grid-template-columns: minmax(4rem, 6rem) 1fr auto; font-size: 0.75rem; }
 }
 
+.stat-hero {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem 0.9rem;
+  background: #f6f6f6;
+  border-left: 3px solid #3a6ea5;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.1s;
+}
+.stat-card:hover { background: #ececec; }
+.stat-value {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+.stat-label {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 0.15rem;
+}
+@media (max-width: 640px) {
+  .stat-hero { grid-template-columns: repeat(2, 1fr); }
+  .stat-value { font-size: 1.3rem; }
+}
+
 nav.toc {
   margin: 1rem 0 1.5rem;
   padding: 0.5rem 0.75rem;
