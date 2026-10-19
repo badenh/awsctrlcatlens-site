@@ -240,9 +240,75 @@
 </section>
 
 <section>
-  <h2>Hub metrics (Analysis page)</h2>
-  <p>Three per-canonical signals drive the <a href="/analysis/">analysis
-  charts</a>:</p>
+  <h2>Analysis page: compression</h2>
+  <p>The <a href="/analysis/">analysis page</a> opens with a raw→canonical
+  compression breakdown. Six numbers answer "how much duplication does the
+  canonical layer actually remove, and where":</p>
+  <table class="data-table">
+    <thead><tr><th>Metric</th><th>Definition</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Global ratio</td>
+        <td>Raw controls ÷ canonical controls. The headline compression factor.</td>
+      </tr>
+      <tr>
+        <td>Group-size histogram</td>
+        <td>How many canonicals have 1, 2, 3+ variants. Size 1 = no duplicate across executors; size ≥2 = AWS published the same intent via multiple executors.</td>
+      </tr>
+      <tr>
+        <td>Raw by executor</td>
+        <td>Raw-control volume split by impl_type (Config, Security Hub, CloudFormation hook, Organizations). Shows which executor dominates the catalog.</td>
+      </tr>
+      <tr>
+        <td>Cross-executor collapse</td>
+        <td>For every multi-variant canonical, the set of executors that collapsed into it. Rows with 2+ executors are the real cross-executor duplicates; single-executor rows are intra-executor duplicates (two Config rules with the same intent).</td>
+      </tr>
+      <tr>
+        <td>By service — top 20 by ratio / raw</td>
+        <td>Services with the strongest raw→canonical compression (ratio) or highest raw volume. Scopes audit work.</td>
+      </tr>
+      <tr>
+        <td>Most-compressed canonicals</td>
+        <td>Top 20 canonicals by variant count. Direct view of the worst cross-executor duplicates.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Analysis page: quadrant scatters</h2>
+  <p>Three median-split scatter plots. Each dashed cross sits at the data
+  median — the four quadrants rank entities above/below median on both
+  axes.</p>
+  <table class="data-table">
+    <thead><tr><th>Scatter</th><th>X axis</th><th>Y axis</th><th>Top-right quadrant</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Frameworks (1 dot per framework)</td>
+        <td>Canonicals the framework references</td>
+        <td>Mean Jaccard similarity to other frameworks</td>
+        <td>Big + typical: mainstream mega-frameworks (CIS, NIST). Bottom-left = niche / outlier.</td>
+      </tr>
+      <tr>
+        <td>Services (1 dot per service)</td>
+        <td>Raw control count (log)</td>
+        <td>Distinct frameworks reached via its canonicals</td>
+        <td>Large footprint + heavily-regulated: audit-heavy services (S3, IAM, EC2).</td>
+      </tr>
+      <tr>
+        <td>Canonicals (1 dot per canonical)</td>
+        <td>Framework count</td>
+        <td>Cross-framework item-span, i.e. items reached across frameworks (log)</td>
+        <td>Super-hubs: one implementation satisfies many clauses in many frameworks.</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Analysis page: hub metrics</h2>
+  <p>Three per-canonical signals also drive the heat map, scatter, and
+  long-tail histograms on the <a href="/analysis/">analysis</a> page:</p>
   <table class="data-table">
     <thead>
       <tr><th>Metric</th><th>Definition</th></tr>
