@@ -34,892 +34,894 @@
 uses the control's governed-resources manifest and implementation identifier;
 the mapping is machine-derived and may miss cases.</p>
 <h2>Service-Control distribution</h2>
-<p>Two bars per service. <strong>Total</strong> = raw controls catalogued for the service. <strong>Deployable everywhere</strong> = raw controls that are either GLOBAL (Organizations-wide) or REGIONAL in every region in the catalog — i.e. no AWS-imposed region restriction. The gap is restricted-region controls.</p>
-<figure class="bar-chart" aria-label="Distribution of services by count"><figcaption class="bar-chart-title">Total controls</figcaption>  <ol>    <li>
-<a class="bar-chart-label" href="/services/ec2.html">ec2</a>      <span class="bar-chart-bar" style="--pct: 100.0%"></span>
-      <span class="bar-chart-count">166</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/rds.html">rds</a>      <span class="bar-chart-bar" style="--pct: 79.52%"></span>
-      <span class="bar-chart-count">132</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/s3.html">s3</a>      <span class="bar-chart-bar" style="--pct: 45.78%"></span>
-      <span class="bar-chart-count">76</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/iam.html">iam</a>      <span class="bar-chart-bar" style="--pct: 30.72%"></span>
-      <span class="bar-chart-count">51</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/sagemaker.html">sagemaker</a>      <span class="bar-chart-bar" style="--pct: 28.92%"></span>
-      <span class="bar-chart-count">48</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/cloudtrail.html">cloudtrail</a>      <span class="bar-chart-bar" style="--pct: 27.71%"></span>
-      <span class="bar-chart-count">46</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/ecs.html">ecs</a>      <span class="bar-chart-bar" style="--pct: 27.71%"></span>
-      <span class="bar-chart-count">46</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/cloudfront.html">cloudfront</a>      <span class="bar-chart-bar" style="--pct: 25.3%"></span>
-      <span class="bar-chart-count">42</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/elasticloadbalancingv2.html">elasticloadbalancingv2</a>      <span class="bar-chart-bar" style="--pct: 22.29%"></span>
-      <span class="bar-chart-count">37</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/redshift.html">redshift</a>      <span class="bar-chart-bar" style="--pct: 22.29%"></span>
-      <span class="bar-chart-count">37</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/opensearchservice.html">opensearchservice</a>      <span class="bar-chart-bar" style="--pct: 17.47%"></span>
-      <span class="bar-chart-count">29</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/dms.html">dms</a>      <span class="bar-chart-bar" style="--pct: 15.66%"></span>
-      <span class="bar-chart-count">26</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/guardduty.html">guardduty</a>      <span class="bar-chart-bar" style="--pct: 15.06%"></span>
-      <span class="bar-chart-count">25</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/autoscaling.html">autoscaling</a>      <span class="bar-chart-bar" style="--pct: 14.46%"></span>
-      <span class="bar-chart-count">24</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/elasticache.html">elasticache</a>      <span class="bar-chart-bar" style="--pct: 14.46%"></span>
-      <span class="bar-chart-count">24</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/efs.html">efs</a>      <span class="bar-chart-bar" style="--pct: 13.86%"></span>
-      <span class="bar-chart-count">23</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/elasticloadbalancing.html">elasticloadbalancing</a>      <span class="bar-chart-bar" style="--pct: 13.25%"></span>
-      <span class="bar-chart-count">22</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/lambda.html">lambda</a>      <span class="bar-chart-bar" style="--pct: 13.25%"></span>
-      <span class="bar-chart-count">22</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/elasticsearch.html">elasticsearch</a>      <span class="bar-chart-bar" style="--pct: 12.65%"></span>
-      <span class="bar-chart-count">21</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/neptune.html">neptune</a>      <span class="bar-chart-bar" style="--pct: 12.65%"></span>
-      <span class="bar-chart-count">21</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/networkfirewall.html">networkfirewall</a>      <span class="bar-chart-bar" style="--pct: 12.65%"></span>
-      <span class="bar-chart-count">21</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/apigateway.html">apigateway</a>      <span class="bar-chart-bar" style="--pct: 12.05%"></span>
-      <span class="bar-chart-count">20</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/transfer.html">transfer</a>      <span class="bar-chart-bar" style="--pct: 11.45%"></span>
-      <span class="bar-chart-count">19</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/codebuild.html">codebuild</a>      <span class="bar-chart-bar" style="--pct: 10.84%"></span>
-      <span class="bar-chart-count">18</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/kms.html">kms</a>      <span class="bar-chart-bar" style="--pct: 10.24%"></span>
-      <span class="bar-chart-count">17</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/appconfig.html">appconfig</a>      <span class="bar-chart-bar" style="--pct: 9.64%"></span>
-      <span class="bar-chart-count">16</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/appmesh.html">appmesh</a>      <span class="bar-chart-bar" style="--pct: 9.64%"></span>
-      <span class="bar-chart-count">16</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/dynamodb.html">dynamodb</a>      <span class="bar-chart-bar" style="--pct: 9.64%"></span>
-      <span class="bar-chart-count">16</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/appsync.html">appsync</a>      <span class="bar-chart-bar" style="--pct: 9.04%"></span>
-      <span class="bar-chart-count">15</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/amazonmq.html">amazonmq</a>      <span class="bar-chart-bar" style="--pct: 8.43%"></span>
-      <span class="bar-chart-count">14</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/amplify.html">amplify</a>      <span class="bar-chart-bar" style="--pct: 8.43%"></span>
-      <span class="bar-chart-count">14</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/cognito.html">cognito</a>      <span class="bar-chart-bar" style="--pct: 8.43%"></span>
-      <span class="bar-chart-count">14</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/eks.html">eks</a>      <span class="bar-chart-bar" style="--pct: 8.43%"></span>
-      <span class="bar-chart-count">14</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/ecr.html">ecr</a>      <span class="bar-chart-bar" style="--pct: 7.83%"></span>
-      <span class="bar-chart-count">13</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/emr.html">emr</a>      <span class="bar-chart-bar" style="--pct: 7.83%"></span>
-      <span class="bar-chart-count">13</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/iot.html">iot</a>      <span class="bar-chart-bar" style="--pct: 7.83%"></span>
-      <span class="bar-chart-count">13</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/redshiftserverless.html">redshiftserverless</a>      <span class="bar-chart-bar" style="--pct: 7.83%"></span>
-      <span class="bar-chart-count">13</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/backup.html">backup</a>      <span class="bar-chart-bar" style="--pct: 7.23%"></span>
-      <span class="bar-chart-count">12</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/batch.html">batch</a>      <span class="bar-chart-bar" style="--pct: 7.23%"></span>
-      <span class="bar-chart-count">12</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/elasticbeanstalk.html">elasticbeanstalk</a>      <span class="bar-chart-bar" style="--pct: 7.23%"></span>
-      <span class="bar-chart-count">12</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/waf.html">waf</a>      <span class="bar-chart-bar" style="--pct: 7.23%"></span>
-      <span class="bar-chart-count">12</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/athena.html">athena</a>      <span class="bar-chart-bar" style="--pct: 6.63%"></span>
-      <span class="bar-chart-count">11</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/msk.html">msk</a>      <span class="bar-chart-bar" style="--pct: 6.63%"></span>
-      <span class="bar-chart-count">11</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/secretsmanager.html">secretsmanager</a>      <span class="bar-chart-bar" style="--pct: 6.63%"></span>
-      <span class="bar-chart-count">11</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/ssm.html">ssm</a>      <span class="bar-chart-bar" style="--pct: 6.63%"></span>
-      <span class="bar-chart-count">11</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/apigatewayv2.html">apigatewayv2</a>      <span class="bar-chart-bar" style="--pct: 6.02%"></span>
-      <span class="bar-chart-count">10</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/fsx.html">fsx</a>      <span class="bar-chart-bar" style="--pct: 6.02%"></span>
-      <span class="bar-chart-count">10</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/iotsitewise.html">iotsitewise</a>      <span class="bar-chart-bar" style="--pct: 6.02%"></span>
-      <span class="bar-chart-count">10</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/iottwinmaker.html">iottwinmaker</a>      <span class="bar-chart-bar" style="--pct: 5.42%"></span>
-      <span class="bar-chart-count">9</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/organizations.html">organizations</a>      <span class="bar-chart-bar" style="--pct: 5.42%"></span>
-      <span class="bar-chart-count">9</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/sns.html">sns</a>      <span class="bar-chart-bar" style="--pct: 5.42%"></span>
-      <span class="bar-chart-count">9</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/sqs.html">sqs</a>      <span class="bar-chart-bar" style="--pct: 5.42%"></span>
-      <span class="bar-chart-count">9</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/wafv2.html">wafv2</a>      <span class="bar-chart-bar" style="--pct: 5.42%"></span>
-      <span class="bar-chart-count">9</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/frauddetector.html">frauddetector</a>      <span class="bar-chart-bar" style="--pct: 4.82%"></span>
-      <span class="bar-chart-count">8</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/inspector.html">inspector</a>      <span class="bar-chart-bar" style="--pct: 4.82%"></span>
-      <span class="bar-chart-count">8</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/apprunner.html">apprunner</a>      <span class="bar-chart-bar" style="--pct: 4.22%"></span>
-      <span class="bar-chart-count">7</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/certificatemanager.html">certificatemanager</a>      <span class="bar-chart-bar" style="--pct: 4.22%"></span>
-      <span class="bar-chart-count">7</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/cloudwatch.html">cloudwatch</a>      <span class="bar-chart-bar" style="--pct: 4.22%"></span>
-      <span class="bar-chart-count">7</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/dax.html">dax</a>      <span class="bar-chart-bar" style="--pct: 4.22%"></span>
-      <span class="bar-chart-count">7</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/docdb.html">docdb</a>      <span class="bar-chart-bar" style="--pct: 4.22%"></span>
-      <span class="bar-chart-count">7</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/ivs.html">ivs</a>      <span class="bar-chart-bar" style="--pct: 4.22%"></span>
-      <span class="bar-chart-count">7</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/cloudformation.html">cloudformation</a>      <span class="bar-chart-bar" style="--pct: 3.61%"></span>
-      <span class="bar-chart-count">6</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/config.html">config</a>      <span class="bar-chart-bar" style="--pct: 3.61%"></span>
-      <span class="bar-chart-count">6</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/datasync.html">datasync</a>      <span class="bar-chart-bar" style="--pct: 3.61%"></span>
-      <span class="bar-chart-count">6</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/events.html">events</a>      <span class="bar-chart-bar" style="--pct: 3.61%"></span>
-      <span class="bar-chart-count">6</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/evidently.html">evidently</a>      <span class="bar-chart-bar" style="--pct: 3.61%"></span>
-      <span class="bar-chart-count">6</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/glue.html">glue</a>      <span class="bar-chart-bar" style="--pct: 3.61%"></span>
-      <span class="bar-chart-count">6</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/iotwireless.html">iotwireless</a>      <span class="bar-chart-bar" style="--pct: 3.61%"></span>
-      <span class="bar-chart-count">6</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/kinesis.html">kinesis</a>      <span class="bar-chart-bar" style="--pct: 3.61%"></span>
-      <span class="bar-chart-count">6</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/logs.html">logs</a>      <span class="bar-chart-bar" style="--pct: 3.61%"></span>
-      <span class="bar-chart-count">6</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/stepfunctions.html">stepfunctions</a>      <span class="bar-chart-bar" style="--pct: 3.61%"></span>
-      <span class="bar-chart-count">6</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/wafregional.html">wafregional</a>      <span class="bar-chart-bar" style="--pct: 3.61%"></span>
-      <span class="bar-chart-count">6</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/workspaces.html">workspaces</a>      <span class="bar-chart-bar" style="--pct: 3.61%"></span>
-      <span class="bar-chart-count">6</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/bedrockagentcore.html">bedrockagentcore</a>      <span class="bar-chart-bar" style="--pct: 3.01%"></span>
-      <span class="bar-chart-count">5</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/codedeploy.html">codedeploy</a>      <span class="bar-chart-bar" style="--pct: 3.01%"></span>
-      <span class="bar-chart-count">5</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/imagebuilder.html">imagebuilder</a>      <span class="bar-chart-bar" style="--pct: 3.01%"></span>
-      <span class="bar-chart-count">5</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/lightsail.html">lightsail</a>      <span class="bar-chart-bar" style="--pct: 3.01%"></span>
-      <span class="bar-chart-count">5</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/route53.html">route53</a>      <span class="bar-chart-bar" style="--pct: 3.01%"></span>
-      <span class="bar-chart-count">5</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/route53resolver.html">route53resolver</a>      <span class="bar-chart-bar" style="--pct: 3.01%"></span>
-      <span class="bar-chart-count">5</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/ses.html">ses</a>      <span class="bar-chart-bar" style="--pct: 3.01%"></span>
-      <span class="bar-chart-count">5</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/acmpca.html">acmpca</a>      <span class="bar-chart-bar" style="--pct: 2.41%"></span>
-      <span class="bar-chart-count">4</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/appintegrations.html">appintegrations</a>      <span class="bar-chart-bar" style="--pct: 2.41%"></span>
-      <span class="bar-chart-count">4</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/customerprofiles.html">customerprofiles</a>      <span class="bar-chart-bar" style="--pct: 2.41%"></span>
-      <span class="bar-chart-count">4</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/macie.html">macie</a>      <span class="bar-chart-bar" style="--pct: 2.41%"></span>
-      <span class="bar-chart-count">4</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/route53recoveryreadiness.html">route53recoveryreadiness</a>      <span class="bar-chart-bar" style="--pct: 2.41%"></span>
-      <span class="bar-chart-count">4</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/accessanalyzer.html">accessanalyzer</a>      <span class="bar-chart-bar" style="--pct: 1.81%"></span>
-      <span class="bar-chart-count">3</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/account.html">account</a>      <span class="bar-chart-bar" style="--pct: 1.81%"></span>
-      <span class="bar-chart-count">3</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/devicefarm.html">devicefarm</a>      <span class="bar-chart-bar" style="--pct: 1.81%"></span>
-      <span class="bar-chart-count">3</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/eventschemas.html">eventschemas</a>      <span class="bar-chart-bar" style="--pct: 1.81%"></span>
-      <span class="bar-chart-count">3</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/groundstation.html">groundstation</a>      <span class="bar-chart-bar" style="--pct: 1.81%"></span>
-      <span class="bar-chart-count">3</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/iotevents.html">iotevents</a>      <span class="bar-chart-bar" style="--pct: 1.81%"></span>
-      <span class="bar-chart-count">3</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/kafkaconnect.html">kafkaconnect</a>      <span class="bar-chart-bar" style="--pct: 1.81%"></span>
-      <span class="bar-chart-count">3</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/s3express.html">s3express</a>      <span class="bar-chart-bar" style="--pct: 1.81%"></span>
-      <span class="bar-chart-count">3</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/servicecatalog.html">servicecatalog</a>      <span class="bar-chart-bar" style="--pct: 1.81%"></span>
-      <span class="bar-chart-count">3</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/storagegateway.html">storagegateway</a>      <span class="bar-chart-bar" style="--pct: 1.81%"></span>
-      <span class="bar-chart-count">3</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/virtualmachine.html">virtualmachine</a>      <span class="bar-chart-bar" style="--pct: 1.81%"></span>
-      <span class="bar-chart-count">3</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/appflow.html">appflow</a>      <span class="bar-chart-bar" style="--pct: 1.2%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/cassandra.html">cassandra</a>      <span class="bar-chart-bar" style="--pct: 1.2%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/codeartifact.html">codeartifact</a>      <span class="bar-chart-bar" style="--pct: 1.2%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/codeguruprofiler.html">codeguruprofiler</a>      <span class="bar-chart-bar" style="--pct: 1.2%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/codegurureviewer.html">codegurureviewer</a>      <span class="bar-chart-bar" style="--pct: 1.2%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/codepipeline.html">codepipeline</a>      <span class="bar-chart-bar" style="--pct: 1.2%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/connect.html">connect</a>      <span class="bar-chart-bar" style="--pct: 1.2%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/fis.html">fis</a>      <span class="bar-chart-bar" style="--pct: 1.2%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/kinesisfirehose.html">kinesisfirehose</a>      <span class="bar-chart-bar" style="--pct: 1.2%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/kinesisvideo.html">kinesisvideo</a>      <span class="bar-chart-bar" style="--pct: 1.2%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/opensearchserverless.html">opensearchserverless</a>      <span class="bar-chart-bar" style="--pct: 1.2%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/resiliencehub.html">resiliencehub</a>      <span class="bar-chart-bar" style="--pct: 1.2%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/rum.html">rum</a>      <span class="bar-chart-bar" style="--pct: 1.2%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/shield.html">shield</a>      <span class="bar-chart-bar" style="--pct: 1.2%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/appstream.html">appstream</a>      <span class="bar-chart-bar" style="--pct: 0.6%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/aps.html">aps</a>      <span class="bar-chart-bar" style="--pct: 0.6%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/auditmanager.html">auditmanager</a>      <span class="bar-chart-bar" style="--pct: 0.6%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/detective.html">detective</a>      <span class="bar-chart-bar" style="--pct: 0.6%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/documentdb.html">documentdb</a>      <span class="bar-chart-bar" style="--pct: 0.6%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/globalaccelerator.html">globalaccelerator</a>      <span class="bar-chart-bar" style="--pct: 0.6%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/healthlake.html">healthlake</a>      <span class="bar-chart-bar" style="--pct: 0.6%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/kendra.html">kendra</a>      <span class="bar-chart-bar" style="--pct: 0.6%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/mediapackage.html">mediapackage</a>      <span class="bar-chart-bar" style="--pct: 0.6%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/mediatailor.html">mediatailor</a>      <span class="bar-chart-bar" style="--pct: 0.6%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/memorydb.html">memorydb</a>      <span class="bar-chart-bar" style="--pct: 0.6%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/panorama.html">panorama</a>      <span class="bar-chart-bar" style="--pct: 0.6%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/route53recoverycontrol.html">route53recoverycontrol</a>      <span class="bar-chart-bar" style="--pct: 0.6%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/security.html">security</a>      <span class="bar-chart-bar" style="--pct: 0.6%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/securityhub.html">securityhub</a>      <span class="bar-chart-bar" style="--pct: 0.6%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/signer.html">signer</a>      <span class="bar-chart-bar" style="--pct: 0.6%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>  </ol></figure>
-<figure class="bar-chart" aria-label="Distribution of services by count"><figcaption class="bar-chart-title">Deployable everywhere</figcaption>  <ol>    <li>
-<a class="bar-chart-label" href="/services/s3.html">s3</a>      <span class="bar-chart-bar" style="--pct: 100.0%"></span>
-      <span class="bar-chart-count">42</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/rds.html">rds</a>      <span class="bar-chart-bar" style="--pct: 95.24%"></span>
-      <span class="bar-chart-count">40</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/ec2.html">ec2</a>      <span class="bar-chart-bar" style="--pct: 92.86%"></span>
-      <span class="bar-chart-count">39</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/cloudtrail.html">cloudtrail</a>      <span class="bar-chart-bar" style="--pct: 76.19%"></span>
-      <span class="bar-chart-count">32</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/cloudfront.html">cloudfront</a>      <span class="bar-chart-bar" style="--pct: 28.57%"></span>
-      <span class="bar-chart-count">12</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/ecs.html">ecs</a>      <span class="bar-chart-bar" style="--pct: 28.57%"></span>
-      <span class="bar-chart-count">12</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/kms.html">kms</a>      <span class="bar-chart-bar" style="--pct: 23.81%"></span>
-      <span class="bar-chart-count">10</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/autoscaling.html">autoscaling</a>      <span class="bar-chart-bar" style="--pct: 21.43%"></span>
-      <span class="bar-chart-count">9</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/elasticloadbalancing.html">elasticloadbalancing</a>      <span class="bar-chart-bar" style="--pct: 21.43%"></span>
-      <span class="bar-chart-count">9</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/lambda.html">lambda</a>      <span class="bar-chart-bar" style="--pct: 21.43%"></span>
-      <span class="bar-chart-count">9</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/organizations.html">organizations</a>      <span class="bar-chart-bar" style="--pct: 21.43%"></span>
-      <span class="bar-chart-count">9</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/elasticache.html">elasticache</a>      <span class="bar-chart-bar" style="--pct: 19.05%"></span>
-      <span class="bar-chart-count">8</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/elasticloadbalancingv2.html">elasticloadbalancingv2</a>      <span class="bar-chart-bar" style="--pct: 19.05%"></span>
-      <span class="bar-chart-count">8</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/elasticsearch.html">elasticsearch</a>      <span class="bar-chart-bar" style="--pct: 19.05%"></span>
-      <span class="bar-chart-count">8</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/opensearchservice.html">opensearchservice</a>      <span class="bar-chart-bar" style="--pct: 19.05%"></span>
-      <span class="bar-chart-count">8</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/redshift.html">redshift</a>      <span class="bar-chart-bar" style="--pct: 19.05%"></span>
-      <span class="bar-chart-count">8</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/iam.html">iam</a>      <span class="bar-chart-bar" style="--pct: 16.67%"></span>
-      <span class="bar-chart-count">7</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/appsync.html">appsync</a>      <span class="bar-chart-bar" style="--pct: 14.29%"></span>
-      <span class="bar-chart-count">6</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/config.html">config</a>      <span class="bar-chart-bar" style="--pct: 14.29%"></span>
-      <span class="bar-chart-count">6</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/codebuild.html">codebuild</a>      <span class="bar-chart-bar" style="--pct: 11.9%"></span>
-      <span class="bar-chart-count">5</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/neptune.html">neptune</a>      <span class="bar-chart-bar" style="--pct: 11.9%"></span>
-      <span class="bar-chart-count">5</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/networkfirewall.html">networkfirewall</a>      <span class="bar-chart-bar" style="--pct: 11.9%"></span>
-      <span class="bar-chart-count">5</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/apigateway.html">apigateway</a>      <span class="bar-chart-bar" style="--pct: 9.52%"></span>
-      <span class="bar-chart-count">4</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/dynamodb.html">dynamodb</a>      <span class="bar-chart-bar" style="--pct: 9.52%"></span>
-      <span class="bar-chart-count">4</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/efs.html">efs</a>      <span class="bar-chart-bar" style="--pct: 9.52%"></span>
-      <span class="bar-chart-count">4</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/emr.html">emr</a>      <span class="bar-chart-bar" style="--pct: 9.52%"></span>
-      <span class="bar-chart-count">4</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/logs.html">logs</a>      <span class="bar-chart-bar" style="--pct: 9.52%"></span>
-      <span class="bar-chart-count">4</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/secretsmanager.html">secretsmanager</a>      <span class="bar-chart-bar" style="--pct: 9.52%"></span>
-      <span class="bar-chart-count">4</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/sns.html">sns</a>      <span class="bar-chart-bar" style="--pct: 9.52%"></span>
-      <span class="bar-chart-count">4</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/backup.html">backup</a>      <span class="bar-chart-bar" style="--pct: 7.14%"></span>
-      <span class="bar-chart-count">3</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/cloudwatch.html">cloudwatch</a>      <span class="bar-chart-bar" style="--pct: 7.14%"></span>
-      <span class="bar-chart-count">3</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/ecr.html">ecr</a>      <span class="bar-chart-bar" style="--pct: 7.14%"></span>
-      <span class="bar-chart-count">3</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/elasticbeanstalk.html">elasticbeanstalk</a>      <span class="bar-chart-bar" style="--pct: 7.14%"></span>
-      <span class="bar-chart-count">3</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/sagemaker.html">sagemaker</a>      <span class="bar-chart-bar" style="--pct: 7.14%"></span>
-      <span class="bar-chart-count">3</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/sqs.html">sqs</a>      <span class="bar-chart-bar" style="--pct: 7.14%"></span>
-      <span class="bar-chart-count">3</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/amazonmq.html">amazonmq</a>      <span class="bar-chart-bar" style="--pct: 4.76%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/apigatewayv2.html">apigatewayv2</a>      <span class="bar-chart-bar" style="--pct: 4.76%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/certificatemanager.html">certificatemanager</a>      <span class="bar-chart-bar" style="--pct: 4.76%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/dax.html">dax</a>      <span class="bar-chart-bar" style="--pct: 4.76%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/dms.html">dms</a>      <span class="bar-chart-bar" style="--pct: 4.76%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/docdb.html">docdb</a>      <span class="bar-chart-bar" style="--pct: 4.76%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/eks.html">eks</a>      <span class="bar-chart-bar" style="--pct: 4.76%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/msk.html">msk</a>      <span class="bar-chart-bar" style="--pct: 4.76%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/stepfunctions.html">stepfunctions</a>      <span class="bar-chart-bar" style="--pct: 4.76%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/waf.html">waf</a>      <span class="bar-chart-bar" style="--pct: 4.76%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/wafregional.html">wafregional</a>      <span class="bar-chart-bar" style="--pct: 4.76%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/wafv2.html">wafv2</a>      <span class="bar-chart-bar" style="--pct: 4.76%"></span>
-      <span class="bar-chart-count">2</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/athena.html">athena</a>      <span class="bar-chart-bar" style="--pct: 2.38%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/events.html">events</a>      <span class="bar-chart-bar" style="--pct: 2.38%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/glue.html">glue</a>      <span class="bar-chart-bar" style="--pct: 2.38%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/guardduty.html">guardduty</a>      <span class="bar-chart-bar" style="--pct: 2.38%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/kinesis.html">kinesis</a>      <span class="bar-chart-bar" style="--pct: 2.38%"></span>
-      <span class="bar-chart-count">1</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/accessanalyzer.html">accessanalyzer</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/account.html">account</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/acmpca.html">acmpca</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/amplify.html">amplify</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/appconfig.html">appconfig</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/appflow.html">appflow</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/appintegrations.html">appintegrations</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/appmesh.html">appmesh</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/apprunner.html">apprunner</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/appstream.html">appstream</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/aps.html">aps</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/auditmanager.html">auditmanager</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/batch.html">batch</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/bedrockagentcore.html">bedrockagentcore</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/cassandra.html">cassandra</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/cloudformation.html">cloudformation</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/codeartifact.html">codeartifact</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/codedeploy.html">codedeploy</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/codeguruprofiler.html">codeguruprofiler</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/codegurureviewer.html">codegurureviewer</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/codepipeline.html">codepipeline</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/cognito.html">cognito</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/connect.html">connect</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/customerprofiles.html">customerprofiles</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/datasync.html">datasync</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/detective.html">detective</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/devicefarm.html">devicefarm</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/documentdb.html">documentdb</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/eventschemas.html">eventschemas</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/evidently.html">evidently</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/fis.html">fis</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/frauddetector.html">frauddetector</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/fsx.html">fsx</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/globalaccelerator.html">globalaccelerator</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/groundstation.html">groundstation</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/healthlake.html">healthlake</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/imagebuilder.html">imagebuilder</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/inspector.html">inspector</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/iot.html">iot</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/iotevents.html">iotevents</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/iotsitewise.html">iotsitewise</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/iottwinmaker.html">iottwinmaker</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/iotwireless.html">iotwireless</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/ivs.html">ivs</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/kafkaconnect.html">kafkaconnect</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/kendra.html">kendra</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/kinesisfirehose.html">kinesisfirehose</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/kinesisvideo.html">kinesisvideo</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/lightsail.html">lightsail</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/macie.html">macie</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/mediapackage.html">mediapackage</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/mediatailor.html">mediatailor</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/memorydb.html">memorydb</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/opensearchserverless.html">opensearchserverless</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/panorama.html">panorama</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/redshiftserverless.html">redshiftserverless</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/resiliencehub.html">resiliencehub</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/route53.html">route53</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/route53recoverycontrol.html">route53recoverycontrol</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/route53recoveryreadiness.html">route53recoveryreadiness</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/route53resolver.html">route53resolver</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/rum.html">rum</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/s3express.html">s3express</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/security.html">security</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/securityhub.html">securityhub</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/servicecatalog.html">servicecatalog</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/ses.html">ses</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/shield.html">shield</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/signer.html">signer</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/ssm.html">ssm</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/storagegateway.html">storagegateway</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/transfer.html">transfer</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/virtualmachine.html">virtualmachine</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>    <li>
-<a class="bar-chart-label" href="/services/workspaces.html">workspaces</a>      <span class="bar-chart-bar" style="--pct: 0.0%"></span>
-      <span class="bar-chart-count">0</span>
-    </li>  </ol></figure><h2>Service list</h2>
+<p>Two bars per row, overlaid. The outer bar is total raw controls catalogued for the service; the inner bar is the subset that is deployable everywhere — either GLOBAL (Organizations-wide) or REGIONAL in every region in the catalog. The gap is restricted-region controls.</p>
+<figure class="bar-chart overlay-bar-chart" aria-label="Distribution of services by count"><figcaption class="bar-chart-title">Total vs deployable-everywhere</figcaption>  <p class="muted bar-chart-legend"><span class="legend-swatch legend-primary"></span> total raw controls &middot; <span class="legend-swatch legend-secondary"></span> deployable everywhere</p>
+  <ol>    <li>
+<a class="bar-chart-label" href="/services/ec2.html">ec2</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 100.0%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 23.49%"></span>
+      </span>
+      <span class="bar-chart-count">166 / 39</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/rds.html">rds</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 79.52%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 24.1%"></span>
+      </span>
+      <span class="bar-chart-count">132 / 40</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/s3.html">s3</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 45.78%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 25.3%"></span>
+      </span>
+      <span class="bar-chart-count">76 / 42</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/iam.html">iam</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 30.72%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 4.22%"></span>
+      </span>
+      <span class="bar-chart-count">51 / 7</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/sagemaker.html">sagemaker</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 28.92%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 1.81%"></span>
+      </span>
+      <span class="bar-chart-count">48 / 3</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/cloudtrail.html">cloudtrail</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 27.71%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 19.28%"></span>
+      </span>
+      <span class="bar-chart-count">46 / 32</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/ecs.html">ecs</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 27.71%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 7.23%"></span>
+      </span>
+      <span class="bar-chart-count">46 / 12</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/cloudfront.html">cloudfront</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 25.3%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 7.23%"></span>
+      </span>
+      <span class="bar-chart-count">42 / 12</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/elasticloadbalancingv2.html">elasticloadbalancingv2</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 22.29%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 4.82%"></span>
+      </span>
+      <span class="bar-chart-count">37 / 8</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/redshift.html">redshift</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 22.29%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 4.82%"></span>
+      </span>
+      <span class="bar-chart-count">37 / 8</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/opensearchservice.html">opensearchservice</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 17.47%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 4.82%"></span>
+      </span>
+      <span class="bar-chart-count">29 / 8</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/dms.html">dms</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 15.66%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 1.2%"></span>
+      </span>
+      <span class="bar-chart-count">26 / 2</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/guardduty.html">guardduty</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 15.06%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.6%"></span>
+      </span>
+      <span class="bar-chart-count">25 / 1</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/autoscaling.html">autoscaling</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 14.46%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 5.42%"></span>
+      </span>
+      <span class="bar-chart-count">24 / 9</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/elasticache.html">elasticache</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 14.46%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 4.82%"></span>
+      </span>
+      <span class="bar-chart-count">24 / 8</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/efs.html">efs</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 13.86%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 2.41%"></span>
+      </span>
+      <span class="bar-chart-count">23 / 4</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/elasticloadbalancing.html">elasticloadbalancing</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 13.25%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 5.42%"></span>
+      </span>
+      <span class="bar-chart-count">22 / 9</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/lambda.html">lambda</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 13.25%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 5.42%"></span>
+      </span>
+      <span class="bar-chart-count">22 / 9</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/elasticsearch.html">elasticsearch</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 12.65%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 4.82%"></span>
+      </span>
+      <span class="bar-chart-count">21 / 8</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/neptune.html">neptune</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 12.65%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 3.01%"></span>
+      </span>
+      <span class="bar-chart-count">21 / 5</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/networkfirewall.html">networkfirewall</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 12.65%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 3.01%"></span>
+      </span>
+      <span class="bar-chart-count">21 / 5</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/apigateway.html">apigateway</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 12.05%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 2.41%"></span>
+      </span>
+      <span class="bar-chart-count">20 / 4</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/transfer.html">transfer</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 11.45%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">19 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/codebuild.html">codebuild</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 10.84%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 3.01%"></span>
+      </span>
+      <span class="bar-chart-count">18 / 5</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/kms.html">kms</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 10.24%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 6.02%"></span>
+      </span>
+      <span class="bar-chart-count">17 / 10</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/appconfig.html">appconfig</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 9.64%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">16 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/appmesh.html">appmesh</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 9.64%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">16 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/dynamodb.html">dynamodb</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 9.64%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 2.41%"></span>
+      </span>
+      <span class="bar-chart-count">16 / 4</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/appsync.html">appsync</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 9.04%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 3.61%"></span>
+      </span>
+      <span class="bar-chart-count">15 / 6</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/amazonmq.html">amazonmq</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 8.43%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 1.2%"></span>
+      </span>
+      <span class="bar-chart-count">14 / 2</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/amplify.html">amplify</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 8.43%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">14 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/cognito.html">cognito</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 8.43%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">14 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/eks.html">eks</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 8.43%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 1.2%"></span>
+      </span>
+      <span class="bar-chart-count">14 / 2</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/ecr.html">ecr</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 7.83%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 1.81%"></span>
+      </span>
+      <span class="bar-chart-count">13 / 3</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/emr.html">emr</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 7.83%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 2.41%"></span>
+      </span>
+      <span class="bar-chart-count">13 / 4</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/iot.html">iot</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 7.83%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">13 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/redshiftserverless.html">redshiftserverless</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 7.83%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">13 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/backup.html">backup</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 7.23%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 1.81%"></span>
+      </span>
+      <span class="bar-chart-count">12 / 3</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/batch.html">batch</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 7.23%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">12 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/elasticbeanstalk.html">elasticbeanstalk</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 7.23%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 1.81%"></span>
+      </span>
+      <span class="bar-chart-count">12 / 3</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/waf.html">waf</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 7.23%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 1.2%"></span>
+      </span>
+      <span class="bar-chart-count">12 / 2</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/athena.html">athena</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 6.63%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.6%"></span>
+      </span>
+      <span class="bar-chart-count">11 / 1</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/msk.html">msk</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 6.63%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 1.2%"></span>
+      </span>
+      <span class="bar-chart-count">11 / 2</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/secretsmanager.html">secretsmanager</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 6.63%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 2.41%"></span>
+      </span>
+      <span class="bar-chart-count">11 / 4</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/ssm.html">ssm</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 6.63%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">11 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/apigatewayv2.html">apigatewayv2</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 6.02%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 1.2%"></span>
+      </span>
+      <span class="bar-chart-count">10 / 2</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/fsx.html">fsx</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 6.02%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">10 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/iotsitewise.html">iotsitewise</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 6.02%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">10 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/iottwinmaker.html">iottwinmaker</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 5.42%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">9 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/organizations.html">organizations</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 5.42%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 5.42%"></span>
+      </span>
+      <span class="bar-chart-count">9 / 9</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/sns.html">sns</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 5.42%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 2.41%"></span>
+      </span>
+      <span class="bar-chart-count">9 / 4</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/sqs.html">sqs</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 5.42%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 1.81%"></span>
+      </span>
+      <span class="bar-chart-count">9 / 3</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/wafv2.html">wafv2</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 5.42%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 1.2%"></span>
+      </span>
+      <span class="bar-chart-count">9 / 2</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/frauddetector.html">frauddetector</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 4.82%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">8 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/inspector.html">inspector</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 4.82%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">8 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/apprunner.html">apprunner</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 4.22%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">7 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/certificatemanager.html">certificatemanager</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 4.22%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 1.2%"></span>
+      </span>
+      <span class="bar-chart-count">7 / 2</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/cloudwatch.html">cloudwatch</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 4.22%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 1.81%"></span>
+      </span>
+      <span class="bar-chart-count">7 / 3</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/dax.html">dax</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 4.22%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 1.2%"></span>
+      </span>
+      <span class="bar-chart-count">7 / 2</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/docdb.html">docdb</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 4.22%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 1.2%"></span>
+      </span>
+      <span class="bar-chart-count">7 / 2</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/ivs.html">ivs</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 4.22%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">7 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/cloudformation.html">cloudformation</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 3.61%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">6 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/config.html">config</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 3.61%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 3.61%"></span>
+      </span>
+      <span class="bar-chart-count">6 / 6</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/datasync.html">datasync</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 3.61%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">6 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/events.html">events</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 3.61%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.6%"></span>
+      </span>
+      <span class="bar-chart-count">6 / 1</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/evidently.html">evidently</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 3.61%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">6 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/glue.html">glue</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 3.61%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.6%"></span>
+      </span>
+      <span class="bar-chart-count">6 / 1</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/iotwireless.html">iotwireless</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 3.61%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">6 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/kinesis.html">kinesis</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 3.61%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.6%"></span>
+      </span>
+      <span class="bar-chart-count">6 / 1</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/logs.html">logs</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 3.61%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 2.41%"></span>
+      </span>
+      <span class="bar-chart-count">6 / 4</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/stepfunctions.html">stepfunctions</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 3.61%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 1.2%"></span>
+      </span>
+      <span class="bar-chart-count">6 / 2</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/wafregional.html">wafregional</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 3.61%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 1.2%"></span>
+      </span>
+      <span class="bar-chart-count">6 / 2</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/workspaces.html">workspaces</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 3.61%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">6 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/bedrockagentcore.html">bedrockagentcore</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 3.01%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">5 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/codedeploy.html">codedeploy</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 3.01%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">5 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/imagebuilder.html">imagebuilder</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 3.01%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">5 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/lightsail.html">lightsail</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 3.01%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">5 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/route53.html">route53</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 3.01%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">5 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/route53resolver.html">route53resolver</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 3.01%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">5 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/ses.html">ses</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 3.01%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">5 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/acmpca.html">acmpca</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 2.41%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">4 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/appintegrations.html">appintegrations</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 2.41%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">4 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/customerprofiles.html">customerprofiles</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 2.41%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">4 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/macie.html">macie</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 2.41%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">4 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/route53recoveryreadiness.html">route53recoveryreadiness</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 2.41%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">4 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/accessanalyzer.html">accessanalyzer</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.81%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">3 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/account.html">account</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.81%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">3 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/devicefarm.html">devicefarm</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.81%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">3 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/eventschemas.html">eventschemas</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.81%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">3 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/groundstation.html">groundstation</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.81%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">3 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/iotevents.html">iotevents</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.81%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">3 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/kafkaconnect.html">kafkaconnect</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.81%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">3 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/s3express.html">s3express</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.81%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">3 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/servicecatalog.html">servicecatalog</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.81%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">3 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/storagegateway.html">storagegateway</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.81%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">3 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/virtualmachine.html">virtualmachine</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.81%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">3 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/appflow.html">appflow</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.2%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">2 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/cassandra.html">cassandra</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.2%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">2 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/codeartifact.html">codeartifact</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.2%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">2 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/codeguruprofiler.html">codeguruprofiler</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.2%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">2 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/codegurureviewer.html">codegurureviewer</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.2%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">2 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/codepipeline.html">codepipeline</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.2%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">2 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/connect.html">connect</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.2%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">2 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/fis.html">fis</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.2%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">2 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/kinesisfirehose.html">kinesisfirehose</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.2%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">2 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/kinesisvideo.html">kinesisvideo</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.2%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">2 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/opensearchserverless.html">opensearchserverless</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.2%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">2 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/resiliencehub.html">resiliencehub</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.2%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">2 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/rum.html">rum</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.2%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">2 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/shield.html">shield</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 1.2%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">2 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/appstream.html">appstream</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 0.6%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">1 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/aps.html">aps</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 0.6%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">1 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/auditmanager.html">auditmanager</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 0.6%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">1 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/detective.html">detective</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 0.6%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">1 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/documentdb.html">documentdb</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 0.6%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">1 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/globalaccelerator.html">globalaccelerator</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 0.6%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">1 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/healthlake.html">healthlake</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 0.6%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">1 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/kendra.html">kendra</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 0.6%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">1 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/mediapackage.html">mediapackage</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 0.6%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">1 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/mediatailor.html">mediatailor</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 0.6%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">1 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/memorydb.html">memorydb</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 0.6%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">1 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/panorama.html">panorama</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 0.6%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">1 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/route53recoverycontrol.html">route53recoverycontrol</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 0.6%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">1 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/security.html">security</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 0.6%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">1 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/securityhub.html">securityhub</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 0.6%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">1 / 0</span>
+    </li>    <li>
+<a class="bar-chart-label" href="/services/signer.html">signer</a>      <span class="bar-chart-bar-wrap">
+        <span class="bar-chart-bar" style="--pct: 0.6%"></span>
+        <span class="bar-chart-bar bar-chart-bar-secondary" style="--pct: 0.0%"></span>
+      </span>
+      <span class="bar-chart-count">1 / 0</span>
+    </li>  </ol>
+</figure>
+<h2>Service list</h2>
 <ul class="index-grid service-grid">
-  <li><a href="/services/accessanalyzer.html">accessanalyzer</a> <span class="badge" title="total raw controls">3</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/account.html">account</a> <span class="badge" title="total raw controls">3</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/acmpca.html">acmpca</a> <span class="badge" title="total raw controls">4</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/amazonmq.html">amazonmq</a> <span class="badge" title="total raw controls">14</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">2 ✓</span></li>
-  <li><a href="/services/amplify.html">amplify</a> <span class="badge" title="total raw controls">14</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/apigateway.html">apigateway</a> <span class="badge" title="total raw controls">20</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">4 ✓</span></li>
-  <li><a href="/services/apigatewayv2.html">apigatewayv2</a> <span class="badge" title="total raw controls">10</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">2 ✓</span></li>
-  <li><a href="/services/appconfig.html">appconfig</a> <span class="badge" title="total raw controls">16</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/appflow.html">appflow</a> <span class="badge" title="total raw controls">2</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/appintegrations.html">appintegrations</a> <span class="badge" title="total raw controls">4</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/appmesh.html">appmesh</a> <span class="badge" title="total raw controls">16</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/apprunner.html">apprunner</a> <span class="badge" title="total raw controls">7</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/appstream.html">appstream</a> <span class="badge" title="total raw controls">1</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/appsync.html">appsync</a> <span class="badge" title="total raw controls">15</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">6 ✓</span></li>
-  <li><a href="/services/aps.html">aps</a> <span class="badge" title="total raw controls">1</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/athena.html">athena</a> <span class="badge" title="total raw controls">11</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">1 ✓</span></li>
-  <li><a href="/services/auditmanager.html">auditmanager</a> <span class="badge" title="total raw controls">1</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/autoscaling.html">autoscaling</a> <span class="badge" title="total raw controls">24</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">9 ✓</span></li>
-  <li><a href="/services/backup.html">backup</a> <span class="badge" title="total raw controls">12</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">3 ✓</span></li>
-  <li><a href="/services/batch.html">batch</a> <span class="badge" title="total raw controls">12</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/bedrockagentcore.html">bedrockagentcore</a> <span class="badge" title="total raw controls">5</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/cassandra.html">cassandra</a> <span class="badge" title="total raw controls">2</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/certificatemanager.html">certificatemanager</a> <span class="badge" title="total raw controls">7</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">2 ✓</span></li>
-  <li><a href="/services/cloudformation.html">cloudformation</a> <span class="badge" title="total raw controls">6</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/cloudfront.html">cloudfront</a> <span class="badge" title="total raw controls">42</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">12 ✓</span></li>
-  <li><a href="/services/cloudtrail.html">cloudtrail</a> <span class="badge" title="total raw controls">46</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">32 ✓</span></li>
-  <li><a href="/services/cloudwatch.html">cloudwatch</a> <span class="badge" title="total raw controls">7</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">3 ✓</span></li>
-  <li><a href="/services/codeartifact.html">codeartifact</a> <span class="badge" title="total raw controls">2</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/codebuild.html">codebuild</a> <span class="badge" title="total raw controls">18</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">5 ✓</span></li>
-  <li><a href="/services/codedeploy.html">codedeploy</a> <span class="badge" title="total raw controls">5</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/codeguruprofiler.html">codeguruprofiler</a> <span class="badge" title="total raw controls">2</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/codegurureviewer.html">codegurureviewer</a> <span class="badge" title="total raw controls">2</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/codepipeline.html">codepipeline</a> <span class="badge" title="total raw controls">2</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/cognito.html">cognito</a> <span class="badge" title="total raw controls">14</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/config.html">config</a> <span class="badge" title="total raw controls">6</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">6 ✓</span></li>
-  <li><a href="/services/connect.html">connect</a> <span class="badge" title="total raw controls">2</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/customerprofiles.html">customerprofiles</a> <span class="badge" title="total raw controls">4</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/datasync.html">datasync</a> <span class="badge" title="total raw controls">6</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/dax.html">dax</a> <span class="badge" title="total raw controls">7</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">2 ✓</span></li>
-  <li><a href="/services/detective.html">detective</a> <span class="badge" title="total raw controls">1</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/devicefarm.html">devicefarm</a> <span class="badge" title="total raw controls">3</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/dms.html">dms</a> <span class="badge" title="total raw controls">26</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">2 ✓</span></li>
-  <li><a href="/services/docdb.html">docdb</a> <span class="badge" title="total raw controls">7</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">2 ✓</span></li>
-  <li><a href="/services/documentdb.html">documentdb</a> <span class="badge" title="total raw controls">1</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/dynamodb.html">dynamodb</a> <span class="badge" title="total raw controls">16</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">4 ✓</span></li>
-  <li><a href="/services/ec2.html">ec2</a> <span class="badge" title="total raw controls">166</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">39 ✓</span></li>
-  <li><a href="/services/ecr.html">ecr</a> <span class="badge" title="total raw controls">13</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">3 ✓</span></li>
-  <li><a href="/services/ecs.html">ecs</a> <span class="badge" title="total raw controls">46</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">12 ✓</span></li>
-  <li><a href="/services/efs.html">efs</a> <span class="badge" title="total raw controls">23</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">4 ✓</span></li>
-  <li><a href="/services/eks.html">eks</a> <span class="badge" title="total raw controls">14</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">2 ✓</span></li>
-  <li><a href="/services/elasticache.html">elasticache</a> <span class="badge" title="total raw controls">24</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">8 ✓</span></li>
-  <li><a href="/services/elasticbeanstalk.html">elasticbeanstalk</a> <span class="badge" title="total raw controls">12</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">3 ✓</span></li>
-  <li><a href="/services/elasticloadbalancing.html">elasticloadbalancing</a> <span class="badge" title="total raw controls">22</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">9 ✓</span></li>
-  <li><a href="/services/elasticloadbalancingv2.html">elasticloadbalancingv2</a> <span class="badge" title="total raw controls">37</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">8 ✓</span></li>
-  <li><a href="/services/elasticsearch.html">elasticsearch</a> <span class="badge" title="total raw controls">21</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">8 ✓</span></li>
-  <li><a href="/services/emr.html">emr</a> <span class="badge" title="total raw controls">13</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">4 ✓</span></li>
-  <li><a href="/services/events.html">events</a> <span class="badge" title="total raw controls">6</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">1 ✓</span></li>
-  <li><a href="/services/eventschemas.html">eventschemas</a> <span class="badge" title="total raw controls">3</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/evidently.html">evidently</a> <span class="badge" title="total raw controls">6</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/fis.html">fis</a> <span class="badge" title="total raw controls">2</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/frauddetector.html">frauddetector</a> <span class="badge" title="total raw controls">8</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/fsx.html">fsx</a> <span class="badge" title="total raw controls">10</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/globalaccelerator.html">globalaccelerator</a> <span class="badge" title="total raw controls">1</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/glue.html">glue</a> <span class="badge" title="total raw controls">6</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">1 ✓</span></li>
-  <li><a href="/services/groundstation.html">groundstation</a> <span class="badge" title="total raw controls">3</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/guardduty.html">guardduty</a> <span class="badge" title="total raw controls">25</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">1 ✓</span></li>
-  <li><a href="/services/healthlake.html">healthlake</a> <span class="badge" title="total raw controls">1</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/iam.html">iam</a> <span class="badge" title="total raw controls">51</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">7 ✓</span></li>
-  <li><a href="/services/imagebuilder.html">imagebuilder</a> <span class="badge" title="total raw controls">5</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/inspector.html">inspector</a> <span class="badge" title="total raw controls">8</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/iot.html">iot</a> <span class="badge" title="total raw controls">13</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/iotevents.html">iotevents</a> <span class="badge" title="total raw controls">3</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/iotsitewise.html">iotsitewise</a> <span class="badge" title="total raw controls">10</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/iottwinmaker.html">iottwinmaker</a> <span class="badge" title="total raw controls">9</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/iotwireless.html">iotwireless</a> <span class="badge" title="total raw controls">6</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/ivs.html">ivs</a> <span class="badge" title="total raw controls">7</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/kafkaconnect.html">kafkaconnect</a> <span class="badge" title="total raw controls">3</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/kendra.html">kendra</a> <span class="badge" title="total raw controls">1</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/kinesis.html">kinesis</a> <span class="badge" title="total raw controls">6</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">1 ✓</span></li>
-  <li><a href="/services/kinesisfirehose.html">kinesisfirehose</a> <span class="badge" title="total raw controls">2</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/kinesisvideo.html">kinesisvideo</a> <span class="badge" title="total raw controls">2</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/kms.html">kms</a> <span class="badge" title="total raw controls">17</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">10 ✓</span></li>
-  <li><a href="/services/lambda.html">lambda</a> <span class="badge" title="total raw controls">22</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">9 ✓</span></li>
-  <li><a href="/services/lightsail.html">lightsail</a> <span class="badge" title="total raw controls">5</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/logs.html">logs</a> <span class="badge" title="total raw controls">6</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">4 ✓</span></li>
-  <li><a href="/services/macie.html">macie</a> <span class="badge" title="total raw controls">4</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/mediapackage.html">mediapackage</a> <span class="badge" title="total raw controls">1</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/mediatailor.html">mediatailor</a> <span class="badge" title="total raw controls">1</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/memorydb.html">memorydb</a> <span class="badge" title="total raw controls">1</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/msk.html">msk</a> <span class="badge" title="total raw controls">11</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">2 ✓</span></li>
-  <li><a href="/services/neptune.html">neptune</a> <span class="badge" title="total raw controls">21</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">5 ✓</span></li>
-  <li><a href="/services/networkfirewall.html">networkfirewall</a> <span class="badge" title="total raw controls">21</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">5 ✓</span></li>
-  <li><a href="/services/opensearchserverless.html">opensearchserverless</a> <span class="badge" title="total raw controls">2</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/opensearchservice.html">opensearchservice</a> <span class="badge" title="total raw controls">29</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">8 ✓</span></li>
-  <li><a href="/services/organizations.html">organizations</a> <span class="badge" title="total raw controls">9</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">9 ✓</span></li>
-  <li><a href="/services/panorama.html">panorama</a> <span class="badge" title="total raw controls">1</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/rds.html">rds</a> <span class="badge" title="total raw controls">132</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">40 ✓</span></li>
-  <li><a href="/services/redshift.html">redshift</a> <span class="badge" title="total raw controls">37</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">8 ✓</span></li>
-  <li><a href="/services/redshiftserverless.html">redshiftserverless</a> <span class="badge" title="total raw controls">13</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/resiliencehub.html">resiliencehub</a> <span class="badge" title="total raw controls">2</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/route53.html">route53</a> <span class="badge" title="total raw controls">5</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/route53recoverycontrol.html">route53recoverycontrol</a> <span class="badge" title="total raw controls">1</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/route53recoveryreadiness.html">route53recoveryreadiness</a> <span class="badge" title="total raw controls">4</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/route53resolver.html">route53resolver</a> <span class="badge" title="total raw controls">5</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/rum.html">rum</a> <span class="badge" title="total raw controls">2</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/s3.html">s3</a> <span class="badge" title="total raw controls">76</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">42 ✓</span></li>
-  <li><a href="/services/s3express.html">s3express</a> <span class="badge" title="total raw controls">3</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/sagemaker.html">sagemaker</a> <span class="badge" title="total raw controls">48</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">3 ✓</span></li>
-  <li><a href="/services/secretsmanager.html">secretsmanager</a> <span class="badge" title="total raw controls">11</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">4 ✓</span></li>
-  <li><a href="/services/security.html">security</a> <span class="badge" title="total raw controls">1</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/securityhub.html">securityhub</a> <span class="badge" title="total raw controls">1</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/servicecatalog.html">servicecatalog</a> <span class="badge" title="total raw controls">3</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/ses.html">ses</a> <span class="badge" title="total raw controls">5</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/shield.html">shield</a> <span class="badge" title="total raw controls">2</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/signer.html">signer</a> <span class="badge" title="total raw controls">1</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/sns.html">sns</a> <span class="badge" title="total raw controls">9</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">4 ✓</span></li>
-  <li><a href="/services/sqs.html">sqs</a> <span class="badge" title="total raw controls">9</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">3 ✓</span></li>
-  <li><a href="/services/ssm.html">ssm</a> <span class="badge" title="total raw controls">11</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/stepfunctions.html">stepfunctions</a> <span class="badge" title="total raw controls">6</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">2 ✓</span></li>
-  <li><a href="/services/storagegateway.html">storagegateway</a> <span class="badge" title="total raw controls">3</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/transfer.html">transfer</a> <span class="badge" title="total raw controls">19</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/virtualmachine.html">virtualmachine</a> <span class="badge" title="total raw controls">3</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
-  <li><a href="/services/waf.html">waf</a> <span class="badge" title="total raw controls">12</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">2 ✓</span></li>
-  <li><a href="/services/wafregional.html">wafregional</a> <span class="badge" title="total raw controls">6</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">2 ✓</span></li>
-  <li><a href="/services/wafv2.html">wafv2</a> <span class="badge" title="total raw controls">9</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">2 ✓</span></li>
-  <li><a href="/services/workspaces.html">workspaces</a> <span class="badge" title="total raw controls">6</span> <span class="badge" title="deployable everywhere (GLOBAL or regional-in-all-regions)">0 ✓</span></li>
+  <li><a href="/services/accessanalyzer.html">accessanalyzer</a> <span class="badge" title="total raw controls catalogued for this service">3 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/account.html">account</a> <span class="badge" title="total raw controls catalogued for this service">3 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/acmpca.html">acmpca</a> <span class="badge" title="total raw controls catalogued for this service">4 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/amazonmq.html">amazonmq</a> <span class="badge" title="total raw controls catalogued for this service">14 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">2 deployable everywhere</span></li>
+  <li><a href="/services/amplify.html">amplify</a> <span class="badge" title="total raw controls catalogued for this service">14 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/apigateway.html">apigateway</a> <span class="badge" title="total raw controls catalogued for this service">20 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">4 deployable everywhere</span></li>
+  <li><a href="/services/apigatewayv2.html">apigatewayv2</a> <span class="badge" title="total raw controls catalogued for this service">10 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">2 deployable everywhere</span></li>
+  <li><a href="/services/appconfig.html">appconfig</a> <span class="badge" title="total raw controls catalogued for this service">16 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/appflow.html">appflow</a> <span class="badge" title="total raw controls catalogued for this service">2 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/appintegrations.html">appintegrations</a> <span class="badge" title="total raw controls catalogued for this service">4 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/appmesh.html">appmesh</a> <span class="badge" title="total raw controls catalogued for this service">16 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/apprunner.html">apprunner</a> <span class="badge" title="total raw controls catalogued for this service">7 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/appstream.html">appstream</a> <span class="badge" title="total raw controls catalogued for this service">1 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/appsync.html">appsync</a> <span class="badge" title="total raw controls catalogued for this service">15 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">6 deployable everywhere</span></li>
+  <li><a href="/services/aps.html">aps</a> <span class="badge" title="total raw controls catalogued for this service">1 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/athena.html">athena</a> <span class="badge" title="total raw controls catalogued for this service">11 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">1 deployable everywhere</span></li>
+  <li><a href="/services/auditmanager.html">auditmanager</a> <span class="badge" title="total raw controls catalogued for this service">1 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/autoscaling.html">autoscaling</a> <span class="badge" title="total raw controls catalogued for this service">24 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">9 deployable everywhere</span></li>
+  <li><a href="/services/backup.html">backup</a> <span class="badge" title="total raw controls catalogued for this service">12 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">3 deployable everywhere</span></li>
+  <li><a href="/services/batch.html">batch</a> <span class="badge" title="total raw controls catalogued for this service">12 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/bedrockagentcore.html">bedrockagentcore</a> <span class="badge" title="total raw controls catalogued for this service">5 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/cassandra.html">cassandra</a> <span class="badge" title="total raw controls catalogued for this service">2 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/certificatemanager.html">certificatemanager</a> <span class="badge" title="total raw controls catalogued for this service">7 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">2 deployable everywhere</span></li>
+  <li><a href="/services/cloudformation.html">cloudformation</a> <span class="badge" title="total raw controls catalogued for this service">6 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/cloudfront.html">cloudfront</a> <span class="badge" title="total raw controls catalogued for this service">42 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">12 deployable everywhere</span></li>
+  <li><a href="/services/cloudtrail.html">cloudtrail</a> <span class="badge" title="total raw controls catalogued for this service">46 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">32 deployable everywhere</span></li>
+  <li><a href="/services/cloudwatch.html">cloudwatch</a> <span class="badge" title="total raw controls catalogued for this service">7 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">3 deployable everywhere</span></li>
+  <li><a href="/services/codeartifact.html">codeartifact</a> <span class="badge" title="total raw controls catalogued for this service">2 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/codebuild.html">codebuild</a> <span class="badge" title="total raw controls catalogued for this service">18 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">5 deployable everywhere</span></li>
+  <li><a href="/services/codedeploy.html">codedeploy</a> <span class="badge" title="total raw controls catalogued for this service">5 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/codeguruprofiler.html">codeguruprofiler</a> <span class="badge" title="total raw controls catalogued for this service">2 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/codegurureviewer.html">codegurureviewer</a> <span class="badge" title="total raw controls catalogued for this service">2 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/codepipeline.html">codepipeline</a> <span class="badge" title="total raw controls catalogued for this service">2 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/cognito.html">cognito</a> <span class="badge" title="total raw controls catalogued for this service">14 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/config.html">config</a> <span class="badge" title="total raw controls catalogued for this service">6 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">6 deployable everywhere</span></li>
+  <li><a href="/services/connect.html">connect</a> <span class="badge" title="total raw controls catalogued for this service">2 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/customerprofiles.html">customerprofiles</a> <span class="badge" title="total raw controls catalogued for this service">4 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/datasync.html">datasync</a> <span class="badge" title="total raw controls catalogued for this service">6 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/dax.html">dax</a> <span class="badge" title="total raw controls catalogued for this service">7 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">2 deployable everywhere</span></li>
+  <li><a href="/services/detective.html">detective</a> <span class="badge" title="total raw controls catalogued for this service">1 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/devicefarm.html">devicefarm</a> <span class="badge" title="total raw controls catalogued for this service">3 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/dms.html">dms</a> <span class="badge" title="total raw controls catalogued for this service">26 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">2 deployable everywhere</span></li>
+  <li><a href="/services/docdb.html">docdb</a> <span class="badge" title="total raw controls catalogued for this service">7 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">2 deployable everywhere</span></li>
+  <li><a href="/services/documentdb.html">documentdb</a> <span class="badge" title="total raw controls catalogued for this service">1 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/dynamodb.html">dynamodb</a> <span class="badge" title="total raw controls catalogued for this service">16 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">4 deployable everywhere</span></li>
+  <li><a href="/services/ec2.html">ec2</a> <span class="badge" title="total raw controls catalogued for this service">166 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">39 deployable everywhere</span></li>
+  <li><a href="/services/ecr.html">ecr</a> <span class="badge" title="total raw controls catalogued for this service">13 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">3 deployable everywhere</span></li>
+  <li><a href="/services/ecs.html">ecs</a> <span class="badge" title="total raw controls catalogued for this service">46 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">12 deployable everywhere</span></li>
+  <li><a href="/services/efs.html">efs</a> <span class="badge" title="total raw controls catalogued for this service">23 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">4 deployable everywhere</span></li>
+  <li><a href="/services/eks.html">eks</a> <span class="badge" title="total raw controls catalogued for this service">14 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">2 deployable everywhere</span></li>
+  <li><a href="/services/elasticache.html">elasticache</a> <span class="badge" title="total raw controls catalogued for this service">24 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">8 deployable everywhere</span></li>
+  <li><a href="/services/elasticbeanstalk.html">elasticbeanstalk</a> <span class="badge" title="total raw controls catalogued for this service">12 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">3 deployable everywhere</span></li>
+  <li><a href="/services/elasticloadbalancing.html">elasticloadbalancing</a> <span class="badge" title="total raw controls catalogued for this service">22 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">9 deployable everywhere</span></li>
+  <li><a href="/services/elasticloadbalancingv2.html">elasticloadbalancingv2</a> <span class="badge" title="total raw controls catalogued for this service">37 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">8 deployable everywhere</span></li>
+  <li><a href="/services/elasticsearch.html">elasticsearch</a> <span class="badge" title="total raw controls catalogued for this service">21 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">8 deployable everywhere</span></li>
+  <li><a href="/services/emr.html">emr</a> <span class="badge" title="total raw controls catalogued for this service">13 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">4 deployable everywhere</span></li>
+  <li><a href="/services/events.html">events</a> <span class="badge" title="total raw controls catalogued for this service">6 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">1 deployable everywhere</span></li>
+  <li><a href="/services/eventschemas.html">eventschemas</a> <span class="badge" title="total raw controls catalogued for this service">3 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/evidently.html">evidently</a> <span class="badge" title="total raw controls catalogued for this service">6 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/fis.html">fis</a> <span class="badge" title="total raw controls catalogued for this service">2 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/frauddetector.html">frauddetector</a> <span class="badge" title="total raw controls catalogued for this service">8 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/fsx.html">fsx</a> <span class="badge" title="total raw controls catalogued for this service">10 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/globalaccelerator.html">globalaccelerator</a> <span class="badge" title="total raw controls catalogued for this service">1 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/glue.html">glue</a> <span class="badge" title="total raw controls catalogued for this service">6 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">1 deployable everywhere</span></li>
+  <li><a href="/services/groundstation.html">groundstation</a> <span class="badge" title="total raw controls catalogued for this service">3 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/guardduty.html">guardduty</a> <span class="badge" title="total raw controls catalogued for this service">25 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">1 deployable everywhere</span></li>
+  <li><a href="/services/healthlake.html">healthlake</a> <span class="badge" title="total raw controls catalogued for this service">1 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/iam.html">iam</a> <span class="badge" title="total raw controls catalogued for this service">51 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">7 deployable everywhere</span></li>
+  <li><a href="/services/imagebuilder.html">imagebuilder</a> <span class="badge" title="total raw controls catalogued for this service">5 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/inspector.html">inspector</a> <span class="badge" title="total raw controls catalogued for this service">8 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/iot.html">iot</a> <span class="badge" title="total raw controls catalogued for this service">13 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/iotevents.html">iotevents</a> <span class="badge" title="total raw controls catalogued for this service">3 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/iotsitewise.html">iotsitewise</a> <span class="badge" title="total raw controls catalogued for this service">10 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/iottwinmaker.html">iottwinmaker</a> <span class="badge" title="total raw controls catalogued for this service">9 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/iotwireless.html">iotwireless</a> <span class="badge" title="total raw controls catalogued for this service">6 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/ivs.html">ivs</a> <span class="badge" title="total raw controls catalogued for this service">7 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/kafkaconnect.html">kafkaconnect</a> <span class="badge" title="total raw controls catalogued for this service">3 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/kendra.html">kendra</a> <span class="badge" title="total raw controls catalogued for this service">1 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/kinesis.html">kinesis</a> <span class="badge" title="total raw controls catalogued for this service">6 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">1 deployable everywhere</span></li>
+  <li><a href="/services/kinesisfirehose.html">kinesisfirehose</a> <span class="badge" title="total raw controls catalogued for this service">2 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/kinesisvideo.html">kinesisvideo</a> <span class="badge" title="total raw controls catalogued for this service">2 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/kms.html">kms</a> <span class="badge" title="total raw controls catalogued for this service">17 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">10 deployable everywhere</span></li>
+  <li><a href="/services/lambda.html">lambda</a> <span class="badge" title="total raw controls catalogued for this service">22 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">9 deployable everywhere</span></li>
+  <li><a href="/services/lightsail.html">lightsail</a> <span class="badge" title="total raw controls catalogued for this service">5 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/logs.html">logs</a> <span class="badge" title="total raw controls catalogued for this service">6 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">4 deployable everywhere</span></li>
+  <li><a href="/services/macie.html">macie</a> <span class="badge" title="total raw controls catalogued for this service">4 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/mediapackage.html">mediapackage</a> <span class="badge" title="total raw controls catalogued for this service">1 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/mediatailor.html">mediatailor</a> <span class="badge" title="total raw controls catalogued for this service">1 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/memorydb.html">memorydb</a> <span class="badge" title="total raw controls catalogued for this service">1 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/msk.html">msk</a> <span class="badge" title="total raw controls catalogued for this service">11 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">2 deployable everywhere</span></li>
+  <li><a href="/services/neptune.html">neptune</a> <span class="badge" title="total raw controls catalogued for this service">21 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">5 deployable everywhere</span></li>
+  <li><a href="/services/networkfirewall.html">networkfirewall</a> <span class="badge" title="total raw controls catalogued for this service">21 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">5 deployable everywhere</span></li>
+  <li><a href="/services/opensearchserverless.html">opensearchserverless</a> <span class="badge" title="total raw controls catalogued for this service">2 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/opensearchservice.html">opensearchservice</a> <span class="badge" title="total raw controls catalogued for this service">29 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">8 deployable everywhere</span></li>
+  <li><a href="/services/organizations.html">organizations</a> <span class="badge" title="total raw controls catalogued for this service">9 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">9 deployable everywhere</span></li>
+  <li><a href="/services/panorama.html">panorama</a> <span class="badge" title="total raw controls catalogued for this service">1 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/rds.html">rds</a> <span class="badge" title="total raw controls catalogued for this service">132 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">40 deployable everywhere</span></li>
+  <li><a href="/services/redshift.html">redshift</a> <span class="badge" title="total raw controls catalogued for this service">37 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">8 deployable everywhere</span></li>
+  <li><a href="/services/redshiftserverless.html">redshiftserverless</a> <span class="badge" title="total raw controls catalogued for this service">13 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/resiliencehub.html">resiliencehub</a> <span class="badge" title="total raw controls catalogued for this service">2 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/route53.html">route53</a> <span class="badge" title="total raw controls catalogued for this service">5 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/route53recoverycontrol.html">route53recoverycontrol</a> <span class="badge" title="total raw controls catalogued for this service">1 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/route53recoveryreadiness.html">route53recoveryreadiness</a> <span class="badge" title="total raw controls catalogued for this service">4 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/route53resolver.html">route53resolver</a> <span class="badge" title="total raw controls catalogued for this service">5 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/rum.html">rum</a> <span class="badge" title="total raw controls catalogued for this service">2 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/s3.html">s3</a> <span class="badge" title="total raw controls catalogued for this service">76 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">42 deployable everywhere</span></li>
+  <li><a href="/services/s3express.html">s3express</a> <span class="badge" title="total raw controls catalogued for this service">3 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/sagemaker.html">sagemaker</a> <span class="badge" title="total raw controls catalogued for this service">48 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">3 deployable everywhere</span></li>
+  <li><a href="/services/secretsmanager.html">secretsmanager</a> <span class="badge" title="total raw controls catalogued for this service">11 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">4 deployable everywhere</span></li>
+  <li><a href="/services/security.html">security</a> <span class="badge" title="total raw controls catalogued for this service">1 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/securityhub.html">securityhub</a> <span class="badge" title="total raw controls catalogued for this service">1 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/servicecatalog.html">servicecatalog</a> <span class="badge" title="total raw controls catalogued for this service">3 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/ses.html">ses</a> <span class="badge" title="total raw controls catalogued for this service">5 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/shield.html">shield</a> <span class="badge" title="total raw controls catalogued for this service">2 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/signer.html">signer</a> <span class="badge" title="total raw controls catalogued for this service">1 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/sns.html">sns</a> <span class="badge" title="total raw controls catalogued for this service">9 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">4 deployable everywhere</span></li>
+  <li><a href="/services/sqs.html">sqs</a> <span class="badge" title="total raw controls catalogued for this service">9 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">3 deployable everywhere</span></li>
+  <li><a href="/services/ssm.html">ssm</a> <span class="badge" title="total raw controls catalogued for this service">11 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/stepfunctions.html">stepfunctions</a> <span class="badge" title="total raw controls catalogued for this service">6 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">2 deployable everywhere</span></li>
+  <li><a href="/services/storagegateway.html">storagegateway</a> <span class="badge" title="total raw controls catalogued for this service">3 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/transfer.html">transfer</a> <span class="badge" title="total raw controls catalogued for this service">19 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/virtualmachine.html">virtualmachine</a> <span class="badge" title="total raw controls catalogued for this service">3 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
+  <li><a href="/services/waf.html">waf</a> <span class="badge" title="total raw controls catalogued for this service">12 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">2 deployable everywhere</span></li>
+  <li><a href="/services/wafregional.html">wafregional</a> <span class="badge" title="total raw controls catalogued for this service">6 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">2 deployable everywhere</span></li>
+  <li><a href="/services/wafv2.html">wafv2</a> <span class="badge" title="total raw controls catalogued for this service">9 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">2 deployable everywhere</span></li>
+  <li><a href="/services/workspaces.html">workspaces</a> <span class="badge" title="total raw controls catalogued for this service">6 total</span> <span class="badge badge-deployable" title="deployable everywhere: GLOBAL controls plus REGIONAL controls deployable in every region">0 deployable everywhere</span></li>
 </ul>
 </main>
   <aside></aside>

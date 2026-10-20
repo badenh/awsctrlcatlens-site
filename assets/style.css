@@ -451,6 +451,32 @@ table.data-table th.num { text-align: right; font-variant-numeric: tabular-nums;
   .stat-card { padding: 0.75rem 0.5rem; }
 }
 
+.overlay-bar-chart .bar-chart-bar-wrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 1rem;
+}
+.overlay-bar-chart .bar-chart-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: var(--pct, 0%);
+  background: #c7d6e8;
+}
+.overlay-bar-chart .bar-chart-bar-secondary { background: #3a6ea5; }
+.overlay-bar-chart .bar-chart-legend { margin: 0 0 0.5rem; font-size: 0.8rem; }
+.overlay-bar-chart .legend-swatch {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  vertical-align: baseline;
+  margin-right: 0.25rem;
+}
+.overlay-bar-chart .legend-primary { background: #c7d6e8; }
+.overlay-bar-chart .legend-secondary { background: #3a6ea5; }
+
 .pct-bar {
   position: relative;
   display: block;
