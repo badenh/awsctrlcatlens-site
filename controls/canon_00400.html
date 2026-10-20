@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
-  <meta name="fetched-at" content="2026-10-11T01:47:30+00:00">
+  <meta name="fetched-at" content="2026-10-20T04:05:40+00:00">
   <title>Detect whether any Amazon EC2 instance has an associated public IPv4 address — Controls — awsctrlcatlens</title>
-  <link rel="stylesheet" href="/assets/style.css?v=2026-10-11">
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-20">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XRKG4GEHL"></script>
   <script>
@@ -22,7 +22,7 @@
       <a href="/" class="site-title">awsctrlcatlens</a>
     </div>
     <p class="site-provenance">
-      Machine-generated analytical view, last data snapshot seal: 2026-10-11T01:47:30+00:00, last site build: 2026-10-11.
+      Machine-generated analytical view, last data snapshot seal: 2026-10-20T04:05:40+00:00, last site build: 2026-10-20.
     </p>
     <div data-staleness-slot hidden role="alert"></div>
 <form class="site-search" role="search" action="/">
@@ -122,6 +122,18 @@
       <strong>PCI-DSS-v4.0</strong>:
       <a href="/crosswalk/pci-dss-v4-0/2-2-4.html">2.2.4</a>
     </li>
+    <li>
+      <strong>PCI-DSS-v4.0.1</strong>:
+      <a href="/crosswalk/pci-dss-v4-0-1/1-4-2.html">1.4.2</a>
+    </li>
+    <li>
+      <strong>PCI-DSS-v4.0.1</strong>:
+      <a href="/crosswalk/pci-dss-v4-0-1/1-4-4.html">1.4.4</a>
+    </li>
+    <li>
+      <strong>PCI-DSS-v4.0.1</strong>:
+      <a href="/crosswalk/pci-dss-v4-0-1/2-2-4.html">2.2.4</a>
+    </li>
   </ul>
 </section>
 
@@ -187,6 +199,10 @@
       &middot; weight 3
 &middot; direct&middot; 2 shared CCs    </li>
     <li>
+      <a href="/controls/canon_00077.html">Checks if Amazon SageMaker monitoring schedules have network isolation enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
       <a href="/controls/canon_00154.html">EFS mount targets should not be associated with subnets that assign public IP addresses on launch</a>
       &middot; weight 2
 &middot; 2 shared CCs    </li>
@@ -204,6 +220,10 @@
 &middot; 2 shared CCs    </li>
     <li>
       <a href="/controls/canon_00270.html">Checks if security groups associated with an Amazon Redshift cluster have inbound rules that allow unrestricted incoming traffic</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00279.html">Checks if Amazon SageMaker data quality job definitions have network isolation enabled</a>
       &middot; weight 2
 &middot; 2 shared CCs    </li>
     <li>
@@ -283,6 +303,10 @@
       &middot; weight 2
 &middot; 2 shared CCs    </li>
     <li>
+      <a href="/controls/canon_01057.html">Checks if an Amazon Bedrock AgentCore runtime is configured with public network access</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
       <a href="/controls/canon_01061.html">S3 general purpose buckets should block public read access</a>
       &middot; weight 2
 &middot; 2 shared CCs    </li>
@@ -300,6 +324,10 @@
 &middot; 2 shared CCs    </li>
     <li>
       <a href="/controls/canon_01188.html">Checks if AWS App Runner services route egress traffic through custom VPC</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01233.html">Checks if Amazon SageMaker model bias job definitions have network isolation enabled</a>
       &middot; weight 2
 &middot; 2 shared CCs    </li>
     <li>

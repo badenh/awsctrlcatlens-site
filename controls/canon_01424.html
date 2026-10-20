@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
-  <meta name="fetched-at" content="2026-10-11T01:47:30+00:00">
+  <meta name="fetched-at" content="2026-10-20T04:05:40+00:00">
   <title>Checks if the latest active revision of an Amazon ECS task definition configures Windows containers to run as non-administrator users — Controls — awsctrlcatlens</title>
-  <link rel="stylesheet" href="/assets/style.css?v=2026-10-11">
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-20">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XRKG4GEHL"></script>
   <script>
@@ -22,7 +22,7 @@
       <a href="/" class="site-title">awsctrlcatlens</a>
     </div>
     <p class="site-provenance">
-      Machine-generated analytical view, last data snapshot seal: 2026-10-11T01:47:30+00:00, last site build: 2026-10-11.
+      Machine-generated analytical view, last data snapshot seal: 2026-10-20T04:05:40+00:00, last site build: 2026-10-20.
     </p>
     <div data-staleness-slot hidden role="alert"></div>
 <form class="site-search" role="search" action="/">
@@ -59,6 +59,19 @@
   </ul>
 </section>
 
+<section class="framework-items">
+  <h2>Framework mappings</h2>
+  <ul>
+    <li>
+      <strong>CRI-Profile-v2.2</strong>:
+      <a href="/crosswalk/cri-profile-v2-2/pr-aa-05-01.html">PR.AA-05.01</a>
+    </li>
+    <li>
+      <strong>CRI-Profile-v2.2</strong>:
+      <a href="/crosswalk/cri-profile-v2-2/pr-aa-05-02.html">PR.AA-05.02</a>
+    </li>
+  </ul>
+</section>
 
 <section class="deployability">
   <h2>Deployability</h2>
@@ -113,7 +126,44 @@
   <h2>Strongly related canonicals</h2>
   <p>Canonicals connected by direct related edges or by two or more shared
   common controls (projection weight &ge; 2).</p>
-  <p class="muted">No strongly related canonicals. This control has no direct related-edge neighbours and shares fewer than two common controls with any other canonical.</p>
+  <ul>
+    <li>
+      <a href="/controls/canon_00046.html">MSK clusters should disable unauthenticated access</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00170.html">Checks if an Amazon MSK Cluster has unauthenticated access disabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00230.html">IAM identities should not have the AWSCloudShellFullAccess policy attached</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00251.html">Disallow deletion of log archive</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00706.html">SSM documents should have the block public sharing setting enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00888.html">Disallow the use of deprecated Amazon EC2 RequestSpotFleet and RequestSpotInstances API actions</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01151.html">Checks if AWS Systems Manager Documents has block public sharing enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01164.html">Require that an Amazon EBS snapshot cannot be publicly restorable</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01228.html">Checks if the latest active revision of an Amazon ECS task definition configures Linux containers to run as non-root users.The rule is NON_COMPLIANT if root user is specified or user configuration is absent for any container</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+  </ul>
 </section>
 
 </main>

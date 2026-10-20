@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
-  <meta name="fetched-at" content="2026-10-11T01:47:30+00:00">
+  <meta name="fetched-at" content="2026-10-20T04:05:40+00:00">
   <title>Require an Amazon Redshift cluster to have a unique administrator username — Controls — awsctrlcatlens</title>
-  <link rel="stylesheet" href="/assets/style.css?v=2026-10-11">
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-20">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XRKG4GEHL"></script>
   <script>
@@ -22,7 +22,7 @@
       <a href="/" class="site-title">awsctrlcatlens</a>
     </div>
     <p class="site-provenance">
-      Machine-generated analytical view, last data snapshot seal: 2026-10-11T01:47:30+00:00, last site build: 2026-10-11.
+      Machine-generated analytical view, last data snapshot seal: 2026-10-20T04:05:40+00:00, last site build: 2026-10-20.
     </p>
     <div data-staleness-slot hidden role="alert"></div>
 <form class="site-search" role="search" action="/">
@@ -130,6 +130,10 @@
       <strong>PCI-DSS-v4.0</strong>:
       <a href="/crosswalk/pci-dss-v4-0/2-2-2.html">2.2.2</a>
     </li>
+    <li>
+      <strong>PCI-DSS-v4.0.1</strong>:
+      <a href="/crosswalk/pci-dss-v4-0-1/2-2-2.html">2.2.2</a>
+    </li>
   </ul>
 </section>
 
@@ -191,6 +195,18 @@
   <p>Canonicals connected by direct related edges or by two or more shared
   common controls (projection weight &ge; 2).</p>
   <ul>
+    <li>
+      <a href="/controls/canon_00098.html">Checks if Amazon Lightsail buckets have allow public overrides disabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00940.html">Checks if an Amazon Redshift Serverless Namespace has changed the admin username from its default value</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00982.html">Checks if Amazon SageMaker models that use a PrimaryContainer pull container image from a private Docker registry in a VPC</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
     <li>
       <a href="/controls/canon_01394.html">Checks if an Amazon Redshift Serverless namespace has changed its database name from the default value</a>
       &middot; weight 2

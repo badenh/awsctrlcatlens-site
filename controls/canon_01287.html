@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
-  <meta name="fetched-at" content="2026-10-11T01:47:30+00:00">
+  <meta name="fetched-at" content="2026-10-20T04:05:40+00:00">
   <title>Checks if AWS CloudFormation stacks are using service roles — Controls — awsctrlcatlens</title>
-  <link rel="stylesheet" href="/assets/style.css?v=2026-10-11">
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-20">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XRKG4GEHL"></script>
   <script>
@@ -22,7 +22,7 @@
       <a href="/" class="site-title">awsctrlcatlens</a>
     </div>
     <p class="site-provenance">
-      Machine-generated analytical view, last data snapshot seal: 2026-10-11T01:47:30+00:00, last site build: 2026-10-11.
+      Machine-generated analytical view, last data snapshot seal: 2026-10-20T04:05:40+00:00, last site build: 2026-10-20.
     </p>
     <div data-staleness-slot hidden role="alert"></div>
 <form class="site-search" role="search" action="/">
@@ -59,6 +59,19 @@
   </ul>
 </section>
 
+<section class="framework-items">
+  <h2>Framework mappings</h2>
+  <ul>
+    <li>
+      <strong>CRI-Profile-v2.2</strong>:
+      <a href="/crosswalk/cri-profile-v2-2/pr-aa-05-01.html">PR.AA-05.01</a>
+    </li>
+    <li>
+      <strong>CRI-Profile-v2.2</strong>:
+      <a href="/crosswalk/cri-profile-v2-2/pr-aa-05-03.html">PR.AA-05.03</a>
+    </li>
+  </ul>
+</section>
 
 <section class="deployability">
   <h2>Deployability</h2>
@@ -104,7 +117,80 @@
   <h2>Strongly related canonicals</h2>
   <p>Canonicals connected by direct related edges or by two or more shared
   common controls (projection weight &ge; 2).</p>
-  <p class="muted">No strongly related canonicals. This control has no direct related-edge neighbours and shares fewer than two common controls with any other canonical.</p>
+  <ul>
+    <li>
+      <a href="/controls/canon_00046.html">MSK clusters should disable unauthenticated access</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00119.html">SQS queue access policies should not allow public access</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00170.html">Checks if an Amazon MSK Cluster has unauthenticated access disabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00226.html">IAM principals should not have IAM inline policies that allow decryption actions on all KMS keys</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00314.html">Disallow cross region replication for S3 buckets</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00355.html">Checks if the SQS queue access policy allows full access</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00450.html">SNS topic access policies should not allow public access</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00536.html">Disallow Changes to Lifecycle Configuration for AWS Control Tower Created S3 Buckets in Log Archive</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00706.html">SSM documents should have the block public sharing setting enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00891.html">Require that AWS Identity and Access Management (IAM) customer-managed policies do not have wildcard service actions</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00925.html">IAM policies should not allow full &#34;*&#34; administrative privileges</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00984.html">Require that the organization&#39;s AWS Security Token Service resources are accessible only by IAM principals that belong to the organization, or by an AWS service</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01014.html">IAM customer managed policies should not allow decryption actions on all KMS keys</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01122.html">Checks whether the default version of AWS Identity and Access Management (IAM) policies do not have administrator access</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01151.html">Checks if AWS Systems Manager Documents has block public sharing enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01294.html">Disallow Changes to Bucket Policy for AWS Control Tower Created S3 Buckets in Log Archive</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01469.html">DMS endpoints for Neptune databases should have IAM authorization enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01489.html">Checks if an AWS Database Migration Service (AWS DMS) endpoint for Amazon Neptune databases is configured with IAM authorization</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+  </ul>
 </section>
 
 </main>

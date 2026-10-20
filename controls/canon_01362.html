@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
-  <meta name="fetched-at" content="2026-10-11T01:47:30+00:00">
+  <meta name="fetched-at" content="2026-10-20T04:05:40+00:00">
   <title>Checks if Amazon OpenSearch Serverless collections have standby replicas enabled — Controls — awsctrlcatlens</title>
-  <link rel="stylesheet" href="/assets/style.css?v=2026-10-11">
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-20">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XRKG4GEHL"></script>
   <script>
@@ -22,7 +22,7 @@
       <a href="/" class="site-title">awsctrlcatlens</a>
     </div>
     <p class="site-provenance">
-      Machine-generated analytical view, last data snapshot seal: 2026-10-11T01:47:30+00:00, last site build: 2026-10-11.
+      Machine-generated analytical view, last data snapshot seal: 2026-10-20T04:05:40+00:00, last site build: 2026-10-20.
     </p>
     <div data-staleness-slot hidden role="alert"></div>
 <form class="site-search" role="search" action="/">
@@ -59,6 +59,19 @@
   </ul>
 </section>
 
+<section class="framework-items">
+  <h2>Framework mappings</h2>
+  <ul>
+    <li>
+      <strong>CRI-Profile-v2.2</strong>:
+      <a href="/crosswalk/cri-profile-v2-2/pr-ir-03-01.html">PR.IR-03.01</a>
+    </li>
+    <li>
+      <strong>CRI-Profile-v2.2</strong>:
+      <a href="/crosswalk/cri-profile-v2-2/pr-ir-04-02.html">PR.IR-04.02</a>
+    </li>
+  </ul>
+</section>
 
 <section class="deployability">
   <h2>Deployability</h2>
@@ -96,7 +109,172 @@
   <h2>Strongly related canonicals</h2>
   <p>Canonicals connected by direct related edges or by two or more shared
   common controls (projection weight &ge; 2).</p>
-  <p class="muted">No strongly related canonicals. This control has no direct related-edge neighbours and shares fewer than two common controls with any other canonical.</p>
+  <ul>
+    <li>
+      <a href="/controls/canon_00035.html">Checks if S3 buckets have replication rules enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00208.html">Checks if listeners for AWS App Mesh virtual nodes have health check enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00239.html">Require an Amazon EC2 Auto Scaling group to have multiple Availability Zones</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00244.html">Require that an Elastic Load Balancing v2 target group does not explicitly disable cross-zone load balancing</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00257.html">Elasticsearch domains should be configured with at least three dedicated master nodes</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00396.html">Checks if AWS CodeDeploy deployment groups have auto rollback configuration enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00441.html">Checks if Amazon OpenSearch Service domains are configured with at least three dedicated primary nodes</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00457.html">Require an Amazon OpenSearch Service domain to have zone awareness and at least three data nodes</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00468.html">Checks if an Amazon MQ for ActiveMQ single-instance broker using the mq.m5 instance type family is configured with Amazon Elastic File System (EFS) for broker storage</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00469.html">Checks if Amazon SageMaker endpoint configurations have production variants `InitialInstanceCount` set to a value greater than 1</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00471.html">Checks if cross-zone load balancing is enabled for Classic Load Balancers</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00480.html">Checks if Amazon OpenSearch Service domains are configured with at least three data nodes and zoneAwarenessEnabled is true</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00493.html">OpenSearch domains should have at least three data nodes</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00511.html">Require an Elasticsearch domain to have zone awareness and at least three data nodes</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00522.html">Require an AWS Network Firewall firewall to be deployed across multiple Availability Zones</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00593.html">Require a Network Load Balancer to have cross-zone load balancing activated</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00609.html">FSx for Windows File Server file systems should be configured for Multi-AZ deployment</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00643.html">Require any classic load balancer to have multiple Availability Zones configured</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00676.html">Checks if AWS Database Migration Service (DMS) replication instances are configured with multiple Availability Zones</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00691.html">Checks if an Amazon ECS Capacity provider containing Auto Scaling groups has managed termination protection enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00707.html">Require any Amazon EC2 Auto Scaling groups to use multiple instance types</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00710.html">FSx for OpenZFS file systems should be configured for Multi-AZ deployment</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00862.html">Require any ELB classic load balancer to have cross-zone load balancing activated</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00871.html">Application, Network and Gateway Load Balancers should span multiple Availability Zones</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00875.html">Require an Amazon ElastiCache (Redis OSS) replication group to have automatic failover activated</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00899.html">S3 general purpose buckets should use cross-Region replication</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00966.html">Redshift cluster subnet groups should have subnets from multiple Availability Zones</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00980.html">Checks if an Amazon Neptune cluster is configured with Amazon RDS Multi-AZ replication</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00994.html">Checks if an Elastic Load Balancer V2 (Application, Network, or Gateway Load Balancer) has registered instances from multiple Availability Zones (AZ&#39;s)</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01007.html">Require an Elasticsearch domain to have at least three dedicated master nodes</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01072.html">Auto Scaling groups should use multiple instance types in multiple Availability Zones</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01127.html">Checks if an Amazon Redshift cluster has multiple Availability Zones deployments enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01157.html">SageMaker endpoint production variants should have an initial instance count greater than 1</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01185.html">Checks whether each stage in the AWS CodePipeline deploys to more regions than N times the number of regions the pipeline has deployed to in all previous stages, where N is regionFanoutFactor</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01216.html">Elasticsearch domains should have at least three data nodes</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01308.html">Checks if listeners for AWS App Mesh virtual nodes have outlier detection enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01339.html">Redshift clusters should have Multi-AZ deployments enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01348.html">Checks If Amazon Redshift subnet groups contain subnets from more than one Availability Zone</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01426.html">Checks if the deployment group for EC2/On-Premises Compute Platform is configured with a minimum healthy hosts fleet percentage or host count greater than or equal to the input threshold</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01439.html">Neptune DB clusters should be deployed across multiple Availability Zones</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01443.html">Require an Amazon DAX cluster to deploy nodes to at least three Availability Zones</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+  </ul>
 </section>
 
 </main>

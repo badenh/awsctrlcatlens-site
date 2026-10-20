@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
-  <meta name="fetched-at" content="2026-10-11T01:47:30+00:00">
+  <meta name="fetched-at" content="2026-10-20T04:05:40+00:00">
   <title>Checks if an Amazon Bedrock AgentCore runtime is configured with public network access — Controls — awsctrlcatlens</title>
-  <link rel="stylesheet" href="/assets/style.css?v=2026-10-11">
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-20">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XRKG4GEHL"></script>
   <script>
@@ -22,7 +22,7 @@
       <a href="/" class="site-title">awsctrlcatlens</a>
     </div>
     <p class="site-provenance">
-      Machine-generated analytical view, last data snapshot seal: 2026-10-11T01:47:30+00:00, last site build: 2026-10-11.
+      Machine-generated analytical view, last data snapshot seal: 2026-10-20T04:05:40+00:00, last site build: 2026-10-20.
     </p>
     <div data-staleness-slot hidden role="alert"></div>
 <form class="site-search" role="search" action="/">
@@ -59,6 +59,23 @@
   </ul>
 </section>
 
+<section class="framework-items">
+  <h2>Framework mappings</h2>
+  <ul>
+    <li>
+      <strong>CRI-Profile-v2.2</strong>:
+      <a href="/crosswalk/cri-profile-v2-2/de-cm-01-03.html">DE.CM-01.03</a>
+    </li>
+    <li>
+      <strong>CRI-Profile-v2.2</strong>:
+      <a href="/crosswalk/cri-profile-v2-2/pr-ir-01-01.html">PR.IR-01.01</a>
+    </li>
+    <li>
+      <strong>CRI-Profile-v2.2</strong>:
+      <a href="/crosswalk/cri-profile-v2-2/pr-ir-01-03.html">PR.IR-01.03</a>
+    </li>
+  </ul>
+</section>
 
 <section class="deployability">
   <h2>Deployability</h2>
@@ -97,7 +114,168 @@
   <h2>Strongly related canonicals</h2>
   <p>Canonicals connected by direct related edges or by two or more shared
   common controls (projection weight &ge; 2).</p>
-  <p class="muted">No strongly related canonicals. This control has no direct related-edge neighbours and shares fewer than two common controls with any other canonical.</p>
+  <ul>
+    <li>
+      <a href="/controls/canon_01233.html">Checks if Amazon SageMaker model bias job definitions have network isolation enabled</a>
+      &middot; weight 3
+&middot; 3 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00077.html">Checks if Amazon SageMaker monitoring schedules have network isolation enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00154.html">EFS mount targets should not be associated with subnets that assign public IP addresses on launch</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00184.html">Checks if S3 buckets are publicly accessible</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00215.html">S3 general purpose buckets should block public access</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00231.html">Checks if an Amazon SageMaker model has network isolation enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00270.html">Checks if security groups associated with an Amazon Redshift cluster have inbound rules that allow unrestricted incoming traffic</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00279.html">Checks if Amazon SageMaker data quality job definitions have network isolation enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00358.html">S3 general purpose buckets should block public write access</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00400.html">Detect whether any Amazon EC2 instance has an associated public IPv4 address</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00409.html">Checks if proxies for AWS App Mesh service meshes do not forward TCP traffic directly to services that aren&#39;t deployed with a proxy that is defined in the mesh</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00438.html">Checks if an Application Load Balancer scheme is internal</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00453.html">Checks if an Amazon SageMaker notebook instance is launched within a VPC or within a list of approved subnets</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00481.html">Amazon MSK clusters should have public access disabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00505.html">Checks if Amazon Redshift Serverless workgroups route the network traffic through a VPC</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00528.html">Checks if a Network Load Balancer scheme is internal</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00532.html">ECS task definitions should not use host network mode</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00607.html">Detect whether Amazon S3 settings to block public access are set as true for the account</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00695.html">Amazon Redshift Serverless workgroups should use enhanced VPC routing</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00757.html">Require an AWS Lambda function to be in a customer-managed Amazon Virtual Private Cloud (VPC)</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00761.html">Checks if Amazon AppStream 2.0 fleets use an Amazon Virtual Private Cloud (Amazon VPC)</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00780.html">Disallow public read access to S3 buckets</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00786.html">Require an Amazon S3 bucket to have block public access settings configured</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00826.html">EC2 instances should not have a public IPv4 address</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00860.html">Disallow public write access to S3 buckets</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00864.html">Disallow public read access to log archive</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00943.html">Checks whether the required public access block settings are configured from account level</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_00972.html">S3 general purpose buckets should have block public access settings enabled</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01042.html">Detect whether public routes exist in the route table for an Internet Gateway (IGW)</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01061.html">S3 general purpose buckets should block public read access</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01116.html">ECS task sets should not automatically assign public IP addresses</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01119.html">Ensure the S3 bucket used to store CloudTrail logs is not publicly accessible</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01166.html">Disallow public write access to log archive</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01188.html">Checks if AWS App Runner services route egress traffic through custom VPC</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01302.html">Require Amazon ECS services not to assign public IP addresses automatically</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01306.html">SageMaker notebook instances should be launched in a custom VPC</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01349.html">Require Amazon SageMaker notebook instances to be deployed within a custom Amazon VPC</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01383.html">Redshift security groups should allow ingress on the cluster port only from restricted origins</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01466.html">Require an Elasticsearch domain to be created in a user-specified Amazon VPC</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+    <li>
+      <a href="/controls/canon_01470.html">Checks if an Amazon Elastic File System (Amazon EFS) mount target is not associated with a public subnet</a>
+      &middot; weight 2
+&middot; 2 shared CCs    </li>
+  </ul>
 </section>
 
 </main>
