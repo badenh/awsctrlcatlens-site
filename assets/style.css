@@ -476,6 +476,19 @@ table.data-table th.num { text-align: right; font-variant-numeric: tabular-nums;
 }
 .overlay-bar-chart .legend-primary { background: #c7d6e8; }
 .overlay-bar-chart .legend-secondary { background: #3a6ea5; }
+.overlay-bar-chart .bar-chart-header {
+  font-size: 0.75rem;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  border-bottom: 1px solid #d4d9e0;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.overlay-bar-chart .bar-chart-header .bar-chart-bar-wrap {
+  background: transparent;
+  height: 0;
+}
 
 .pct-bar {
   position: relative;
