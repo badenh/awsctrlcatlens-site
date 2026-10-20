@@ -34,10 +34,10 @@
       .then(function (r) { return r.json(); })
       .then(function (records) {
         mini = new MiniSearch({
-          fields: ['name', 'aliases', 'framework_items'],
+          fields: ['name', 'aliases', 'framework_items', 'arns'],
           storeFields: ['id', 'kind', 'name', 'frameworks', 'service', 'url'],
           searchOptions: {
-            boost: { aliases: 5, framework_items: 4, name: 2 },
+            boost: { aliases: 5, framework_items: 4, arns: 4, name: 2 },
             prefix: true,
             fuzzy: false,
             combineWith: 'AND'
