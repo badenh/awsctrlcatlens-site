@@ -179,6 +179,7 @@ a:hover { text-decoration: underline; }
 .badge-behavior-preventive { background: #d5e9f8; border-color: #0b57d0; }
 .badge-behavior-detective  { background: #e8dcf3; border-color: #6a3fa0; }
 .badge-impl { background: #eef2f7; border-color: #c0c7d2; }
+.badge-deployable { background: #d6f0dd; border-color: #2f8f4a; color: #0f5a28; }
 
 /* Filter chip (SITE-UX-04) — RESEARCH Q6 Pitfall 8: without a visible
    `.is-active` style the toggle is invisible to users. */
