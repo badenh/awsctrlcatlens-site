@@ -55,7 +55,7 @@
   <strong>On this page:</strong>
   <ul>
 <li><a href="#compression">Raw → canonical compression</a></li>    <li><a href="#canonicals">Canonicals (hubs &amp; leverage)</a></li>
-    <li><a href="#services">Services (footprint &amp; compliance surface)</a></li>
+<li><a href="#regions-deployability">Regions (deployability &amp; scope)</a></li>    <li><a href="#services">Services (footprint &amp; compliance surface)</a></li>
     <li><a href="#frameworks">Frameworks (overlap &amp; typicality)</a></li>
   </ul>
 </nav>
@@ -539,6 +539,91 @@
       <tr><td class="num">20</td><td><a href="/controls/canon_00078.html">Checks if Amazon Simple Storage Service (Amazon S3) version enabled buckets have lifecycle policy configured</a></td><td class="num">2</td><td>CloudFormation hook, Config rule</td></tr>
     </tbody>
   </table>
+</section>
+
+<section class="deployability-analysis" id="regions-deployability">
+  <h2>Regions — deployability &amp; scope</h2>
+  <p>Not every control is deployable in every region. AWS Control Catalog tags each raw control with a <code>RegionConfiguration</code>: either GLOBAL (Organizations policies — enforced org-wide, no region) or REGIONAL with a <code>DeployableRegions</code> list.</p>
+
+  <h3>Scope split (raw controls)</h3>
+  <table class="data-table">
+    <thead><tr><th>Scope</th><th class="num">Raw controls</th></tr></thead>
+    <tbody>
+      <tr><td>GLOBAL</td><td class="num">69</td></tr>
+      <tr><td>REGIONAL</td><td class="num">1544</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Scope split (canonicals)</h3>
+  <p>Aggregated per canonical. "MIXED" = variants of this canonical have different scopes (one REGIONAL + one GLOBAL).</p>
+  <table class="data-table">
+    <thead><tr><th>Scope</th><th class="num">Canonicals</th></tr></thead>
+    <tbody>
+      <tr><td>GLOBAL</td><td class="num">65</td></tr>
+      <tr><td>MIXED</td><td class="num">4</td></tr>
+      <tr><td>REGIONAL</td><td class="num">1428</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Deployable-region count distribution</h3>
+  <p>For REGIONAL raw controls only. How many regions each raw control is deployable in.</p>
+  <table class="data-table">
+    <thead><tr><th>Regions</th><th class="num">Raw controls</th></tr></thead>
+    <tbody>
+      <tr><td>1–5</td><td class="num">67</td></tr>
+      <tr><td>6–10</td><td class="num">64</td></tr>
+      <tr><td>11–15</td><td class="num">55</td></tr>
+      <tr><td>16–20</td><td class="num">165</td></tr>
+      <tr><td>21–25</td><td class="num">331</td></tr>
+      <tr><td>26–30</td><td class="num">421</td></tr>
+      <tr><td>31+</td><td class="num">441</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Per-region raw control count</h3>
+  <p>How many REGIONAL raw controls are deployable in each region, sorted by count. GLOBAL controls are not shown — they apply org-wide and are not tied to a region.</p>
+  <details open>
+    <summary>Region coverage (34 regions)</summary>
+    <table class="data-table">
+      <thead><tr><th>Region</th><th class="num">Deployable raw controls</th></tr></thead>
+      <tbody>
+        <tr><td><a href="/regions/us-east-1.html">us-east-1</a></td><td class="num">1530</td></tr>
+        <tr><td><a href="/regions/us-west-2.html">us-west-2</a></td><td class="num">1489</td></tr>
+        <tr><td><a href="/regions/eu-west-1.html">eu-west-1</a></td><td class="num">1470</td></tr>
+        <tr><td><a href="/regions/ap-southeast-2.html">ap-southeast-2</a></td><td class="num">1467</td></tr>
+        <tr><td><a href="/regions/ap-northeast-1.html">ap-northeast-1</a></td><td class="num">1463</td></tr>
+        <tr><td><a href="/regions/eu-central-1.html">eu-central-1</a></td><td class="num">1462</td></tr>
+        <tr><td><a href="/regions/ap-southeast-1.html">ap-southeast-1</a></td><td class="num">1460</td></tr>
+        <tr><td><a href="/regions/us-east-2.html">us-east-2</a></td><td class="num">1435</td></tr>
+        <tr><td><a href="/regions/ap-south-1.html">ap-south-1</a></td><td class="num">1429</td></tr>
+        <tr><td><a href="/regions/eu-west-2.html">eu-west-2</a></td><td class="num">1416</td></tr>
+        <tr><td><a href="/regions/ap-northeast-2.html">ap-northeast-2</a></td><td class="num">1413</td></tr>
+        <tr><td><a href="/regions/ca-central-1.html">ca-central-1</a></td><td class="num">1409</td></tr>
+        <tr><td><a href="/regions/eu-west-3.html">eu-west-3</a></td><td class="num">1388</td></tr>
+        <tr><td><a href="/regions/sa-east-1.html">sa-east-1</a></td><td class="num">1378</td></tr>
+        <tr><td><a href="/regions/eu-north-1.html">eu-north-1</a></td><td class="num">1371</td></tr>
+        <tr><td><a href="/regions/us-west-1.html">us-west-1</a></td><td class="num">1349</td></tr>
+        <tr><td><a href="/regions/ap-east-1.html">ap-east-1</a></td><td class="num">1332</td></tr>
+        <tr><td><a href="/regions/me-south-1.html">me-south-1</a></td><td class="num">1269</td></tr>
+        <tr><td><a href="/regions/af-south-1.html">af-south-1</a></td><td class="num">1227</td></tr>
+        <tr><td><a href="/regions/eu-south-1.html">eu-south-1</a></td><td class="num">1218</td></tr>
+        <tr><td><a href="/regions/ap-northeast-3.html">ap-northeast-3</a></td><td class="num">1134</td></tr>
+        <tr><td><a href="/regions/ap-southeast-3.html">ap-southeast-3</a></td><td class="num">1016</td></tr>
+        <tr><td><a href="/regions/me-central-1.html">me-central-1</a></td><td class="num">927</td></tr>
+        <tr><td><a href="/regions/eu-central-2.html">eu-central-2</a></td><td class="num">904</td></tr>
+        <tr><td><a href="/regions/ap-southeast-4.html">ap-southeast-4</a></td><td class="num">892</td></tr>
+        <tr><td><a href="/regions/ap-south-2.html">ap-south-2</a></td><td class="num">881</td></tr>
+        <tr><td><a href="/regions/eu-south-2.html">eu-south-2</a></td><td class="num">851</td></tr>
+        <tr><td><a href="/regions/il-central-1.html">il-central-1</a></td><td class="num">837</td></tr>
+        <tr><td><a href="/regions/ca-west-1.html">ca-west-1</a></td><td class="num">582</td></tr>
+        <tr><td><a href="/regions/ap-southeast-5.html">ap-southeast-5</a></td><td class="num">502</td></tr>
+        <tr><td><a href="/regions/ap-southeast-7.html">ap-southeast-7</a></td><td class="num">492</td></tr>
+        <tr><td><a href="/regions/mx-central-1.html">mx-central-1</a></td><td class="num">486</td></tr>
+        <tr><td><a href="/regions/ap-southeast-6.html">ap-southeast-6</a></td><td class="num">429</td></tr>
+        <tr><td><a href="/regions/ap-east-2.html">ap-east-2</a></td><td class="num">385</td></tr>
+      </tbody>
+    </table>
+  </details>
 </section>
 
 <section class="services-analysis" id="services">

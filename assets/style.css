@@ -451,6 +451,27 @@ table.data-table th.num { text-align: right; font-variant-numeric: tabular-nums;
   .stat-card { padding: 0.75rem 0.5rem; }
 }
 
+ul.chip-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+ul.chip-list .chip {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  background: #eef2f7;
+  border: 1px solid #d4d9e0;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: inherit;
+  font-variant-numeric: tabular-nums;
+}
+ul.chip-list .chip:hover { background: #d9e2ef; border-color: #3a6ea5; }
+
 nav.toc {
   margin: 1rem 0 1.5rem;
   padding: 0.5rem 0.75rem;
