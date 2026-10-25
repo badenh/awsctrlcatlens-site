@@ -61,44 +61,52 @@
 
 <section class="framework-items">
   <h2>Framework mappings</h2>
-  <ul>
-    <li>
-      <strong>AWS-WAF-v10</strong>:
-      <a href="/crosswalk/aws-waf-v10/sec01-bp02.html">SEC01-BP02</a>
-    </li>
-    <li>
-      <strong>CIS-AWS-Benchmark-v1.2</strong>:
-      <a href="/crosswalk/cis-aws-benchmark-v1-2/1-12.html">1.12</a>
-    </li>
-    <li>
-      <strong>CIS-AWS-Benchmark-v1.3</strong>:
-      <a href="/crosswalk/cis-aws-benchmark-v1-3/1-4.html">1.4</a>
-    </li>
-    <li>
-      <strong>CIS-AWS-Benchmark-v1.4</strong>:
-      <a href="/crosswalk/cis-aws-benchmark-v1-4/1-4.html">1.4</a>
-    </li>
-    <li>
-      <strong>CIS-v8.0</strong>:
-      <a href="/crosswalk/cis-v8-0/4-7.html">4.7</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-aa-03-02.html">PR.AA-03.02</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-aa-05-01.html">PR.AA-05.01</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-aa-05-02.html">PR.AA-05.02</a>
-    </li>
-    <li>
-      <strong>ISO-IEC-27001:2013-Annex-A</strong>:
-      <a href="/crosswalk/iso-iec-27001_2013-annex-a/a-9-2-3.html">A.9.2.3</a>
-    </li>
-  </ul>
+  <table class="data-table framework-mapping-table">
+    <thead>
+      <tr>
+        <th scope="col">Framework</th>
+        <th scope="col">Item</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><strong>AWS-WAF-v10</strong></td>
+      <td><a href="/crosswalk/aws-waf-v10/sec01-bp02.html">SEC01-BP02</a></td>
+    </tr>
+    <tr>
+      <td><strong>CIS-AWS-Benchmark-v1.2</strong></td>
+      <td><a href="/crosswalk/cis-aws-benchmark-v1-2/1-12.html">1.12</a></td>
+    </tr>
+    <tr>
+      <td><strong>CIS-AWS-Benchmark-v1.3</strong></td>
+      <td><a href="/crosswalk/cis-aws-benchmark-v1-3/1-4.html">1.4</a></td>
+    </tr>
+    <tr>
+      <td><strong>CIS-AWS-Benchmark-v1.4</strong></td>
+      <td><a href="/crosswalk/cis-aws-benchmark-v1-4/1-4.html">1.4</a></td>
+    </tr>
+    <tr>
+      <td><strong>CIS-v8.0</strong></td>
+      <td><a href="/crosswalk/cis-v8-0/4-7.html">4.7</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-aa-03-02.html">PR.AA-03.02</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-aa-05-01.html">PR.AA-05.01</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-aa-05-02.html">PR.AA-05.02</a></td>
+    </tr>
+    <tr>
+      <td><strong>ISO-IEC-27001:2013-Annex-A</strong></td>
+      <td><a href="/crosswalk/iso-iec-27001_2013-annex-a/a-9-2-3.html">A.9.2.3</a></td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 <section class="deployability">
@@ -110,24 +118,42 @@
   <h2>Strongly related canonicals</h2>
   <p>Canonicals connected by direct related edges or by two or more shared
   common controls (projection weight &ge; 2).</p>
-  <ul>
-    <li>
-      <a href="/controls/canon_00895.html">Checks if the root user access key is available</a>
-      &middot; weight 3
-&middot; direct&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01422.html">IAM root user access key should not exist</a>
-      &middot; weight 3
-&middot; direct&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01469.html">DMS endpoints for Neptune databases should have IAM authorization enabled</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01489.html">Checks if an AWS Database Migration Service (AWS DMS) endpoint for Amazon Neptune databases is configured with IAM authorization</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-  </ul>
+  <table class="data-table strong-neighbours-table">
+    <thead>
+      <tr>
+        <th scope="col">Canonical</th>
+        <th scope="col" class="num">Weight</th>
+        <th scope="col">Direct</th>
+        <th scope="col" class="num">Shared CCs</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><a href="/controls/canon_00895.html">Checks if the root user access key is available</a></td>
+      <td class="num">3</td>
+      <td>&#x2713;</td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01422.html">IAM root user access key should not exist</a></td>
+      <td class="num">3</td>
+      <td>&#x2713;</td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01469.html">DMS endpoints for Neptune databases should have IAM authorization enabled</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01489.html">Checks if an AWS Database Migration Service (AWS DMS) endpoint for Amazon Neptune databases is configured with IAM authorization</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 </main>

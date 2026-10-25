@@ -61,48 +61,56 @@
 
 <section class="framework-items">
   <h2>Framework mappings</h2>
-  <ul>
-    <li>
-      <strong>AWS Foundational Security Best Practices</strong>:
-      <a href="/crosswalk/aws-foundational-security-best-practices/account-1.html">Account.1</a>
-    </li>
-    <li>
-      <strong>CIS-AWS-Benchmark-v1.2</strong>:
-      <a href="/crosswalk/cis-aws-benchmark-v1-2/1-17.html">1.17</a>
-    </li>
-    <li>
-      <strong>CIS-AWS-Benchmark-v1.2</strong>:
-      <a href="/crosswalk/cis-aws-benchmark-v1-2/1-18.html">1.18</a>
-    </li>
-    <li>
-      <strong>CIS-AWS-Benchmark-v1.3</strong>:
-      <a href="/crosswalk/cis-aws-benchmark-v1-3/1-1.html">1.1</a>
-    </li>
-    <li>
-      <strong>CIS-AWS-Benchmark-v1.3</strong>:
-      <a href="/crosswalk/cis-aws-benchmark-v1-3/1-2.html">1.2</a>
-    </li>
-    <li>
-      <strong>CIS-AWS-Benchmark-v1.4</strong>:
-      <a href="/crosswalk/cis-aws-benchmark-v1-4/1-1.html">1.1</a>
-    </li>
-    <li>
-      <strong>CIS-AWS-Benchmark-v1.4</strong>:
-      <a href="/crosswalk/cis-aws-benchmark-v1-4/1-2.html">1.2</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/de-ae-06-01.html">DE.AE-06.01</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/rs-co-02-01.html">RS.CO-02.01</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/rs-co-02-03.html">RS.CO-02.03</a>
-    </li>
-  </ul>
+  <table class="data-table framework-mapping-table">
+    <thead>
+      <tr>
+        <th scope="col">Framework</th>
+        <th scope="col">Item</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><strong>AWS Foundational Security Best Practices</strong></td>
+      <td><a href="/crosswalk/aws-foundational-security-best-practices/account-1.html">Account.1</a></td>
+    </tr>
+    <tr>
+      <td><strong>CIS-AWS-Benchmark-v1.2</strong></td>
+      <td><a href="/crosswalk/cis-aws-benchmark-v1-2/1-17.html">1.17</a></td>
+    </tr>
+    <tr>
+      <td><strong>CIS-AWS-Benchmark-v1.2</strong></td>
+      <td><a href="/crosswalk/cis-aws-benchmark-v1-2/1-18.html">1.18</a></td>
+    </tr>
+    <tr>
+      <td><strong>CIS-AWS-Benchmark-v1.3</strong></td>
+      <td><a href="/crosswalk/cis-aws-benchmark-v1-3/1-1.html">1.1</a></td>
+    </tr>
+    <tr>
+      <td><strong>CIS-AWS-Benchmark-v1.3</strong></td>
+      <td><a href="/crosswalk/cis-aws-benchmark-v1-3/1-2.html">1.2</a></td>
+    </tr>
+    <tr>
+      <td><strong>CIS-AWS-Benchmark-v1.4</strong></td>
+      <td><a href="/crosswalk/cis-aws-benchmark-v1-4/1-1.html">1.1</a></td>
+    </tr>
+    <tr>
+      <td><strong>CIS-AWS-Benchmark-v1.4</strong></td>
+      <td><a href="/crosswalk/cis-aws-benchmark-v1-4/1-2.html">1.2</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/de-ae-06-01.html">DE.AE-06.01</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/rs-co-02-01.html">RS.CO-02.01</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/rs-co-02-03.html">RS.CO-02.03</a></td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 <section class="deployability">
@@ -156,12 +164,24 @@
   <h2>Strongly related canonicals</h2>
   <p>Canonicals connected by direct related edges or by two or more shared
   common controls (projection weight &ge; 2).</p>
-  <ul>
-    <li>
-      <a href="/controls/canon_00765.html">Checks if you have provided security contact information for your AWS account contacts</a>
-      &middot; weight 3
-&middot; direct&middot; 2 shared CCs    </li>
-  </ul>
+  <table class="data-table strong-neighbours-table">
+    <thead>
+      <tr>
+        <th scope="col">Canonical</th>
+        <th scope="col" class="num">Weight</th>
+        <th scope="col">Direct</th>
+        <th scope="col" class="num">Shared CCs</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><a href="/controls/canon_00765.html">Checks if you have provided security contact information for your AWS account contacts</a></td>
+      <td class="num">3</td>
+      <td>&#x2713;</td>
+      <td class="num">2</td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 </main>

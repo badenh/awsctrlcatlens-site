@@ -61,36 +61,44 @@
 
 <section class="framework-items">
   <h2>Framework mappings</h2>
-  <ul>
-    <li>
-      <strong>CCCS-Medium-Cloud-Control-May-2019</strong>:
-      <a href="/crosswalk/cccs-medium-cloud-control-may-2019/ir-6-1.html">IR-6(1)</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/de-ae-03-01.html">DE.AE-03.01</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-ir-04-01.html">PR.IR-04.01</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-ps-04-02.html">PR.PS-04.02</a>
-    </li>
-    <li>
-      <strong>FedRAMP-r4</strong>:
-      <a href="/crosswalk/fedramp-r4/ir-6-1.html">IR-6 (1)</a>
-    </li>
-    <li>
-      <strong>FedRAMP-r5</strong>:
-      <a href="/crosswalk/fedramp-r5/ir-6-1.html">IR-6 (1)</a>
-    </li>
-    <li>
-      <strong>NIST-SP-800-53-r5</strong>:
-      <a href="/crosswalk/nist-sp-800-53-r5/ir-6-1.html">IR-6(1)</a>
-    </li>
-  </ul>
+  <table class="data-table framework-mapping-table">
+    <thead>
+      <tr>
+        <th scope="col">Framework</th>
+        <th scope="col">Item</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><strong>CCCS-Medium-Cloud-Control-May-2019</strong></td>
+      <td><a href="/crosswalk/cccs-medium-cloud-control-may-2019/ir-6-1.html">IR-6(1)</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/de-ae-03-01.html">DE.AE-03.01</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-ir-04-01.html">PR.IR-04.01</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-ps-04-02.html">PR.PS-04.02</a></td>
+    </tr>
+    <tr>
+      <td><strong>FedRAMP-r4</strong></td>
+      <td><a href="/crosswalk/fedramp-r4/ir-6-1.html">IR-6 (1)</a></td>
+    </tr>
+    <tr>
+      <td><strong>FedRAMP-r5</strong></td>
+      <td><a href="/crosswalk/fedramp-r5/ir-6-1.html">IR-6 (1)</a></td>
+    </tr>
+    <tr>
+      <td><strong>NIST-SP-800-53-r5</strong></td>
+      <td><a href="/crosswalk/nist-sp-800-53-r5/ir-6-1.html">IR-6(1)</a></td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 <section class="deployability">
@@ -137,40 +145,66 @@
   <h2>Strongly related canonicals</h2>
   <p>Canonicals connected by direct related edges or by two or more shared
   common controls (projection weight &ge; 2).</p>
-  <ul>
-    <li>
-      <a href="/controls/canon_00031.html">MSK clusters should have enhanced monitoring configured</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00161.html">A log metric filter and alarm should exist for usage of the &#34;root&#34; user</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00274.html">Ensure a log metric filter and alarm exist for Management Console sign-in without MFA</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00440.html">Require an Amazon CloudWatch alarm to have actions activated</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00548.html">Checks if enhanced monitoring is enabled for an Amazon MSK cluster set to PER_TOPIC_PER_BROKER or PER_TOPIC_PER_PARTITION</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00731.html">Ensure a log metric filter and alarm exist for AWS Management Console authentication failures</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01132.html">Ensure a log metric filter and alarm exist for disabling or scheduled deletion of customer created CMKs</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01317.html">Require any Amazon ECS cluster to have container insights activated</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-  </ul>
+  <table class="data-table strong-neighbours-table">
+    <thead>
+      <tr>
+        <th scope="col">Canonical</th>
+        <th scope="col" class="num">Weight</th>
+        <th scope="col">Direct</th>
+        <th scope="col" class="num">Shared CCs</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><a href="/controls/canon_00031.html">MSK clusters should have enhanced monitoring configured</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00161.html">A log metric filter and alarm should exist for usage of the &#34;root&#34; user</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00274.html">Ensure a log metric filter and alarm exist for Management Console sign-in without MFA</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00440.html">Require an Amazon CloudWatch alarm to have actions activated</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00548.html">Checks if enhanced monitoring is enabled for an Amazon MSK cluster set to PER_TOPIC_PER_BROKER or PER_TOPIC_PER_PARTITION</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00731.html">Ensure a log metric filter and alarm exist for AWS Management Console authentication failures</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01132.html">Ensure a log metric filter and alarm exist for disabling or scheduled deletion of customer created CMKs</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01317.html">Require any Amazon ECS cluster to have container insights activated</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 </main>

@@ -61,16 +61,24 @@
 
 <section class="framework-items">
   <h2>Framework mappings</h2>
-  <ul>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-ds-02-01.html">PR.DS-02.01</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-ps-01-06.html">PR.PS-01.06</a>
-    </li>
-  </ul>
+  <table class="data-table framework-mapping-table">
+    <thead>
+      <tr>
+        <th scope="col">Framework</th>
+        <th scope="col">Item</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-ds-02-01.html">PR.DS-02.01</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-ps-01-06.html">PR.PS-01.06</a></td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 <section class="deployability">
@@ -128,12 +136,24 @@
   <h2>Strongly related canonicals</h2>
   <p>Canonicals connected by direct related edges or by two or more shared
   common controls (projection weight &ge; 2).</p>
-  <ul>
-    <li>
-      <a href="/controls/canon_00229.html">Application and Network Load Balancer target groups should use encrypted health check protocols</a>
-      &middot; weight 2
-&middot; direct&middot; 1 shared CCs    </li>
-  </ul>
+  <table class="data-table strong-neighbours-table">
+    <thead>
+      <tr>
+        <th scope="col">Canonical</th>
+        <th scope="col" class="num">Weight</th>
+        <th scope="col">Direct</th>
+        <th scope="col" class="num">Shared CCs</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><a href="/controls/canon_00229.html">Application and Network Load Balancer target groups should use encrypted health check protocols</a></td>
+      <td class="num">2</td>
+      <td>&#x2713;</td>
+      <td class="num">1</td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 </main>

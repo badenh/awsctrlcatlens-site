@@ -61,16 +61,24 @@
 
 <section class="framework-items">
   <h2>Framework mappings</h2>
-  <ul>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-aa-05-01.html">PR.AA-05.01</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-aa-05-03.html">PR.AA-05.03</a>
-    </li>
-  </ul>
+  <table class="data-table framework-mapping-table">
+    <thead>
+      <tr>
+        <th scope="col">Framework</th>
+        <th scope="col">Item</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-aa-05-01.html">PR.AA-05.01</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-aa-05-03.html">PR.AA-05.03</a></td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 <section class="deployability">
@@ -117,80 +125,126 @@
   <h2>Strongly related canonicals</h2>
   <p>Canonicals connected by direct related edges or by two or more shared
   common controls (projection weight &ge; 2).</p>
-  <ul>
-    <li>
-      <a href="/controls/canon_00046.html">MSK clusters should disable unauthenticated access</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00119.html">SQS queue access policies should not allow public access</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00170.html">Checks if an Amazon MSK Cluster has unauthenticated access disabled</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00226.html">IAM principals should not have IAM inline policies that allow decryption actions on all KMS keys</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00314.html">Disallow cross region replication for S3 buckets</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00355.html">Checks if the SQS queue access policy allows full access</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00450.html">SNS topic access policies should not allow public access</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00536.html">Disallow Changes to Lifecycle Configuration for AWS Control Tower Created S3 Buckets in Log Archive</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00706.html">SSM documents should have the block public sharing setting enabled</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00891.html">Require that AWS Identity and Access Management (IAM) customer-managed policies do not have wildcard service actions</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00925.html">IAM policies should not allow full &#34;*&#34; administrative privileges</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00984.html">Require that the organization&#39;s AWS Security Token Service resources are accessible only by IAM principals that belong to the organization, or by an AWS service</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01014.html">IAM customer managed policies should not allow decryption actions on all KMS keys</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01122.html">Checks whether the default version of AWS Identity and Access Management (IAM) policies do not have administrator access</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01151.html">Checks if AWS Systems Manager Documents has block public sharing enabled</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01294.html">Disallow Changes to Bucket Policy for AWS Control Tower Created S3 Buckets in Log Archive</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01469.html">DMS endpoints for Neptune databases should have IAM authorization enabled</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01489.html">Checks if an AWS Database Migration Service (AWS DMS) endpoint for Amazon Neptune databases is configured with IAM authorization</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-  </ul>
+  <table class="data-table strong-neighbours-table">
+    <thead>
+      <tr>
+        <th scope="col">Canonical</th>
+        <th scope="col" class="num">Weight</th>
+        <th scope="col">Direct</th>
+        <th scope="col" class="num">Shared CCs</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><a href="/controls/canon_00046.html">MSK clusters should disable unauthenticated access</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00119.html">SQS queue access policies should not allow public access</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00170.html">Checks if an Amazon MSK Cluster has unauthenticated access disabled</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00226.html">IAM principals should not have IAM inline policies that allow decryption actions on all KMS keys</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00314.html">Disallow cross region replication for S3 buckets</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00355.html">Checks if the SQS queue access policy allows full access</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00450.html">SNS topic access policies should not allow public access</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00536.html">Disallow Changes to Lifecycle Configuration for AWS Control Tower Created S3 Buckets in Log Archive</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00706.html">SSM documents should have the block public sharing setting enabled</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00891.html">Require that AWS Identity and Access Management (IAM) customer-managed policies do not have wildcard service actions</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00925.html">IAM policies should not allow full &#34;*&#34; administrative privileges</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00984.html">Require that the organization&#39;s AWS Security Token Service resources are accessible only by IAM principals that belong to the organization, or by an AWS service</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01014.html">IAM customer managed policies should not allow decryption actions on all KMS keys</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01122.html">Checks whether the default version of AWS Identity and Access Management (IAM) policies do not have administrator access</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01151.html">Checks if AWS Systems Manager Documents has block public sharing enabled</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01294.html">Disallow Changes to Bucket Policy for AWS Control Tower Created S3 Buckets in Log Archive</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01469.html">DMS endpoints for Neptune databases should have IAM authorization enabled</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01489.html">Checks if an AWS Database Migration Service (AWS DMS) endpoint for Amazon Neptune databases is configured with IAM authorization</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 </main>

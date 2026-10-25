@@ -61,48 +61,56 @@
 
 <section class="framework-items">
   <h2>Framework mappings</h2>
-  <ul>
-    <li>
-      <strong>ACSC-ISM-02-Mar-2023</strong>:
-      <a href="/crosswalk/acsc-ism-02-mar-2023/ism-1790.html">ISM-1790</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-ds-01-01.html">PR.DS-01.01</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-ps-01-01.html">PR.PS-01.01</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-ps-01-02.html">PR.PS-01.02</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-ps-01-03.html">PR.PS-01.03</a>
-    </li>
-    <li>
-      <strong>PCI-DSS-v4.0</strong>:
-      <a href="/crosswalk/pci-dss-v4-0/7-2-2.html">7.2.2</a>
-    </li>
-    <li>
-      <strong>PCI-DSS-v4.0</strong>:
-      <a href="/crosswalk/pci-dss-v4-0/7-2-5.html">7.2.5</a>
-    </li>
-    <li>
-      <strong>PCI-DSS-v4.0.1</strong>:
-      <a href="/crosswalk/pci-dss-v4-0-1/7-2-2.html">7.2.2</a>
-    </li>
-    <li>
-      <strong>PCI-DSS-v4.0.1</strong>:
-      <a href="/crosswalk/pci-dss-v4-0-1/7-2-5.html">7.2.5</a>
-    </li>
-    <li>
-      <strong>SSAE-18-SOC-2-Oct-2023</strong>:
-      <a href="/crosswalk/ssae-18-soc-2-oct-2023/cc6-1.html">CC6.1</a>
-    </li>
-  </ul>
+  <table class="data-table framework-mapping-table">
+    <thead>
+      <tr>
+        <th scope="col">Framework</th>
+        <th scope="col">Item</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><strong>ACSC-ISM-02-Mar-2023</strong></td>
+      <td><a href="/crosswalk/acsc-ism-02-mar-2023/ism-1790.html">ISM-1790</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-ds-01-01.html">PR.DS-01.01</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-ps-01-01.html">PR.PS-01.01</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-ps-01-02.html">PR.PS-01.02</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-ps-01-03.html">PR.PS-01.03</a></td>
+    </tr>
+    <tr>
+      <td><strong>PCI-DSS-v4.0</strong></td>
+      <td><a href="/crosswalk/pci-dss-v4-0/7-2-2.html">7.2.2</a></td>
+    </tr>
+    <tr>
+      <td><strong>PCI-DSS-v4.0</strong></td>
+      <td><a href="/crosswalk/pci-dss-v4-0/7-2-5.html">7.2.5</a></td>
+    </tr>
+    <tr>
+      <td><strong>PCI-DSS-v4.0.1</strong></td>
+      <td><a href="/crosswalk/pci-dss-v4-0-1/7-2-2.html">7.2.2</a></td>
+    </tr>
+    <tr>
+      <td><strong>PCI-DSS-v4.0.1</strong></td>
+      <td><a href="/crosswalk/pci-dss-v4-0-1/7-2-5.html">7.2.5</a></td>
+    </tr>
+    <tr>
+      <td><strong>SSAE-18-SOC-2-Oct-2023</strong></td>
+      <td><a href="/crosswalk/ssae-18-soc-2-oct-2023/cc6-1.html">CC6.1</a></td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 <section class="deployability">
@@ -156,80 +164,126 @@
   <h2>Strongly related canonicals</h2>
   <p>Canonicals connected by direct related edges or by two or more shared
   common controls (projection weight &ge; 2).</p>
-  <ul>
-    <li>
-      <a href="/controls/canon_00502.html">ECS task definitions should configure containers to be limited to read-only access to root filesystems</a>
-      &middot; weight 4
-&middot; direct&middot; 3 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01158.html">Require an Amazon ElastiCache replication group of later Redis OSS versions to have RBAC authentication activated</a>
-      &middot; weight 3
-&middot; 3 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00046.html">MSK clusters should disable unauthenticated access</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00170.html">Checks if an Amazon MSK Cluster has unauthenticated access disabled</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00326.html">Require that an Amazon S3 bucket does not manage user access with an access control list (ACL)</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00378.html">Disallow access to the EC2 serial console for all EC2 instances</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00509.html">Checks whether Amazon Cognito user pools has deletion protection enabled</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00525.html">Lambda function policies should prohibit public access</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00646.html">Require an AWS KMS key policy to have a statement that limits creation of AWS KMS grants to AWS services</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00706.html">SSM documents should have the block public sharing setting enabled</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00941.html">S3 general purpose bucket policies should restrict access to other AWS accounts</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00948.html">Require an Amazon Neptune DB cluster to have AWS Identity and Access Management (IAM) database authentication enabled</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00978.html">Disallow changes to CloudWatch set up by Control Tower</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01020.html">Detect whether the AWS Lambda function policy attached to the Lambda resource blocks public access</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01151.html">Checks if AWS Systems Manager Documents has block public sharing enabled</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01223.html">Checks if a backup vault has an attached resource-based policy which prevents deletion of recovery points</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01225.html">Require Amazon ECS containers to allow read-only access to the root filesystem</a>
-      &middot; weight 2
-&middot; direct&middot; 1 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01256.html">Require an Amazon OpenSearch Service domain to use fine-grained access control</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-  </ul>
+  <table class="data-table strong-neighbours-table">
+    <thead>
+      <tr>
+        <th scope="col">Canonical</th>
+        <th scope="col" class="num">Weight</th>
+        <th scope="col">Direct</th>
+        <th scope="col" class="num">Shared CCs</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><a href="/controls/canon_00502.html">ECS task definitions should configure containers to be limited to read-only access to root filesystems</a></td>
+      <td class="num">4</td>
+      <td>&#x2713;</td>
+      <td class="num">3</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01158.html">Require an Amazon ElastiCache replication group of later Redis OSS versions to have RBAC authentication activated</a></td>
+      <td class="num">3</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">3</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00046.html">MSK clusters should disable unauthenticated access</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00170.html">Checks if an Amazon MSK Cluster has unauthenticated access disabled</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00326.html">Require that an Amazon S3 bucket does not manage user access with an access control list (ACL)</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00378.html">Disallow access to the EC2 serial console for all EC2 instances</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00509.html">Checks whether Amazon Cognito user pools has deletion protection enabled</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00525.html">Lambda function policies should prohibit public access</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00646.html">Require an AWS KMS key policy to have a statement that limits creation of AWS KMS grants to AWS services</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00706.html">SSM documents should have the block public sharing setting enabled</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00941.html">S3 general purpose bucket policies should restrict access to other AWS accounts</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00948.html">Require an Amazon Neptune DB cluster to have AWS Identity and Access Management (IAM) database authentication enabled</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00978.html">Disallow changes to CloudWatch set up by Control Tower</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01020.html">Detect whether the AWS Lambda function policy attached to the Lambda resource blocks public access</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01151.html">Checks if AWS Systems Manager Documents has block public sharing enabled</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01223.html">Checks if a backup vault has an attached resource-based policy which prevents deletion of recovery points</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01225.html">Require Amazon ECS containers to allow read-only access to the root filesystem</a></td>
+      <td class="num">2</td>
+      <td>&#x2713;</td>
+      <td class="num">1</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01256.html">Require an Amazon OpenSearch Service domain to use fine-grained access control</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 </main>

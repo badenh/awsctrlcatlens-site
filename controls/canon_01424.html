@@ -61,16 +61,24 @@
 
 <section class="framework-items">
   <h2>Framework mappings</h2>
-  <ul>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-aa-05-01.html">PR.AA-05.01</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-aa-05-02.html">PR.AA-05.02</a>
-    </li>
-  </ul>
+  <table class="data-table framework-mapping-table">
+    <thead>
+      <tr>
+        <th scope="col">Framework</th>
+        <th scope="col">Item</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-aa-05-01.html">PR.AA-05.01</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-aa-05-02.html">PR.AA-05.02</a></td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 <section class="deployability">
@@ -126,44 +134,72 @@
   <h2>Strongly related canonicals</h2>
   <p>Canonicals connected by direct related edges or by two or more shared
   common controls (projection weight &ge; 2).</p>
-  <ul>
-    <li>
-      <a href="/controls/canon_00046.html">MSK clusters should disable unauthenticated access</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00170.html">Checks if an Amazon MSK Cluster has unauthenticated access disabled</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00230.html">IAM identities should not have the AWSCloudShellFullAccess policy attached</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00251.html">Disallow deletion of log archive</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00706.html">SSM documents should have the block public sharing setting enabled</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00888.html">Disallow the use of deprecated Amazon EC2 RequestSpotFleet and RequestSpotInstances API actions</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01151.html">Checks if AWS Systems Manager Documents has block public sharing enabled</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01164.html">Require that an Amazon EBS snapshot cannot be publicly restorable</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01228.html">Checks if the latest active revision of an Amazon ECS task definition configures Linux containers to run as non-root users.The rule is NON_COMPLIANT if root user is specified or user configuration is absent for any container</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-  </ul>
+  <table class="data-table strong-neighbours-table">
+    <thead>
+      <tr>
+        <th scope="col">Canonical</th>
+        <th scope="col" class="num">Weight</th>
+        <th scope="col">Direct</th>
+        <th scope="col" class="num">Shared CCs</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><a href="/controls/canon_00046.html">MSK clusters should disable unauthenticated access</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00170.html">Checks if an Amazon MSK Cluster has unauthenticated access disabled</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00230.html">IAM identities should not have the AWSCloudShellFullAccess policy attached</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00251.html">Disallow deletion of log archive</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00706.html">SSM documents should have the block public sharing setting enabled</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00888.html">Disallow the use of deprecated Amazon EC2 RequestSpotFleet and RequestSpotInstances API actions</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01151.html">Checks if AWS Systems Manager Documents has block public sharing enabled</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01164.html">Require that an Amazon EBS snapshot cannot be publicly restorable</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01228.html">Checks if the latest active revision of an Amazon ECS task definition configures Linux containers to run as non-root users.The rule is NON_COMPLIANT if root user is specified or user configuration is absent for any container</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 </main>

@@ -61,44 +61,52 @@
 
 <section class="framework-items">
   <h2>Framework mappings</h2>
-  <ul>
-    <li>
-      <strong>CIS-AWS-Benchmark-v3.0</strong>:
-      <a href="/crosswalk/cis-aws-benchmark-v3-0/5-1.html">5.1</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/de-ae-03-02.html">DE.AE-03.02</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/de-cm-01-02.html">DE.CM-01.02</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/de-cm-01-03.html">DE.CM-01.03</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-ir-01-01.html">PR.IR-01.01</a>
-    </li>
-    <li>
-      <strong>ISO-IEC-27001:2022-Annex-A</strong>:
-      <a href="/crosswalk/iso-iec-27001_2022-annex-a/8-20.html">8.20</a>
-    </li>
-    <li>
-      <strong>PCI-DSS-v3.2.1</strong>:
-      <a href="/crosswalk/pci-dss-v3-2-1/6-6.html">6.6</a>
-    </li>
-    <li>
-      <strong>PCI-DSS-v4.0</strong>:
-      <a href="/crosswalk/pci-dss-v4-0/6-4-2.html">6.4.2</a>
-    </li>
-    <li>
-      <strong>PCI-DSS-v4.0.1</strong>:
-      <a href="/crosswalk/pci-dss-v4-0-1/6-4-2.html">6.4.2</a>
-    </li>
-  </ul>
+  <table class="data-table framework-mapping-table">
+    <thead>
+      <tr>
+        <th scope="col">Framework</th>
+        <th scope="col">Item</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><strong>CIS-AWS-Benchmark-v3.0</strong></td>
+      <td><a href="/crosswalk/cis-aws-benchmark-v3-0/5-1.html">5.1</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/de-ae-03-02.html">DE.AE-03.02</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/de-cm-01-02.html">DE.CM-01.02</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/de-cm-01-03.html">DE.CM-01.03</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-ir-01-01.html">PR.IR-01.01</a></td>
+    </tr>
+    <tr>
+      <td><strong>ISO-IEC-27001:2022-Annex-A</strong></td>
+      <td><a href="/crosswalk/iso-iec-27001_2022-annex-a/8-20.html">8.20</a></td>
+    </tr>
+    <tr>
+      <td><strong>PCI-DSS-v3.2.1</strong></td>
+      <td><a href="/crosswalk/pci-dss-v3-2-1/6-6.html">6.6</a></td>
+    </tr>
+    <tr>
+      <td><strong>PCI-DSS-v4.0</strong></td>
+      <td><a href="/crosswalk/pci-dss-v4-0/6-4-2.html">6.4.2</a></td>
+    </tr>
+    <tr>
+      <td><strong>PCI-DSS-v4.0.1</strong></td>
+      <td><a href="/crosswalk/pci-dss-v4-0-1/6-4-2.html">6.4.2</a></td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 <section class="deployability">
@@ -144,56 +152,90 @@
   <h2>Strongly related canonicals</h2>
   <p>Canonicals connected by direct related edges or by two or more shared
   common controls (projection weight &ge; 2).</p>
-  <ul>
-    <li>
-      <a href="/controls/canon_00030.html">Checks if Amazon CloudFront distributions are associated with either web application firewall (WAF) or WAFv2 web access control lists (ACLs)</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00160.html">CloudFront distributions should have WAF enabled</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00228.html">Checks if WAF Regional rule groups contain any rules</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00293.html">AWS WAF Classic global web ACLs should have at least one rule or rule group</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00550.html">Require any AWS WAF Classic regional rule to have a condition</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00642.html">Checks whether WAF regional rule contains conditions</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00665.html">AWS WAF Classic global rules should have at least one condition</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00727.html">Checks if a WAF regional Web ACL contains any WAF rules or rule groups</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_00729.html">Checks whether a WAF Global Web ACL contains any WAF rules or rule groups</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01079.html">AWS WAF Classic Regional rule groups should have at least one rule</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01418.html">Checks if an AWS WAF global rule contains any conditions</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01494.html">AWS WAF Classic Regional web ACLs should have at least one rule or rule group</a>
-      &middot; weight 2
-&middot; 2 shared CCs    </li>
-  </ul>
+  <table class="data-table strong-neighbours-table">
+    <thead>
+      <tr>
+        <th scope="col">Canonical</th>
+        <th scope="col" class="num">Weight</th>
+        <th scope="col">Direct</th>
+        <th scope="col" class="num">Shared CCs</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><a href="/controls/canon_00030.html">Checks if Amazon CloudFront distributions are associated with either web application firewall (WAF) or WAFv2 web access control lists (ACLs)</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00160.html">CloudFront distributions should have WAF enabled</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00228.html">Checks if WAF Regional rule groups contain any rules</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00293.html">AWS WAF Classic global web ACLs should have at least one rule or rule group</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00550.html">Require any AWS WAF Classic regional rule to have a condition</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00642.html">Checks whether WAF regional rule contains conditions</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00665.html">AWS WAF Classic global rules should have at least one condition</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00727.html">Checks if a WAF regional Web ACL contains any WAF rules or rule groups</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_00729.html">Checks whether a WAF Global Web ACL contains any WAF rules or rule groups</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01079.html">AWS WAF Classic Regional rule groups should have at least one rule</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01418.html">Checks if an AWS WAF global rule contains any conditions</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01494.html">AWS WAF Classic Regional web ACLs should have at least one rule or rule group</a></td>
+      <td class="num">2</td>
+      <td><span class="muted">&mdash;</span></td>
+      <td class="num">2</td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 </main>

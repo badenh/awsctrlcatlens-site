@@ -61,32 +61,40 @@
 
 <section class="framework-items">
   <h2>Framework mappings</h2>
-  <ul>
-    <li>
-      <strong>ACSC-ISM-02-Mar-2023</strong>:
-      <a href="/crosswalk/acsc-ism-02-mar-2023/ism-1438.html">ISM-1438</a>
-    </li>
-    <li>
-      <strong>ACSC-ISM-02-Mar-2023</strong>:
-      <a href="/crosswalk/acsc-ism-02-mar-2023/ism-1580.html">ISM-1580</a>
-    </li>
-    <li>
-      <strong>AWS Foundational Security Best Practices</strong>:
-      <a href="/crosswalk/aws-foundational-security-best-practices/rds-5.html">RDS.5</a>
-    </li>
-    <li>
-      <strong>CCCS-Medium-Cloud-Control-May-2019</strong>:
-      <a href="/crosswalk/cccs-medium-cloud-control-may-2019/cp-6-1.html">CP-6(1)</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-ir-03-01.html">PR.IR-03.01</a>
-    </li>
-    <li>
-      <strong>NIST-SP-800-53-r5</strong>:
-      <a href="/crosswalk/nist-sp-800-53-r5/si-13-5.html">SI-13(5)</a>
-    </li>
-  </ul>
+  <table class="data-table framework-mapping-table">
+    <thead>
+      <tr>
+        <th scope="col">Framework</th>
+        <th scope="col">Item</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><strong>ACSC-ISM-02-Mar-2023</strong></td>
+      <td><a href="/crosswalk/acsc-ism-02-mar-2023/ism-1438.html">ISM-1438</a></td>
+    </tr>
+    <tr>
+      <td><strong>ACSC-ISM-02-Mar-2023</strong></td>
+      <td><a href="/crosswalk/acsc-ism-02-mar-2023/ism-1580.html">ISM-1580</a></td>
+    </tr>
+    <tr>
+      <td><strong>AWS Foundational Security Best Practices</strong></td>
+      <td><a href="/crosswalk/aws-foundational-security-best-practices/rds-5.html">RDS.5</a></td>
+    </tr>
+    <tr>
+      <td><strong>CCCS-Medium-Cloud-Control-May-2019</strong></td>
+      <td><a href="/crosswalk/cccs-medium-cloud-control-may-2019/cp-6-1.html">CP-6(1)</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-ir-03-01.html">PR.IR-03.01</a></td>
+    </tr>
+    <tr>
+      <td><strong>NIST-SP-800-53-r5</strong></td>
+      <td><a href="/crosswalk/nist-sp-800-53-r5/si-13-5.html">SI-13(5)</a></td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 <section class="deployability">
@@ -143,16 +151,30 @@
   <h2>Strongly related canonicals</h2>
   <p>Canonicals connected by direct related edges or by two or more shared
   common controls (projection weight &ge; 2).</p>
-  <ul>
-    <li>
-      <a href="/controls/canon_01000.html">Require that an Amazon RDS database instance is configured with multiple Availability Zones</a>
-      &middot; weight 2
-&middot; direct&middot; 1 shared CCs    </li>
-    <li>
-      <a href="/controls/canon_01490.html">Checks whether high availability is enabled for your RDS DB instances</a>
-      &middot; weight 2
-&middot; direct&middot; 1 shared CCs    </li>
-  </ul>
+  <table class="data-table strong-neighbours-table">
+    <thead>
+      <tr>
+        <th scope="col">Canonical</th>
+        <th scope="col" class="num">Weight</th>
+        <th scope="col">Direct</th>
+        <th scope="col" class="num">Shared CCs</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><a href="/controls/canon_01000.html">Require that an Amazon RDS database instance is configured with multiple Availability Zones</a></td>
+      <td class="num">2</td>
+      <td>&#x2713;</td>
+      <td class="num">1</td>
+    </tr>
+    <tr>
+      <td><a href="/controls/canon_01490.html">Checks whether high availability is enabled for your RDS DB instances</a></td>
+      <td class="num">2</td>
+      <td>&#x2713;</td>
+      <td class="num">1</td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 </main>

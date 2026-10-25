@@ -61,36 +61,44 @@
 
 <section class="framework-items">
   <h2>Framework mappings</h2>
-  <ul>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-ds-01-01.html">PR.DS-01.01</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-ir-01-05.html">PR.IR-01.05</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-ps-01-01.html">PR.PS-01.01</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-ps-01-02.html">PR.PS-01.02</a>
-    </li>
-    <li>
-      <strong>CRI-Profile-v2.2</strong>:
-      <a href="/crosswalk/cri-profile-v2-2/pr-ps-01-03.html">PR.PS-01.03</a>
-    </li>
-    <li>
-      <strong>PCI-DSS-v4.0</strong>:
-      <a href="/crosswalk/pci-dss-v4-0/2-2-6.html">2.2.6</a>
-    </li>
-    <li>
-      <strong>PCI-DSS-v4.0.1</strong>:
-      <a href="/crosswalk/pci-dss-v4-0-1/2-2-6.html">2.2.6</a>
-    </li>
-  </ul>
+  <table class="data-table framework-mapping-table">
+    <thead>
+      <tr>
+        <th scope="col">Framework</th>
+        <th scope="col">Item</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-ds-01-01.html">PR.DS-01.01</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-ir-01-05.html">PR.IR-01.05</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-ps-01-01.html">PR.PS-01.01</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-ps-01-02.html">PR.PS-01.02</a></td>
+    </tr>
+    <tr>
+      <td><strong>CRI-Profile-v2.2</strong></td>
+      <td><a href="/crosswalk/cri-profile-v2-2/pr-ps-01-03.html">PR.PS-01.03</a></td>
+    </tr>
+    <tr>
+      <td><strong>PCI-DSS-v4.0</strong></td>
+      <td><a href="/crosswalk/pci-dss-v4-0/2-2-6.html">2.2.6</a></td>
+    </tr>
+    <tr>
+      <td><strong>PCI-DSS-v4.0.1</strong></td>
+      <td><a href="/crosswalk/pci-dss-v4-0-1/2-2-6.html">2.2.6</a></td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 <section class="deployability">
@@ -143,12 +151,24 @@
   <h2>Strongly related canonicals</h2>
   <p>Canonicals connected by direct related edges or by two or more shared
   common controls (projection weight &ge; 2).</p>
-  <ul>
-    <li>
-      <a href="/controls/canon_00651.html">Require Amazon EFS access points to have a root directory</a>
-      &middot; weight 2
-&middot; direct&middot; 1 shared CCs    </li>
-  </ul>
+  <table class="data-table strong-neighbours-table">
+    <thead>
+      <tr>
+        <th scope="col">Canonical</th>
+        <th scope="col" class="num">Weight</th>
+        <th scope="col">Direct</th>
+        <th scope="col" class="num">Shared CCs</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><a href="/controls/canon_00651.html">Require Amazon EFS access points to have a root directory</a></td>
+      <td class="num">2</td>
+      <td>&#x2713;</td>
+      <td class="num">1</td>
+    </tr>
+    </tbody>
+  </table>
 </section>
 
 </main>
