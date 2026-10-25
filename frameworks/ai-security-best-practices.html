@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+  <meta name="fetched-at" content="2026-10-25T03:46:54+00:00">
+  <title>AI Security Best Practices — Frameworks — awsctrlcatlens</title>
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-25">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XRKG4GEHL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9XRKG4GEHL');
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-bar">
+      <a href="/" class="site-title">awsctrlcatlens</a>
+    </div>
+    <p class="site-provenance">
+      Machine-generated analytical view, last data snapshot seal: 2026-10-25T03:46:54+00:00, last site build: 2026-10-25.
+    </p>
+    <div data-staleness-slot hidden role="alert"></div>
+<form class="site-search" role="search" action="/">
+      <input type="search" data-search-input placeholder="Search raw controls, canonical controls, aliases, services, regions, frameworks ..." autocomplete="off">
+      <ul data-search-results hidden></ul>
+    </form><nav aria-label="breadcrumb"><ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/frameworks/">Frameworks</a></li><li><span aria-current="page">AI Security Best Practices</span></li></ol></nav>  </header>
+  <main><h1>AI Security Best Practices
+  <span class="badge badge-extension"
+        title="Synthesized from Security Hub standard; not published in AWS Control Catalog ListControlMappings">extension</span>
+</h1>
+<p><span class="badge">18</span> items in this framework. Each item
+links to a crosswalk page showing equivalents in other frameworks.</p>
+
+<section class="framework-stats">
+  <p>
+    <strong>18</strong> mapped items
+    reference
+    <strong>18</strong> unique canonical controls
+    (density <strong>1.0x</strong>);
+    <strong>0</strong> canonicals
+    appear on more than one item in this framework.
+  </p>
+  <p class="muted">
+    Why the repetition? AWS maps the same canonical control to multiple framework
+    items by design — maturity-tier frameworks (ACSC Essential Eight) carry the
+    same requirement across every tier, pillar-structured frameworks (Well-Architected)
+    overlap best practices across pillars, and family-structured frameworks (CMMC,
+    NIST&nbsp;800-171) share controls across access-control, audit, and system-protection
+    domains. Items below with <em>(shared with N items)</em> indicate canonicals
+    AWS maps to more than one place in this framework.
+  </p>
+</section>
+
+<ul class="framework-items">
+  <li>
+    <strong>BedrockAgentCore.1</strong>
+      &rarr; <a href="/controls/canon_00673.html">Bedrock AgentCore runtimes should be configured with VPC network mode</a>
+    &middot; <a href="/crosswalk/ai-security-best-practices/bedrockagentcore-1.html">crosswalk</a>
+  </li>
+  <li>
+    <strong>BedrockAgentCore.2</strong>
+      &rarr; <a href="/controls/canon_00604.html">Bedrock AgentCore Gateways should require authorization for inbound requests</a>
+    &middot; <a href="/crosswalk/ai-security-best-practices/bedrockagentcore-2.html">crosswalk</a>
+  </li>
+  <li>
+    <strong>SageMaker.1</strong>
+      &rarr; <a href="/controls/canon_00351.html">Amazon SageMaker notebook instances should not have direct internet access</a>
+    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-1.html">crosswalk</a>
+  </li>
+  <li>
+    <strong>SageMaker.10</strong>
+      &rarr; <a href="/controls/canon_01023.html">SageMaker model explainability job definitions should have inter-container traffic encryption enabled</a>
+    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-10.html">crosswalk</a>
+  </li>
+  <li>
+    <strong>SageMaker.11</strong>
+      &rarr; <a href="/controls/canon_00733.html">SageMaker data quality job definitions should have network isolation enabled</a>
+    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-11.html">crosswalk</a>
+  </li>
+  <li>
+    <strong>SageMaker.12</strong>
+      &rarr; <a href="/controls/canon_00479.html">SageMaker model bias job definitions should have network isolation enabled</a>
+    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-12.html">crosswalk</a>
+  </li>
+  <li>
+    <strong>SageMaker.13</strong>
+      &rarr; <a href="/controls/canon_01084.html">SageMaker model quality job definitions should have inter-container traffic encryption enabled</a>
+    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-13.html">crosswalk</a>
+  </li>
+  <li>
+    <strong>SageMaker.14</strong>
+      &rarr; <a href="/controls/canon_00182.html">SageMaker monitoring schedules should have network isolation enabled</a>
+    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-14.html">crosswalk</a>
+  </li>
+  <li>
+    <strong>SageMaker.15</strong>
+      &rarr; <a href="/controls/canon_00056.html">SageMaker model bias job definitions should have inter-container traffic encryption enabled</a>
+    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-15.html">crosswalk</a>
+  </li>
+  <li>
+    <strong>SageMaker.16</strong>
+      &rarr; <a href="/controls/canon_00686.html">SageMaker models should use private registry in VPC for primary containers</a>
+    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-16.html">crosswalk</a>
+  </li>
+  <li>
+    <strong>SageMaker.17</strong>
+      &rarr; <a href="/controls/canon_00648.html">SageMaker feature group offline stores should be encrypted with AWS KMS keys </a>
+    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-17.html">crosswalk</a>
+  </li>
+  <li>
+    <strong>SageMaker.19</strong>
+      &rarr; <a href="/controls/canon_00418.html">SageMaker models should use private registry in VPC for multi-container inference pipelines</a>
+    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-19.html">crosswalk</a>
+  </li>
+  <li>
+    <strong>SageMaker.2</strong>
+      &rarr; <a href="/controls/canon_01306.html">SageMaker notebook instances should be launched in a custom VPC</a>
+    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-2.html">crosswalk</a>
+  </li>
+  <li>
+    <strong>SageMaker.3</strong>
+      &rarr; <a href="/controls/canon_00217.html">Users should not have root access to SageMaker notebook instances</a>
+    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-3.html">crosswalk</a>
+  </li>
+  <li>
+    <strong>SageMaker.4</strong>
+      &rarr; <a href="/controls/canon_01157.html">SageMaker endpoint production variants should have an initial instance count greater than 1</a>
+    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-4.html">crosswalk</a>
+  </li>
+  <li>
+    <strong>SageMaker.5</strong>
+      &rarr; <a href="/controls/canon_00231.html">Checks if an Amazon SageMaker model has network isolation enabled</a>
+    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-5.html">crosswalk</a>
+  </li>
+  <li>
+    <strong>SageMaker.8</strong>
+      &rarr; <a href="/controls/canon_00073.html">SageMaker notebook instances should run on supported platforms</a>
+    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-8.html">crosswalk</a>
+  </li>
+  <li>
+    <strong>SageMaker.9</strong>
+      &rarr; <a href="/controls/canon_01135.html">SageMaker data quality job definitions should have inter-container traffic encryption enabled</a>
+    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-9.html">crosswalk</a>
+  </li>
+</ul>
+
+<section class="methodology">
+  <h2>Methodology</h2>
+  <p>
+    This framework page is derived from an AWS Security Hub standard, not from
+    <code>controlcatalog:ListControlMappings</code>. awsctrlcatlens fetches
+    the standard's docs page, parses the Security Hub control ids, and joins
+    each one to the Control Catalog canonical via
+    <code>controls_detailed[arn].Implementation.Identifier</code>.
+  </p>
+  <ul>
+    <li>
+      Source:
+      <a href="https://docs.aws.amazon.com/securityhub/latest/userguide/standards-ai-security.html" rel="external">https://docs.aws.amazon.com/securityhub/latest/userguide/standards-ai-security.html</a>
+    </li>
+    <li>Fetched: 2026-10-25T03:41:17+00:00</li>
+    <li>
+      <strong>31</strong> Security Hub control ids on the docs page (raw);
+      <strong>18</strong> resolved to Control Catalog canonicals.
+    </li>
+  </ul>
+  <p>
+    Unresolved Security Hub control ids
+    (13 total; first 13 shown).
+    These are AWS-authored Security Hub controls that are either not yet
+    published in the Control Catalog, or have been retired from it.
+  </p>
+  <ul class="unresolved-sh-ids">
+    <li><strong>Bedrock.1</strong> — Amazon Bedrock data sources should be encrypted with customer managed AWS KMS keys</li>
+    <li><strong>BedrockAgentCore.3</strong> — Bedrock AgentCore Memory should be encrypted with customer managed AWS KMS keys</li>
+    <li><strong>BedrockAgentCore.4</strong> — Bedrock AgentCore Gateway should be encrypted with customer managed AWS KMS keys</li>
+    <li><strong>BedrockAgentCore.5</strong> — Bedrock AgentCore custom browsers should not use public network mode</li>
+    <li><strong>BedrockAgentCore.6</strong> — Bedrock AgentCore custom browsers should have session recording enabled</li>
+    <li><strong>BedrockAgentCore.7</strong> — Bedrock AgentCore custom code interpreters should use a private network configuration</li>
+    <li><strong>SageMaker.18</strong> — SageMaker feature group online stores with standard storage should be encrypted with AWS KMS keys</li>
+    <li><strong>SageMaker.20</strong> — SageMaker model explainability job definitions should have network isolation enabled</li>
+    <li><strong>SageMaker.21</strong> — SageMaker notebook instances should be encrypted with customer managed AWS KMS keys</li>
+    <li><strong>SageMaker.22</strong> — SageMaker monitoring schedules should have inter-container traffic encryption enabled</li>
+    <li><strong>SageMaker.23</strong> — SageMaker inference experiments should have instance storage volume encrypted with customer managed AWS KMS keys</li>
+    <li><strong>SageMaker.24</strong> — SageMaker inference experiments should have data storage encrypted with customer managed AWS KMS keys</li>
+    <li><strong>SageMaker.25</strong> — SageMaker model quality job definitions should have network isolation enabled</li>
+  </ul>
+  <p class="muted">
+    See the <a href="/about/#extension-frameworks">overlay methodology</a>
+    for how this list was synthesised.
+  </p>
+</section>
+
+<section class="attribution">
+  <h2>About this framework</h2>
+  <p>
+    The AI Security Best Practices is an AWS-authored security standard published by AWS
+    Security Hub. The standard, its control membership, and all control text
+    are the intellectual property of Amazon Web Services, Inc. and its
+    affiliates. This page is a derived view: awsctrlcatlens overlays the
+    standard's control membership onto the AWS Control Catalog's canonical
+    controls to expose per-region deployability, per-service grouping, and
+    cross-framework crosswalk — none of which are published in the Security
+    Hub standard directly.
+  </p>
+</section>
+</main>
+  <aside></aside>
+  <footer class="site-footer">
+    <p class="footer-legal">
+      awsctrlcatlens is not affiliated with or endorsed by Amazon Web Services. All AWS
+      service and region names are trademarks of Amazon.com, Inc. or
+      its affiliates. 
+    </p>
+    <p class="footer-legal">Data derived from the public AWS Control Catalog
+      API and AWS Account service endpoints; analysis + presentation
+      are machine-generated and may contain errors based on inconsistency in original source data.
+    </p>
+    <p class="footer-about">
+      awsctrlcatlens is an analytical tool and publication by Baden Hughes,
+      an independent security and compliance engineer. Contact him at
+      <a href="mailto:hello@awsctrlcatlens.com">hello@awsctrlcatlens.com</a>
+      or sign up to the
+      <a href="mailto:hello@awsctrlcatlens.com?subject=subscribe">low-volume
+      announcements list</a>.
+    </p>
+    <p class="footer-copyright">
+      Pipeline, analysis, and site generator &copy; 2026 Baden Hughes.
+    </p>
+  </footer>
+  <script src="/assets/minisearch.min.js" defer></script>
+  <script src="/assets/search.js" defer></script>
+  <script src="/assets/enhance.js" defer></script>
+</body>
+</html>

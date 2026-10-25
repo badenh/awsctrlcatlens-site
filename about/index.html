@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
-  <meta name="fetched-at" content="2026-10-20T04:05:40+00:00">
+  <meta name="fetched-at" content="2026-10-25T03:46:54+00:00">
   <title>About — awsctrlcatlens</title>
-  <link rel="stylesheet" href="/assets/style.css?v=2026-10-20">
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-25">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XRKG4GEHL"></script>
   <script>
@@ -22,7 +22,7 @@
       <a href="/" class="site-title">awsctrlcatlens</a>
     </div>
     <p class="site-provenance">
-      Machine-generated analytical view, last data snapshot seal: 2026-10-20T04:05:40+00:00, last site build: 2026-10-20.
+      Machine-generated analytical view, last data snapshot seal: 2026-10-25T03:46:54+00:00, last site build: 2026-10-25.
     </p>
     <div data-staleness-slot hidden role="alert"></div>
 <form class="site-search" role="search" action="/">
@@ -47,6 +47,7 @@
     <li><a href="#analysis-quadrants">Analysis page: quadrant scatters</a></li>
     <li><a href="#analysis-hub-metrics">Analysis page: hub metrics</a></li>
     <li><a href="#build-determinism">Build determinism</a></li>
+    <li><a href="#extension-frameworks">Extension frameworks (Security Hub)</a></li>
   </ul>
 </nav>
 
@@ -356,6 +357,49 @@
   same snapshot produces byte-identical output; a <code>snapshot.json</code>
   provenance file at the site root stamps the sealed-at timestamp of the
   snapshot the build consumed.</p>
+</section>
+
+<section id="extension-frameworks">
+  <h2>Extension frameworks (Security Hub)</h2>
+  <p>Two of the frameworks on this site are <em>extension</em> frameworks:
+  the AWS Foundational Security Best Practices and AI Security Best
+  Practices. These are AWS-authored Security Hub standards whose
+  per-standard membership is <strong>not published</strong> in the
+  Control Catalog's <code>ListControlMappings</code> output — the
+  Control Catalog knows about the member controls (as Security Hub-executed
+  variants) but does not record which standard they belong to.
+  awsctrlcatlens overlays that membership from AWS's own Security Hub
+  user-guide pages so these two standards are first-class citizens of
+  the lens alongside the natively mapped frameworks.</p>
+  <p>The join is deterministic. For each standard, awsctrlcatlens parses
+  the dotted Security Hub control ids (such as <code>EC2.8</code>) from
+  the pinned user-guide HTML and matches each one against
+  <code>controls_detailed[arn].Implementation.Identifier</code> on
+  canonicals whose <code>Implementation.Type</code> is
+  <code>AWS::SecurityHub::SecurityControl</code>. Resolved ids become
+  rows carrying <code>source="securityhub-standard"</code> in
+  <code>canonical_framework_items</code>; the native rows carry
+  <code>source="controlcatalog"</code>. Both source values flow into
+  the region, service, and crosswalk views at parity — a canonical
+  reached only through an extension-framework overlay contributes to
+  per-region and per-service framework-coverage counts the same way a
+  natively mapped canonical does.</p>
+  <p>Misses — Security Hub control ids on the standard's docs page that
+  do not resolve to any Control Catalog canonical — are logged to
+  <code>unresolved.json</code> under the sealed snapshot's
+  <code>extension_frameworks/</code> directory and surfaced on each
+  extension framework page's methodology section. A non-zero unresolved
+  count is an authentic signal (either a new Security Hub control not
+  yet published in the Control Catalog, or a Security Hub control that
+  has been retired), <strong>not</strong> an error. The refresh is not
+  failed by non-empty <code>unresolved.json</code>.</p>
+  <p>AWS attribution. AWS authored both standards and their control
+  membership; the standards, their names, and all control text are the
+  intellectual property of Amazon Web Services, Inc. and its affiliates.
+  awsctrlcatlens's contribution to the extension-framework pages is the
+  overlay expression only — the per-region deployability, per-service
+  grouping, and cross-framework crosswalk views — none of which are
+  published by the Security Hub standards themselves.</p>
 </section>
 </main>
   <aside></aside>

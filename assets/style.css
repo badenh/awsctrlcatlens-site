@@ -326,6 +326,7 @@ ul.controls-list li {
 .bar-chart .bar-chart-title { font-weight: 600; font-size: 0.9rem; margin: 0 0 0.4rem; color: #334; }
 
 .badge-opt-in { background: #fff4d6; color: #7a5a00; border: 1px solid #e8c974; }
+.badge-extension { background: #e0e4ff; color: #2a2f6b; border: 1px solid #8d95d6; }
 
 /* Heat map (framework Jaccard) */
 .heat-map { margin: 1rem 0 1.5rem; }
