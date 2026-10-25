@@ -362,12 +362,13 @@
 <section id="extension-frameworks">
   <h2>Extension frameworks (Security Hub)</h2>
   <p>Two of the frameworks on this site are <em>extension</em> frameworks:
-  the AWS Foundational Security Best Practices and AI Security Best
-  Practices. These are AWS-authored Security Hub standards whose
-  per-standard membership is <strong>not published</strong> in the
-  Control Catalog's <code>ListControlMappings</code> output — the
-  Control Catalog knows about the member controls (as Security Hub-executed
-  variants) but does not record which standard they belong to.
+  the <a href="https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html">AWS Foundational Security Best Practices</a>
+  and <a href="https://docs.aws.amazon.com/securityhub/latest/userguide/standards-ai-security.html">AI Security Best Practices</a>.
+  These are AWS-authored <a href="https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.html">Security Hub standards</a>
+  whose per-standard membership is <strong>not published</strong> in the
+  Control Catalog's <a href="https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListControlMappings.html"><code>ListControlMappings</code></a>
+  output — the Control Catalog knows about the member controls (as Security
+  Hub-executed variants) but does not record which standard they belong to.
   awsctrlcatlens overlays that membership from AWS's own Security Hub
   user-guide pages so these two standards are first-class citizens of
   the lens alongside the natively mapped frameworks.</p>
@@ -376,7 +377,7 @@
   the pinned user-guide HTML and matches each one against
   <code>controls_detailed[arn].Implementation.Identifier</code> on
   canonicals whose <code>Implementation.Type</code> is
-  <code>AWS::SecurityHub::SecurityControl</code>. Resolved ids become
+  <a href="https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.html"><code>AWS::SecurityHub::SecurityControl</code></a>. Resolved ids become
   rows carrying <code>source="securityhub-standard"</code> in
   <code>canonical_framework_items</code>; the native rows carry
   <code>source="controlcatalog"</code>. Both source values flow into
