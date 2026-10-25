@@ -429,6 +429,29 @@ table.data-table thead th { background: var(--color-accent); color: #fff; font-w
 table.glossary tbody tr:hover td,
 table.data-table tbody tr:hover td { background: var(--color-row-hover); }
 table.glossary tbody th { font-weight: 600; white-space: nowrap; width: 14rem; }
+
+/* Numeric cell alignment (used in framework / data tables). */
+table.data-table th.num,
+table.data-table td.num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* Control-list and raw-list tables fit full page width. */
+table.control-table,
+table.raw-table,
+table.framework-items-table,
+table.framework-index-table { max-width: 100%; }
+
+/* ARN cell: fixed-width mono, wraps on narrow screens. */
+table.raw-table td code { font-size: 0.78rem; word-break: break-all; }
+
+/* Tighter per-row padding for dense control lists. */
+table.control-table th,
+table.control-table td,
+table.raw-table th,
+table.raw-table td,
+table.framework-items-table th,
+table.framework-items-table td,
+table.framework-index-table th,
+table.framework-index-table td { padding: 0.35rem 0.55rem; font-size: 0.85rem; }
 table.data-table td.num,
 table.data-table th.num { text-align: right; font-variant-numeric: tabular-nums; }
 

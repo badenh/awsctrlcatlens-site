@@ -83,22 +83,102 @@
   </p>
 </section>
 
-<ul id="control-list" class="control-list">
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00741.html">Checks if a Stateless Network Firewall Rule Group contains rules</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00654.html">Network Firewall firewall policies should be tagged</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00910.html">Network Firewall firewalls should be tagged</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00446.html">Network Firewall firewalls should have deletion protection enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00749.html">Network Firewall firewalls should have subnet change protection enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00840.html">Network Firewall logging should be enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00522.html">Require an AWS Network Firewall firewall to be deployed across multiple Availability Zones</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01341.html">Require any AWS Network Firewall firewall policy to drop or forward fragmented packets by default when they do not match a stateless rule</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00996.html">Require any AWS Network Firewall firewall policy to drop or forward stateless full packets by default when they do not match a rule</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00083.html">Require any AWS Network Firewall firewall policy to have an associated rule group</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01108.html">Require any AWS Network Firewall rule group to contain at least one rule</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00709.html">Stateless network firewall rule group should not be empty</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00778.html">The default stateless action for Network Firewall policies should be drop or forward for fragmented packets</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00850.html">The default stateless action for Network Firewall policies should be drop or forward for full packets</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-</ul>
+<table id="control-list" class="data-table control-table">
+  <thead>
+    <tr>
+      <th scope="col">Severity</th>
+      <th scope="col">Behavior</th>
+      <th scope="col">Impl</th>
+      <th scope="col">Control</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00741.html">Checks if a Stateless Network Firewall Rule Group contains rules</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00654.html">Network Firewall firewall policies should be tagged</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00910.html">Network Firewall firewalls should be tagged</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00446.html">Network Firewall firewalls should have deletion protection enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00749.html">Network Firewall firewalls should have subnet change protection enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00840.html">Network Firewall logging should be enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00522.html">Require an AWS Network Firewall firewall to be deployed across multiple Availability Zones</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_01341.html">Require any AWS Network Firewall firewall policy to drop or forward fragmented packets by default when they do not match a stateless rule</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_00996.html">Require any AWS Network Firewall firewall policy to drop or forward stateless full packets by default when they do not match a rule</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00083.html">Require any AWS Network Firewall firewall policy to have an associated rule group</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_01108.html">Require any AWS Network Firewall rule group to contain at least one rule</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00709.html">Stateless network firewall rule group should not be empty</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00778.html">The default stateless action for Network Firewall policies should be drop or forward for fragmented packets</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00850.html">The default stateless action for Network Firewall policies should be drop or forward for full packets</a></td>
+</tr>
+  </tbody>
+</table>
 </main>
   <aside></aside>
   <footer class="site-footer">

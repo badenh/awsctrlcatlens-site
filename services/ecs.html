@@ -83,49 +83,264 @@
   </p>
 </section>
 
-<ul id="control-list" class="control-list">
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01447.html">Checks if AWS ECS Service has property PropagateTags with value of either SERVICE or TASK_DEFINITION</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00811.html">Checks if Amazon ECS Task Definitions with EFS volumes have in-transit encryption enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00449.html">Checks if Amazon ECS capacity providers have tags</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00107.html">Checks if Amazon ECS task definitions with host network mode have privileged OR nonroot in the container definition</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01472.html">Checks if Amazon Elastic Container Service (Amazon ECS) Containers only have read-only access to its root filesystems</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01456.html">Checks if Amazon Elastic Container Service (ECS) task definitions have a set memory limit for its container definitions</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01374.html">Checks if Amazon Elastic Container Service clusters have container insights enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00380.html">Checks if ECSTaskDefinitions are configured to share a host&#39;s process namespace with its Amazon Elastic Container Service (Amazon ECS) containers</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01015.html">Checks if ECSTaskDefinitions specify a user for Amazon Elastic Container Service (Amazon ECS) EC2 launch type containers to run on</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00691.html">Checks if an Amazon ECS Capacity provider containing Auto Scaling groups has managed termination protection enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01275.html">Checks if logConfiguration is set on active ECS Task Definitions</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01228.html">Checks if the latest active revision of an Amazon ECS task definition configures Linux containers to run as non-root users.The rule is NON_COMPLIANT if root user is specified or user configuration is absent for any container</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01424.html">Checks if the latest active revision of an Amazon ECS task definition configures Windows containers to run as non-administrator users</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00190.html">Checks if the networking mode for active ECSTaskDefinitions is set to &#39;awsvpc&#39;</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00770.html">Checks if the privileged parameter in the container definition of ECSTaskDefinitions is set to &#39;true&#39;</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01307.html">ECS Task Definitions should use in-transit encryption for EFS volumes</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00299.html">ECS capacity providers should have managed termination protection enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01058.html">ECS clusters should be tagged</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00730.html">ECS clusters should use Container Insights</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00959.html">ECS services should be tagged</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00882.html">ECS services should not have public IP addresses assigned to them automatically</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00584.html">ECS task definitions should be tagged</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00502.html">ECS task definitions should configure containers to be limited to read-only access to root filesystems</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01385.html">ECS task definitions should configure non-administrator users in Windows container definitions</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01035.html">ECS task definitions should configure non-root users in Linux container definitions</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01365.html">ECS task definitions should have a logging configuration</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00532.html">ECS task definitions should not use host network mode</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01116.html">ECS task sets should not automatically assign public IP addresses</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00139.html">Require AWS ECS Fargate Services to run on the latest Fargate platform version</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01225.html">Require Amazon ECS containers to allow read-only access to the root filesystem</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01302.html">Require Amazon ECS services not to assign public IP addresses automatically</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01138.html">Require Amazon ECS task definitions to have secure networking modes and user definitions</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01458.html">Require Amazon ECS tasks to use &#39;awsvpc&#39; networking mode</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00652.html">Require an Amazon ECS container to run as non-privileged</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01169.html">Require an Amazon ECS task definition to have a specific memory usage limit</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00196.html">Require an active Amazon ECS task definition to have a logging configuration</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01317.html">Require any Amazon ECS cluster to have container insights activated</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01372.html">Require any Amazon ECS task definition to specify a user that is not the root</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00412.html">Require that Amazon ECS task definitions do not pass secrets as container environment variables</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01269.html">Require that Amazon ECS task definitions do not share the host&#39;s process namespace</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01078.html">Secrets should not be passed as container environment variables</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-</ul>
+<table id="control-list" class="data-table control-table">
+  <thead>
+    <tr>
+      <th scope="col">Severity</th>
+      <th scope="col">Behavior</th>
+      <th scope="col">Impl</th>
+      <th scope="col">Control</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01447.html">Checks if AWS ECS Service has property PropagateTags with value of either SERVICE or TASK_DEFINITION</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00811.html">Checks if Amazon ECS Task Definitions with EFS volumes have in-transit encryption enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00449.html">Checks if Amazon ECS capacity providers have tags</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00107.html">Checks if Amazon ECS task definitions with host network mode have privileged OR nonroot in the container definition</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01472.html">Checks if Amazon Elastic Container Service (Amazon ECS) Containers only have read-only access to its root filesystems</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01456.html">Checks if Amazon Elastic Container Service (ECS) task definitions have a set memory limit for its container definitions</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01374.html">Checks if Amazon Elastic Container Service clusters have container insights enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00380.html">Checks if ECSTaskDefinitions are configured to share a host&#39;s process namespace with its Amazon Elastic Container Service (Amazon ECS) containers</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01015.html">Checks if ECSTaskDefinitions specify a user for Amazon Elastic Container Service (Amazon ECS) EC2 launch type containers to run on</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00691.html">Checks if an Amazon ECS Capacity provider containing Auto Scaling groups has managed termination protection enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01275.html">Checks if logConfiguration is set on active ECS Task Definitions</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01228.html">Checks if the latest active revision of an Amazon ECS task definition configures Linux containers to run as non-root users.The rule is NON_COMPLIANT if root user is specified or user configuration is absent for any container</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01424.html">Checks if the latest active revision of an Amazon ECS task definition configures Windows containers to run as non-administrator users</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00190.html">Checks if the networking mode for active ECSTaskDefinitions is set to &#39;awsvpc&#39;</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00770.html">Checks if the privileged parameter in the container definition of ECSTaskDefinitions is set to &#39;true&#39;</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_01307.html">ECS Task Definitions should use in-transit encryption for EFS volumes</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00299.html">ECS capacity providers should have managed termination protection enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_01058.html">ECS clusters should be tagged</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00730.html">ECS clusters should use Container Insights</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00959.html">ECS services should be tagged</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00882.html">ECS services should not have public IP addresses assigned to them automatically</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00584.html">ECS task definitions should be tagged</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00502.html">ECS task definitions should configure containers to be limited to read-only access to root filesystems</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_01385.html">ECS task definitions should configure non-administrator users in Windows container definitions</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_01035.html">ECS task definitions should configure non-root users in Linux container definitions</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_01365.html">ECS task definitions should have a logging configuration</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00532.html">ECS task definitions should not use host network mode</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_01116.html">ECS task sets should not automatically assign public IP addresses</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00139.html">Require AWS ECS Fargate Services to run on the latest Fargate platform version</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_01225.html">Require Amazon ECS containers to allow read-only access to the root filesystem</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_01302.html">Require Amazon ECS services not to assign public IP addresses automatically</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_01138.html">Require Amazon ECS task definitions to have secure networking modes and user definitions</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_01458.html">Require Amazon ECS tasks to use &#39;awsvpc&#39; networking mode</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00652.html">Require an Amazon ECS container to run as non-privileged</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_01169.html">Require an Amazon ECS task definition to have a specific memory usage limit</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_00196.html">Require an active Amazon ECS task definition to have a logging configuration</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_01317.html">Require any Amazon ECS cluster to have container insights activated</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_01372.html">Require any Amazon ECS task definition to specify a user that is not the root</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_00412.html">Require that Amazon ECS task definitions do not pass secrets as container environment variables</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_01269.html">Require that Amazon ECS task definitions do not share the host&#39;s process namespace</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_01078.html">Secrets should not be passed as container environment variables</a></td>
+</tr>
+  </tbody>
+</table>
 </main>
   <aside></aside>
   <footer class="site-footer">

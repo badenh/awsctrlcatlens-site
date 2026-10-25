@@ -83,22 +83,102 @@
   </p>
 </section>
 
-<ul id="control-list" class="control-list">
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00556.html">ActiveMQ brokers should stream audit logs to CloudWatch</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00999.html">ActiveMQ brokers should use active/standby deployment mode</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01479.html">Amazon MQ brokers should be tagged</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00949.html">Checks if Amazon MQ ActiveMQ brokers use the LDAP authentication strategy to secure the broker</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01272.html">Checks if Amazon MQ brokers are not publicly accessible</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00813.html">Checks if Amazon MQ brokers have general logging enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01192.html">Checks if an Amazon MQ broker has CloudWatch audit logging enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00468.html">Checks if an Amazon MQ for ActiveMQ single-instance broker using the mq.m5 instance type family is configured with Amazon Elastic File System (EFS) for broker storage</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01149.html">Checks if automatic minor version upgrades are enabled for Amazon MQ brokers</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00277.html">Checks the deployment mode configured for Amazon MQ ActiveMQ broker engine</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00874.html">Checks the deployment mode configured for the Amazon MQ RabbitMQ broker engine</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00020.html">RabbitMQ brokers should use cluster deployment mode</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:low behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01427.html">Require an Amazon MQ ActiveMQ broker to use use active/standby deployment mode for high availability</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:low behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00977.html">Require an Amazon MQ Rabbit MQ broker to use Multi-AZ cluster mode for high availability</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-</ul>
+<table id="control-list" class="data-table control-table">
+  <thead>
+    <tr>
+      <th scope="col">Severity</th>
+      <th scope="col">Behavior</th>
+      <th scope="col">Impl</th>
+      <th scope="col">Control</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00556.html">ActiveMQ brokers should stream audit logs to CloudWatch</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00999.html">ActiveMQ brokers should use active/standby deployment mode</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_01479.html">Amazon MQ brokers should be tagged</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00949.html">Checks if Amazon MQ ActiveMQ brokers use the LDAP authentication strategy to secure the broker</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01272.html">Checks if Amazon MQ brokers are not publicly accessible</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00813.html">Checks if Amazon MQ brokers have general logging enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01192.html">Checks if an Amazon MQ broker has CloudWatch audit logging enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00468.html">Checks if an Amazon MQ for ActiveMQ single-instance broker using the mq.m5 instance type family is configured with Amazon Elastic File System (EFS) for broker storage</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01149.html">Checks if automatic minor version upgrades are enabled for Amazon MQ brokers</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00277.html">Checks the deployment mode configured for Amazon MQ ActiveMQ broker engine</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00874.html">Checks the deployment mode configured for the Amazon MQ RabbitMQ broker engine</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00020.html">RabbitMQ brokers should use cluster deployment mode</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_01427.html">Require an Amazon MQ ActiveMQ broker to use use active/standby deployment mode for high availability</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_00977.html">Require an Amazon MQ Rabbit MQ broker to use Multi-AZ cluster mode for high availability</a></td>
+</tr>
+  </tbody>
+</table>
 </main>
   <aside></aside>
   <footer class="site-footer">

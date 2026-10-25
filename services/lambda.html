@@ -84,29 +84,144 @@
   </p>
 </section>
 
-<ul id="control-list" class="control-list">
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00361.html">Checks if AWS Lambda functions have a description</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00258.html">Checks if AWS Lambda functions have the log format set to JSON for more control and better readability</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01286.html">Checks if AWS X-Ray is enabled on AWS Lambda functions.The rule is NON_COMPLIANT if X-Ray tracing is disabled for a Lambda function</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00554.html">Checks if Lambda has more than 1 availability zone associated</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01452.html">Checks if a Lambda function is allowed access to a virtual private cloud (VPC)</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01284.html">Checks if a Lambda function is configured with a dead-letter queue</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00926.html">Checks if the Lambda function is configured with a function-level concurrent execution limit</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01020.html">Detect whether the AWS Lambda function policy attached to the Lambda resource blocks public access</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00557.html">Disallow changes to Lambda functions set up by Control Tower</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00525.html">Lambda function policies should prohibit public access</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00567.html">Lambda functions should be in a VPC</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00124.html">Lambda functions should be tagged</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00633.html">Lambda functions should have AWS X-Ray active tracing enabled</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00064.html">Lambda functions should use supported runtimes</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:critical behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00901.html">Require AWS Lambda function policies to prohibit public access</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01124.html">Require an AWS Lambda function URL CORS policy to restrict access to specific origins</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:critical behavior:proactive impl_type:aws::cloudformation::type::hook impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00281.html">Require an AWS Lambda function URL to use AWS IAM-based authentication</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:high behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00965.html">Require an AWS Lambda function or AWS Lambda function URL to be configured for access only to principals within your AWS account</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:low behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00757.html">Require an AWS Lambda function to be in a customer-managed Amazon Virtual Private Cloud (VPC)</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:critical behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00262.html">Require an AWS Lambda layer permission to grant access to an AWS organization or specific AWS account</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00601.html">VPC Lambda functions should operate in multiple Availability Zones</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-</ul>
+<table id="control-list" class="data-table control-table">
+  <thead>
+    <tr>
+      <th scope="col">Severity</th>
+      <th scope="col">Behavior</th>
+      <th scope="col">Impl</th>
+      <th scope="col">Control</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00361.html">Checks if AWS Lambda functions have a description</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00258.html">Checks if AWS Lambda functions have the log format set to JSON for more control and better readability</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01286.html">Checks if AWS X-Ray is enabled on AWS Lambda functions.The rule is NON_COMPLIANT if X-Ray tracing is disabled for a Lambda function</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00554.html">Checks if Lambda has more than 1 availability zone associated</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01452.html">Checks if a Lambda function is allowed access to a virtual private cloud (VPC)</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01284.html">Checks if a Lambda function is configured with a dead-letter queue</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00926.html">Checks if the Lambda function is configured with a function-level concurrent execution limit</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01020.html">Detect whether the AWS Lambda function policy attached to the Lambda resource blocks public access</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00557.html">Disallow changes to Lambda functions set up by Control Tower</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00525.html">Lambda function policies should prohibit public access</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00567.html">Lambda functions should be in a VPC</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00124.html">Lambda functions should be tagged</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00633.html">Lambda functions should have AWS X-Ray active tracing enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00064.html">Lambda functions should use supported runtimes</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_00901.html">Require AWS Lambda function policies to prohibit public access</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_01124.html">Require an AWS Lambda function URL CORS policy to restrict access to specific origins</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:proactive impl_type:aws::cloudformation::type::hook impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00281.html">Require an AWS Lambda function URL to use AWS IAM-based authentication</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00965.html">Require an AWS Lambda function or AWS Lambda function URL to be configured for access only to principals within your AWS account</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_00757.html">Require an AWS Lambda function to be in a customer-managed Amazon Virtual Private Cloud (VPC)</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_00262.html">Require an AWS Lambda layer permission to grant access to an AWS organization or specific AWS account</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00601.html">VPC Lambda functions should operate in multiple Availability Zones</a></td>
+</tr>
+  </tbody>
+</table>
 </main>
   <aside></aside>
   <footer class="site-footer">

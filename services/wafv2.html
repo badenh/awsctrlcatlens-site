@@ -83,17 +83,72 @@
   </p>
 </section>
 
-<ul id="control-list" class="control-list">
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00849.html">AWS WAF rules should have CloudWatch metrics enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00333.html">AWS WAF web ACL logging should be enabled</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00173.html">AWS WAF web ACLs should have at least one rule or rule group</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00144.html">Checks if Amazon CloudWatch security metrics collection on AWS WAFv2 rule groups is enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00212.html">Checks if WAFv2 Rule Groups contain rules</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00015.html">Checks if a WAFv2 Web ACL contains any WAF rules or WAF rule groups</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01330.html">Checks if logging is enabled on AWS WAFv2 regional and global web access control lists (web ACLs)</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00304.html">Require an AWS WAF rule group to be non-empty</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01431.html">Require an AWS WAF web ACL to be non-empty</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-</ul>
+<table id="control-list" class="data-table control-table">
+  <thead>
+    <tr>
+      <th scope="col">Severity</th>
+      <th scope="col">Behavior</th>
+      <th scope="col">Impl</th>
+      <th scope="col">Control</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00849.html">AWS WAF rules should have CloudWatch metrics enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00333.html">AWS WAF web ACL logging should be enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00173.html">AWS WAF web ACLs should have at least one rule or rule group</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00144.html">Checks if Amazon CloudWatch security metrics collection on AWS WAFv2 rule groups is enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00212.html">Checks if WAFv2 Rule Groups contain rules</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00015.html">Checks if a WAFv2 Web ACL contains any WAF rules or WAF rule groups</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01330.html">Checks if logging is enabled on AWS WAFv2 regional and global web access control lists (web ACLs)</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_00304.html">Require an AWS WAF rule group to be non-empty</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_01431.html">Require an AWS WAF web ACL to be non-empty</a></td>
+</tr>
+  </tbody>
+</table>
 </main>
   <aside></aside>
   <footer class="site-footer">

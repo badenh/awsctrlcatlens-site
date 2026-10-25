@@ -83,17 +83,72 @@
   </p>
 </section>
 
-<ul id="control-list" class="control-list">
-  <li data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_01457.html">Deny access to AWS based on the requested AWS Region for an organizational unit</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_01210.html">Deny access to AWS based on the requested AWS Region for the landing zone</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:high behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00465.html">Disallow actions as a root user</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00785.html">Disallow creation of access keys for the root user</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::declarative_policy_ec2 "><a href="/controls/canon_01176.html">Disallow public sharing of Amazon Machine Images (AMIs)</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::DECLARATIVE_POLICY_EC2</span></li>
-  <li data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00419.html">Disallow the use of Amazon EC2 VM import and export</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:high behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00456.html">Require that Amazon EBS direct APIs are not called</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_01164.html">Require that an Amazon EBS snapshot cannot be publicly restorable</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::resource_control_policy "><a href="/controls/canon_00984.html">Require that the organization&#39;s AWS Security Token Service resources are accessible only by IAM principals that belong to the organization, or by an AWS service</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::RESOURCE_CONTROL_POLICY</span></li>
-</ul>
+<table id="control-list" class="data-table control-table">
+  <thead>
+    <tr>
+      <th scope="col">Severity</th>
+      <th scope="col">Behavior</th>
+      <th scope="col">Impl</th>
+      <th scope="col">Control</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_01457.html">Deny access to AWS based on the requested AWS Region for an organizational unit</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_01210.html">Deny access to AWS based on the requested AWS Region for the landing zone</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00465.html">Disallow actions as a root user</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00785.html">Disallow creation of access keys for the root user</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::declarative_policy_ec2 ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::DECLARATIVE_POLICY_EC2</span></td>
+  <td><a href="/controls/canon_01176.html">Disallow public sharing of Amazon Machine Images (AMIs)</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00419.html">Disallow the use of Amazon EC2 VM import and export</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00456.html">Require that Amazon EBS direct APIs are not called</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_01164.html">Require that an Amazon EBS snapshot cannot be publicly restorable</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::resource_control_policy ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::RESOURCE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00984.html">Require that the organization&#39;s AWS Security Token Service resources are accessible only by IAM principals that belong to the organization, or by an AWS service</a></td>
+</tr>
+  </tbody>
+</table>
 </main>
   <aside></aside>
   <footer class="site-footer">

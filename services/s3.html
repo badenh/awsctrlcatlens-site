@@ -84,78 +84,438 @@
   </p>
 </section>
 
-<ul id="control-list" class="control-list">
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00668.html">ACLs should not be used to manage user access to S3 general purpose buckets</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01414.html">Checks if Amazon S3 access points have block public access settings enabled</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00159.html">Checks if Amazon S3 buckets have tags</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01041.html">Checks if Amazon Simple Storage Service (Amazon S3) Buckets allow user permissions through access control lists (ACLs)</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00301.html">Checks if Amazon Simple Storage Service (Amazon S3) buckets are in a logically air-gapped vault</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00123.html">Checks if Amazon Simple Storage Service (Amazon S3) buckets are protected by a backup plan</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::cloudformation::type::hook impl_type:aws::config::configrule "><a href="/controls/canon_00078.html">Checks if Amazon Simple Storage Service (Amazon S3) version enabled buckets have lifecycle policy configured</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00921.html">Checks if MFA Delete is enabled in the Amazon Simple Storage Service (Amazon S3) bucket versioning configuration</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00184.html">Checks if S3 buckets are publicly accessible</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01232.html">Checks if S3 buckets have default encryption enabled or have bucket policies that explicitly deny put-object requests without server side encryption using AES-256 or AWS KMS</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01337.html">Checks if S3 buckets have policies that require requests to use SSL/TLS</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00035.html">Checks if S3 buckets have replication rules enabled</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01367.html">Checks if a lifecycle rule is configured for an Amazon Simple Storage Service (Amazon S3) bucket</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00455.html">Checks if a recovery point was created for Amazon Simple Storage Service (Amazon S3)</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00962.html">Checks if an Amazon S3 access point does not allow access from the internet (NetworkOrigin is VPC)</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01055.html">Checks if logging is enabled for your S3 buckets</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01392.html">Checks if the S3 bucket has lock enabled, by default</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00623.html">Checks if the S3 buckets are encrypted with AWS Key Management Service (AWS KMS)</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01373.html">Checks if you have enabled S3 Cross-Region Replication for your Amazon S3 buckets</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00551.html">Checks that the access granted by the Amazon S3 bucket is restricted to any of the AWS principals, federated users, service principals, IP addresses, or VPCs that you provide</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00943.html">Checks whether the required public access block settings are configured from account level</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00607.html">Detect whether Amazon S3 settings to block public access are set as true for the account</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_01294.html">Disallow Changes to Bucket Policy for AWS Control Tower Created S3 Buckets in Log Archive</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00065.html">Disallow Changes to Encryption Configuration for AWS Control Tower Created S3 Buckets in Log Archive</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00536.html">Disallow Changes to Lifecycle Configuration for AWS Control Tower Created S3 Buckets in Log Archive</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00489.html">Disallow Changes to Logging Configuration for AWS Control Tower Created S3 Buckets in Log Archive</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01347.html">Disallow S3 buckets that are not versioning enabled</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00314.html">Disallow cross region replication for S3 buckets</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00541.html">Disallow delete actions on S3 buckets without MFA</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00251.html">Disallow deletion of log archive</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_01454.html">Disallow modification of an Amazon S3 bucket default encryption</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_01231.html">Disallow modification of an Amazon S3 bucket that stores AWS Backup reports for AWS Control Tower</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:medium behavior:preventive impl_type:aws::cloudformation::type::hook impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_01082.html">Disallow modification of server access logging for an Amazon S3 bucket</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_01056.html">Disallow modifications to AWS Config recorder Amazon S3 buckets managed by AWS Control Tower</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00169.html">Disallow modifications to Amazon S3 buckets managed by AWS Control Tower</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_00405.html">Disallow policy changes to an Amazon S3 bucket</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00780.html">Disallow public read access to S3 buckets</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00864.html">Disallow public read access to log archive</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_00860.html">Disallow public write access to S3 buckets</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule "><a href="/controls/canon_01166.html">Disallow public write access to log archive</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01230.html">Ensure S3 bucket access logging is enabled on the CloudTrail S3 bucket</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:high behavior:preventive impl_type:aws::organizations::policy::resource_control_policy "><a href="/controls/canon_01093.html">Require all object uploads to Amazon S3 buckets to use server-side encryption with an AWS KMS key (SSE-KMS)</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::RESOURCE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:high behavior:preventive impl_type:aws::organizations::policy::resource_control_policy "><a href="/controls/canon_00094.html">Require all requests to Amazon S3 resources use authentication based on an Authorization header</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::RESOURCE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:critical behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01453.html">Require an Amazon S3 access point to have a Block Public Access (BPA) configuration with all options set to true</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00786.html">Require an Amazon S3 bucket to have block public access settings configured</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00526.html">Require an Amazon S3 bucket to have event notifications configured</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01038.html">Require an Amazon S3 bucket to have server-side encryption configured using an AWS KMS key</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01397.html">Require an Amazon S3 buckets to have versioning configured and a lifecycle policy</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:high behavior:preventive impl_type:aws::organizations::policy::resource_control_policy "><a href="/controls/canon_00666.html">Require encryption of data in transit for calls to Amazon S3 resources</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::RESOURCE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:high behavior:preventive impl_type:aws::organizations::policy::resource_control_policy "><a href="/controls/canon_00024.html">Require requests to Amazon S3 resources to use a minimum TLS version of 1.3</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::RESOURCE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01075.html">Require that Amazon S3 bucket requests use Secure Sockets Layer</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_00326.html">Require that an Amazon S3 bucket does not manage user access with an access control list (ACL)</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook "><a href="/controls/canon_01277.html">Require that an Amazon S3 bucket has S3 Object Lock activated</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-proactive">proactive</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></li>
-  <li data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::resource_control_policy "><a href="/controls/canon_00671.html">Require that the organization&#39;s Amazon S3 resources are accessible only by IAM principals that belong to the organization or by an AWS service</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::RESOURCE_CONTROL_POLICY</span></li>
-  <li data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01435.html">S3 Multi-Region Access Points should have block public access settings enabled</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00941.html">S3 general purpose bucket policies should restrict access to other AWS accounts</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00234.html">S3 general purpose buckets should be encrypted at rest with AWS KMS keys</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00215.html">S3 general purpose buckets should block public access</a> <span class="badge badge-severity-high">high</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01061.html">S3 general purpose buckets should block public read access</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:critical behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00358.html">S3 general purpose buckets should block public write access</a> <span class="badge badge-severity-critical">critical</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01137.html">S3 general purpose buckets should have Lifecycle configurations</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01382.html">S3 general purpose buckets should have MFA delete enabled</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00354.html">S3 general purpose buckets should have Object Lock enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00972.html">S3 general purpose buckets should have block public access settings enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00681.html">S3 general purpose buckets should have server access logging enabled</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::cloudformation::type::hook impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00801.html">S3 general purpose buckets should have versioning enabled</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00232.html">S3 general purpose buckets should require requests to use SSL</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_00899.html">S3 general purpose buckets should use cross-Region replication</a> <span class="badge badge-severity-low">low</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol "><a href="/controls/canon_01052.html">S3 general purpose buckets with versioning enabled should have Lifecycle configurations</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-detective">detective</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></li>
-  <li data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::service_control_policy "><a href="/controls/canon_01417.html">Set a retention policy for log archive</a> <span class="badge badge-severity-medium">medium</span> <span class="badge badge-behavior-preventive">preventive</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></li>
-</ul>
+<table id="control-list" class="data-table control-table">
+  <thead>
+    <tr>
+      <th scope="col">Severity</th>
+      <th scope="col">Behavior</th>
+      <th scope="col">Impl</th>
+      <th scope="col">Control</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00668.html">ACLs should not be used to manage user access to S3 general purpose buckets</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_01414.html">Checks if Amazon S3 access points have block public access settings enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00159.html">Checks if Amazon S3 buckets have tags</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01041.html">Checks if Amazon Simple Storage Service (Amazon S3) Buckets allow user permissions through access control lists (ACLs)</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00301.html">Checks if Amazon Simple Storage Service (Amazon S3) buckets are in a logically air-gapped vault</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00123.html">Checks if Amazon Simple Storage Service (Amazon S3) buckets are protected by a backup plan</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::cloudformation::type::hook impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00078.html">Checks if Amazon Simple Storage Service (Amazon S3) version enabled buckets have lifecycle policy configured</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00921.html">Checks if MFA Delete is enabled in the Amazon Simple Storage Service (Amazon S3) bucket versioning configuration</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00184.html">Checks if S3 buckets are publicly accessible</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01232.html">Checks if S3 buckets have default encryption enabled or have bucket policies that explicitly deny put-object requests without server side encryption using AES-256 or AWS KMS</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01337.html">Checks if S3 buckets have policies that require requests to use SSL/TLS</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00035.html">Checks if S3 buckets have replication rules enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01367.html">Checks if a lifecycle rule is configured for an Amazon Simple Storage Service (Amazon S3) bucket</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00455.html">Checks if a recovery point was created for Amazon Simple Storage Service (Amazon S3)</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00962.html">Checks if an Amazon S3 access point does not allow access from the internet (NetworkOrigin is VPC)</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01055.html">Checks if logging is enabled for your S3 buckets</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01392.html">Checks if the S3 bucket has lock enabled, by default</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00623.html">Checks if the S3 buckets are encrypted with AWS Key Management Service (AWS KMS)</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01373.html">Checks if you have enabled S3 Cross-Region Replication for your Amazon S3 buckets</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00551.html">Checks that the access granted by the Amazon S3 bucket is restricted to any of the AWS principals, federated users, service principals, IP addresses, or VPCs that you provide</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00943.html">Checks whether the required public access block settings are configured from account level</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00607.html">Detect whether Amazon S3 settings to block public access are set as true for the account</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_01294.html">Disallow Changes to Bucket Policy for AWS Control Tower Created S3 Buckets in Log Archive</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00065.html">Disallow Changes to Encryption Configuration for AWS Control Tower Created S3 Buckets in Log Archive</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00536.html">Disallow Changes to Lifecycle Configuration for AWS Control Tower Created S3 Buckets in Log Archive</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00489.html">Disallow Changes to Logging Configuration for AWS Control Tower Created S3 Buckets in Log Archive</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01347.html">Disallow S3 buckets that are not versioning enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00314.html">Disallow cross region replication for S3 buckets</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00541.html">Disallow delete actions on S3 buckets without MFA</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00251.html">Disallow deletion of log archive</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_01454.html">Disallow modification of an Amazon S3 bucket default encryption</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_01231.html">Disallow modification of an Amazon S3 bucket that stores AWS Backup reports for AWS Control Tower</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:preventive impl_type:aws::cloudformation::type::hook impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_01082.html">Disallow modification of server access logging for an Amazon S3 bucket</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_01056.html">Disallow modifications to AWS Config recorder Amazon S3 buckets managed by AWS Control Tower</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00169.html">Disallow modifications to Amazon S3 buckets managed by AWS Control Tower</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00405.html">Disallow policy changes to an Amazon S3 bucket</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00780.html">Disallow public read access to S3 buckets</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00864.html">Disallow public read access to log archive</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_00860.html">Disallow public write access to S3 buckets</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:detective impl_type:aws::config::configrule ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::Config::ConfigRule</span></td>
+  <td><a href="/controls/canon_01166.html">Disallow public write access to log archive</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_01230.html">Ensure S3 bucket access logging is enabled on the CloudTrail S3 bucket</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:preventive impl_type:aws::organizations::policy::resource_control_policy ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::RESOURCE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_01093.html">Require all object uploads to Amazon S3 buckets to use server-side encryption with an AWS KMS key (SSE-KMS)</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:preventive impl_type:aws::organizations::policy::resource_control_policy ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::RESOURCE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00094.html">Require all requests to Amazon S3 resources use authentication based on an Authorization header</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_01453.html">Require an Amazon S3 access point to have a Block Public Access (BPA) configuration with all options set to true</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_00786.html">Require an Amazon S3 bucket to have block public access settings configured</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook impl_type:aws::config::configrule impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::Config::ConfigRule</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00526.html">Require an Amazon S3 bucket to have event notifications configured</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_01038.html">Require an Amazon S3 bucket to have server-side encryption configured using an AWS KMS key</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_01397.html">Require an Amazon S3 buckets to have versioning configured and a lifecycle policy</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:preventive impl_type:aws::organizations::policy::resource_control_policy ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::RESOURCE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00666.html">Require encryption of data in transit for calls to Amazon S3 resources</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:preventive impl_type:aws::organizations::policy::resource_control_policy ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::RESOURCE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00024.html">Require requests to Amazon S3 resources to use a minimum TLS version of 1.3</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_01075.html">Require that Amazon S3 bucket requests use Secure Sockets Layer</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_00326.html">Require that an Amazon S3 bucket does not manage user access with an access control list (ACL)</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:proactive impl_type:aws::cloudformation::type::hook ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-proactive">proactive</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span></td>
+  <td><a href="/controls/canon_01277.html">Require that an Amazon S3 bucket has S3 Object Lock activated</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::resource_control_policy ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::RESOURCE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_00671.html">Require that the organization&#39;s Amazon S3 resources are accessible only by IAM principals that belong to the organization or by an AWS service</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_01435.html">S3 Multi-Region Access Points should have block public access settings enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00941.html">S3 general purpose bucket policies should restrict access to other AWS accounts</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00234.html">S3 general purpose buckets should be encrypted at rest with AWS KMS keys</a></td>
+</tr>
+    <tr data-filter-tags="severity:high behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-high">high</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00215.html">S3 general purpose buckets should block public access</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_01061.html">S3 general purpose buckets should block public read access</a></td>
+</tr>
+    <tr data-filter-tags="severity:critical behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-critical">critical</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00358.html">S3 general purpose buckets should block public write access</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_01137.html">S3 general purpose buckets should have Lifecycle configurations</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_01382.html">S3 general purpose buckets should have MFA delete enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00354.html">S3 general purpose buckets should have Object Lock enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00972.html">S3 general purpose buckets should have block public access settings enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00681.html">S3 general purpose buckets should have server access logging enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::cloudformation::type::hook impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::CloudFormation::Type::HOOK</span> <span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00801.html">S3 general purpose buckets should have versioning enabled</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00232.html">S3 general purpose buckets should require requests to use SSL</a></td>
+</tr>
+    <tr data-filter-tags="severity:low behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-low">low</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_00899.html">S3 general purpose buckets should use cross-Region replication</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:detective impl_type:aws::securityhub::securitycontrol ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-detective">detective</span></td>
+  <td><span class="badge badge-impl">AWS::SecurityHub::SecurityControl</span></td>
+  <td><a href="/controls/canon_01052.html">S3 general purpose buckets with versioning enabled should have Lifecycle configurations</a></td>
+</tr>
+    <tr data-filter-tags="severity:medium behavior:preventive impl_type:aws::organizations::policy::service_control_policy ">
+  <td><span class="badge badge-severity-medium">medium</span></td>
+  <td><span class="badge badge-behavior-preventive">preventive</span></td>
+  <td><span class="badge badge-impl">AWS::Organizations::Policy::SERVICE_CONTROL_POLICY</span></td>
+  <td><a href="/controls/canon_01417.html">Set a retention policy for log archive</a></td>
+</tr>
+  </tbody>
+</table>
 </main>
   <aside></aside>
   <footer class="site-footer">

@@ -56,346 +56,648 @@ links to a crosswalk page showing equivalents in other frameworks.</p>
   </p>
 </section>
 
-<ul class="framework-items">
-  <li>
-    <strong>1.4</strong>
-      &rarr; <a href="/controls/canon_01488.html">Checks if Amazon EC2 client VPN endpoints have tags</a>
-    &middot; <a href="/crosswalk/cis-v7-1/1-4.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>1.5</strong>
-      &rarr; <a href="/controls/canon_01355.html">Checks if Amazon Fraud Detector labels have tags</a>
-    &middot; <a href="/crosswalk/cis-v7-1/1-5.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>10.1</strong>
-      &rarr; <a href="/controls/canon_01329.html">Checks if Amazon ElastiCache clusters (Valkey or Redis OSS) have automatic backup turned on</a>
-    &middot; <a href="/crosswalk/cis-v7-1/10-1.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>10.2</strong>
-      &rarr; <a href="/controls/canon_01340.html">Checks if a recovery point was created for AWS Backup-Gateway VirtualMachines</a>
-    &middot; <a href="/crosswalk/cis-v7-1/10-2.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>10.3</strong>
-      &rarr; <a href="/controls/canon_00804.html">Checks if AWS DataSync tasks have data verification enabled to perform additional verification at the end of your transfer</a>
-    &middot; <a href="/crosswalk/cis-v7-1/10-3.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>10.4</strong>
-      &rarr; <a href="/controls/canon_01436.html">Checks if a recovery point is encrypted</a>
-    &middot; <a href="/crosswalk/cis-v7-1/10-4.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>11.1</strong>
-      &rarr; <a href="/controls/canon_00749.html">Network Firewall firewalls should have subnet change protection enabled</a>
-    &middot; <a href="/crosswalk/cis-v7-1/11-1.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>11.2</strong>
-      &rarr; <a href="/controls/canon_00550.html">Require any AWS WAF Classic regional rule to have a condition</a>
-        <span class="muted">(shared with 3 other items)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/11-2.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>11.3</strong>
-      &rarr; <a href="/controls/canon_00955.html">Require that Amazon EC2 launch templates restrict the token hop limit to a maximum of one</a>
-    &middot; <a href="/crosswalk/cis-v7-1/11-3.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>11.4</strong>
-      &rarr; <a href="/controls/canon_01025.html">Require an AWS Elastic Beanstalk environment to have managed platform updates configured</a>
-    &middot; <a href="/crosswalk/cis-v7-1/11-4.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>12.1</strong>
-      &rarr; <a href="/controls/canon_00550.html">Require any AWS WAF Classic regional rule to have a condition</a>
-        <span class="muted">(shared with 3 other items)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/12-1.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>12.2</strong>
-      &rarr; <a href="/controls/canon_00528.html">Checks if a Network Load Balancer scheme is internal</a>
-    &middot; <a href="/crosswalk/cis-v7-1/12-2.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>12.3</strong>
-      &rarr; <a href="/controls/canon_01470.html">Checks if an Amazon Elastic File System (Amazon EFS) mount target is not associated with a public subnet</a>
-    &middot; <a href="/crosswalk/cis-v7-1/12-3.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>12.4</strong>
-      &rarr; <a href="/controls/canon_01356.html">Network ACLs should not allow ingress from 0.0.0.0/0 to port 22 or port 3389</a>
-    &middot; <a href="/crosswalk/cis-v7-1/12-4.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>12.6</strong>
-      &rarr; <a href="/controls/canon_01495.html">GuardDuty S3 Protection should be enabled</a>
-        <span class="muted">(shared with 1 other item)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/12-6.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>12.7</strong>
-      &rarr; <a href="/controls/canon_00550.html">Require any AWS WAF Classic regional rule to have a condition</a>
-        <span class="muted">(shared with 3 other items)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/12-7.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>12.8</strong>
-      &rarr; <a href="/controls/canon_01299.html">Amazon Connect instances should have CloudWatch logging enabled</a>
-    &middot; <a href="/crosswalk/cis-v7-1/12-8.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>12.9</strong>
-      &rarr; <a href="/controls/canon_00550.html">Require any AWS WAF Classic regional rule to have a condition</a>
-        <span class="muted">(shared with 3 other items)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/12-9.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>13.1</strong>
-      &rarr; <a href="/controls/canon_00762.html">Require an Amazon RDS database instance to copy tags to snapshots</a>
-    &middot; <a href="/crosswalk/cis-v7-1/13-1.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>13.3</strong>
-      &rarr; <a href="/controls/canon_00717.html">Require an Amazon OpenSearch Service domain to be created in a user-specified Amazon VPC</a>
-    &middot; <a href="/crosswalk/cis-v7-1/13-3.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>14.1</strong>
-      &rarr; <a href="/controls/canon_01354.html">Require an Amazon RDS database instance to have a VPC configuration</a>
-        <span class="muted">(shared with 1 other item)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/14-1.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>14.2</strong>
-      &rarr; <a href="/controls/canon_01267.html">Disallow Internet connection via RDP</a>
-    &middot; <a href="/crosswalk/cis-v7-1/14-2.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>14.4</strong>
-      &rarr; <a href="/controls/canon_01493.html">RDS for SQL Server DB instances should be encrypted in transit</a>
-    &middot; <a href="/crosswalk/cis-v7-1/14-4.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>14.5</strong>
-      &rarr; <a href="/controls/canon_01485.html">Macie automated sensitive data discovery should be enabled</a>
-    &middot; <a href="/crosswalk/cis-v7-1/14-5.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>14.6</strong>
-      &rarr; <a href="/controls/canon_01489.html">Checks if an AWS Database Migration Service (AWS DMS) endpoint for Amazon Neptune databases is configured with IAM authorization</a>
-    &middot; <a href="/crosswalk/cis-v7-1/14-6.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>14.8</strong>
-      &rarr; <a href="/controls/canon_01474.html">Checks if Amazon EC2 Spot Fleet request launch parameters set encrypted to True for attached EBS volumes</a>
-    &middot; <a href="/crosswalk/cis-v7-1/14-8.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>14.9</strong>
-      &rarr; <a href="/controls/canon_01492.html">Enable integrity validation for CloudTrail log file</a>
-    &middot; <a href="/crosswalk/cis-v7-1/14-9.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>16.2</strong>
-      &rarr; <a href="/controls/canon_00949.html">Checks if Amazon MQ ActiveMQ brokers use the LDAP authentication strategy to secure the broker</a>
-    &middot; <a href="/crosswalk/cis-v7-1/16-2.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>16.3</strong>
-      &rarr; <a href="/controls/canon_00558.html">MFA should be enabled for all IAM users that have a console password</a>
-        <span class="muted">(shared with 1 other item)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/16-3.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>16.4</strong>
-      &rarr; <a href="/controls/canon_01219.html">Require any AWS CodeBuild project environment variable to encrypt credentials in environment variables</a>
-    &middot; <a href="/crosswalk/cis-v7-1/16-4.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>16.9</strong>
-      &rarr; <a href="/controls/canon_00834.html">IAM user credentials unused for 45 days should be removed</a>
-    &middot; <a href="/crosswalk/cis-v7-1/16-9.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>18.1</strong>
-      &rarr; <a href="/controls/canon_01415.html">Checks if AWS Amplify apps automatically disconnect a branch in Amplify Hosting when you delete a branch from your Git repository</a>
-    &middot; <a href="/crosswalk/cis-v7-1/18-1.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>18.10</strong>
-      &rarr; <a href="/controls/canon_01431.html">Require an AWS WAF web ACL to be non-empty</a>
-        <span class="muted">(shared with 1 other item)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/18-10.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>18.11</strong>
-      &rarr; <a href="/controls/canon_01394.html">Checks if an Amazon Redshift Serverless namespace has changed its database name from the default value</a>
-    &middot; <a href="/crosswalk/cis-v7-1/18-11.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>18.2</strong>
-      &rarr; <a href="/controls/canon_00634.html">Checks if Amazon Simple Queue Service (Amazon SQS) queues have configuration to use dead-letter queue (DLQ)</a>
-    &middot; <a href="/crosswalk/cis-v7-1/18-2.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>18.3</strong>
-      &rarr; <a href="/controls/canon_01342.html">Checks if the currently set default version of an Amazon EC2 Launch Template requires new launched instances to use V2 of the Amazon EC2 Instance Metadata Service (IMDSv2)</a>
-        <span class="muted">(shared with 3 other items)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/18-3.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>18.4</strong>
-      &rarr; <a href="/controls/canon_01342.html">Checks if the currently set default version of an Amazon EC2 Launch Template requires new launched instances to use V2 of the Amazon EC2 Instance Metadata Service (IMDSv2)</a>
-        <span class="muted">(shared with 3 other items)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/18-4.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>18.5</strong>
-      &rarr; <a href="/controls/canon_01075.html">Require that Amazon S3 bucket requests use Secure Sockets Layer</a>
-    &middot; <a href="/crosswalk/cis-v7-1/18-5.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>2.1</strong>
-      &rarr; <a href="/controls/canon_01269.html">Require that Amazon ECS task definitions do not share the host&#39;s process namespace</a>
-    &middot; <a href="/crosswalk/cis-v7-1/2-1.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>2.10</strong>
-      &rarr; <a href="/controls/canon_01354.html">Require an Amazon RDS database instance to have a VPC configuration</a>
-        <span class="muted">(shared with 1 other item)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/2-10.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>2.2</strong>
-      &rarr; <a href="/controls/canon_01342.html">Checks if the currently set default version of an Amazon EC2 Launch Template requires new launched instances to use V2 of the Amazon EC2 Instance Metadata Service (IMDSv2)</a>
-        <span class="muted">(shared with 3 other items)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/2-2.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>3.1</strong>
-      &rarr; <a href="/controls/canon_01402.html">Checks if a private Amazon Elastic Container Registry (ECR) repository has image scanning enabled</a>
-        <span class="muted">(shared with 1 other item)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/3-1.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>3.2</strong>
-      &rarr; <a href="/controls/canon_01402.html">Checks if a private Amazon Elastic Container Registry (ECR) repository has image scanning enabled</a>
-        <span class="muted">(shared with 1 other item)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/3-2.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>3.4</strong>
-      &rarr; <a href="/controls/canon_01036.html">Checks if AWS CodeDeploy deployment groups automatically update outdated instances</a>
-    &middot; <a href="/crosswalk/cis-v7-1/3-4.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>3.5</strong>
-      &rarr; <a href="/controls/canon_01149.html">Checks if automatic minor version upgrades are enabled for Amazon MQ brokers</a>
-    &middot; <a href="/crosswalk/cis-v7-1/3-5.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>4.4</strong>
-      &rarr; <a href="/controls/canon_01293.html">Checks if the account password policy for AWS Identity and Access Management (IAM) users meets the specified requirements indicated in the parameters</a>
-    &middot; <a href="/crosswalk/cis-v7-1/4-4.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>4.5</strong>
-      &rarr; <a href="/controls/canon_00558.html">MFA should be enabled for all IAM users that have a console password</a>
-        <span class="muted">(shared with 1 other item)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/4-5.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>4.9</strong>
-      &rarr; <a href="/controls/canon_00161.html">A log metric filter and alarm should exist for usage of the &#34;root&#34; user</a>
-    &middot; <a href="/crosswalk/cis-v7-1/4-9.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>5.1</strong>
-      &rarr; <a href="/controls/canon_01322.html">Checks if AWS Batch compute environments are managed</a>
-    &middot; <a href="/crosswalk/cis-v7-1/5-1.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>5.2</strong>
-      &rarr; <a href="/controls/canon_01342.html">Checks if the currently set default version of an Amazon EC2 Launch Template requires new launched instances to use V2 of the Amazon EC2 Instance Metadata Service (IMDSv2)</a>
-        <span class="muted">(shared with 3 other items)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/5-2.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>5.4</strong>
-      &rarr; <a href="/controls/canon_00885.html">AWS Config should be enabled and use the service-linked role for resource recording</a>
-        <span class="muted">(shared with 1 other item)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/5-4.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>5.5</strong>
-      &rarr; <a href="/controls/canon_00885.html">AWS Config should be enabled and use the service-linked role for resource recording</a>
-        <span class="muted">(shared with 1 other item)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/5-5.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>6.2</strong>
-      &rarr; <a href="/controls/canon_01442.html">GuardDuty Malware Protection for EC2 should be enabled</a>
-        <span class="muted">(shared with 2 other items)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/6-2.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>6.3</strong>
-      &rarr; <a href="/controls/canon_01484.html">Athena workgroups should have logging enabled</a>
-    &middot; <a href="/crosswalk/cis-v7-1/6-3.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>6.5</strong>
-      &rarr; <a href="/controls/canon_01442.html">GuardDuty Malware Protection for EC2 should be enabled</a>
-        <span class="muted">(shared with 2 other items)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/6-5.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>6.6</strong>
-      &rarr; <a href="/controls/canon_00613.html">Require an AWS Step Functions state machine to have AWS X-Ray tracing activated</a>
-    &middot; <a href="/crosswalk/cis-v7-1/6-6.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>6.7</strong>
-      &rarr; <a href="/controls/canon_01010.html">GuardDuty EKS Audit Log Monitoring should be enabled</a>
-    &middot; <a href="/crosswalk/cis-v7-1/6-7.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>8.1</strong>
-      &rarr; <a href="/controls/canon_01495.html">GuardDuty S3 Protection should be enabled</a>
-        <span class="muted">(shared with 1 other item)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/8-1.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>8.2</strong>
-      &rarr; <a href="/controls/canon_01442.html">GuardDuty Malware Protection for EC2 should be enabled</a>
-        <span class="muted">(shared with 2 other items)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/8-2.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>8.7</strong>
-      &rarr; <a href="/controls/canon_00660.html">Checks if DNS query logging is enabled for your Amazon Route 53 public hosted zones</a>
-    &middot; <a href="/crosswalk/cis-v7-1/8-7.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>9.2</strong>
-      &rarr; <a href="/controls/canon_00816.html">Require an Elasticsearch Service domain to use a minimum TLS version of TLSv1.2</a>
-    &middot; <a href="/crosswalk/cis-v7-1/9-2.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>9.4</strong>
-      &rarr; <a href="/controls/canon_01341.html">Require any AWS Network Firewall firewall policy to drop or forward fragmented packets by default when they do not match a stateless rule</a>
-    &middot; <a href="/crosswalk/cis-v7-1/9-4.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>9.5</strong>
-      &rarr; <a href="/controls/canon_01431.html">Require an AWS WAF web ACL to be non-empty</a>
-        <span class="muted">(shared with 1 other item)</span>
-    &middot; <a href="/crosswalk/cis-v7-1/9-5.html">crosswalk</a>
-  </li>
-</ul>
+<table class="data-table framework-items-table">
+  <thead>
+    <tr>
+      <th scope="col">Item</th>
+      <th scope="col">Canonical</th>
+      <th scope="col">Shared</th>
+      <th scope="col">Crosswalk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1.4</strong></td>
+      <td>
+          <a href="/controls/canon_01488.html">Checks if Amazon EC2 client VPN endpoints have tags</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/1-4.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>1.5</strong></td>
+      <td>
+          <a href="/controls/canon_01355.html">Checks if Amazon Fraud Detector labels have tags</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/1-5.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>10.1</strong></td>
+      <td>
+          <a href="/controls/canon_01329.html">Checks if Amazon ElastiCache clusters (Valkey or Redis OSS) have automatic backup turned on</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/10-1.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>10.2</strong></td>
+      <td>
+          <a href="/controls/canon_01340.html">Checks if a recovery point was created for AWS Backup-Gateway VirtualMachines</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/10-2.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>10.3</strong></td>
+      <td>
+          <a href="/controls/canon_00804.html">Checks if AWS DataSync tasks have data verification enabled to perform additional verification at the end of your transfer</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/10-3.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>10.4</strong></td>
+      <td>
+          <a href="/controls/canon_01436.html">Checks if a recovery point is encrypted</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/10-4.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>11.1</strong></td>
+      <td>
+          <a href="/controls/canon_00749.html">Network Firewall firewalls should have subnet change protection enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/11-1.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>11.2</strong></td>
+      <td>
+          <a href="/controls/canon_00550.html">Require any AWS WAF Classic regional rule to have a condition</a>
+      </td>
+      <td>
+          <span class="muted">3 other items</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/11-2.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>11.3</strong></td>
+      <td>
+          <a href="/controls/canon_00955.html">Require that Amazon EC2 launch templates restrict the token hop limit to a maximum of one</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/11-3.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>11.4</strong></td>
+      <td>
+          <a href="/controls/canon_01025.html">Require an AWS Elastic Beanstalk environment to have managed platform updates configured</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/11-4.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>12.1</strong></td>
+      <td>
+          <a href="/controls/canon_00550.html">Require any AWS WAF Classic regional rule to have a condition</a>
+      </td>
+      <td>
+          <span class="muted">3 other items</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/12-1.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>12.2</strong></td>
+      <td>
+          <a href="/controls/canon_00528.html">Checks if a Network Load Balancer scheme is internal</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/12-2.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>12.3</strong></td>
+      <td>
+          <a href="/controls/canon_01470.html">Checks if an Amazon Elastic File System (Amazon EFS) mount target is not associated with a public subnet</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/12-3.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>12.4</strong></td>
+      <td>
+          <a href="/controls/canon_01356.html">Network ACLs should not allow ingress from 0.0.0.0/0 to port 22 or port 3389</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/12-4.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>12.6</strong></td>
+      <td>
+          <a href="/controls/canon_01495.html">GuardDuty S3 Protection should be enabled</a>
+      </td>
+      <td>
+          <span class="muted">1 other item</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/12-6.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>12.7</strong></td>
+      <td>
+          <a href="/controls/canon_00550.html">Require any AWS WAF Classic regional rule to have a condition</a>
+      </td>
+      <td>
+          <span class="muted">3 other items</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/12-7.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>12.8</strong></td>
+      <td>
+          <a href="/controls/canon_01299.html">Amazon Connect instances should have CloudWatch logging enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/12-8.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>12.9</strong></td>
+      <td>
+          <a href="/controls/canon_00550.html">Require any AWS WAF Classic regional rule to have a condition</a>
+      </td>
+      <td>
+          <span class="muted">3 other items</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/12-9.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>13.1</strong></td>
+      <td>
+          <a href="/controls/canon_00762.html">Require an Amazon RDS database instance to copy tags to snapshots</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/13-1.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>13.3</strong></td>
+      <td>
+          <a href="/controls/canon_00717.html">Require an Amazon OpenSearch Service domain to be created in a user-specified Amazon VPC</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/13-3.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>14.1</strong></td>
+      <td>
+          <a href="/controls/canon_01354.html">Require an Amazon RDS database instance to have a VPC configuration</a>
+      </td>
+      <td>
+          <span class="muted">1 other item</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/14-1.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>14.2</strong></td>
+      <td>
+          <a href="/controls/canon_01267.html">Disallow Internet connection via RDP</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/14-2.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>14.4</strong></td>
+      <td>
+          <a href="/controls/canon_01493.html">RDS for SQL Server DB instances should be encrypted in transit</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/14-4.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>14.5</strong></td>
+      <td>
+          <a href="/controls/canon_01485.html">Macie automated sensitive data discovery should be enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/14-5.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>14.6</strong></td>
+      <td>
+          <a href="/controls/canon_01489.html">Checks if an AWS Database Migration Service (AWS DMS) endpoint for Amazon Neptune databases is configured with IAM authorization</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/14-6.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>14.8</strong></td>
+      <td>
+          <a href="/controls/canon_01474.html">Checks if Amazon EC2 Spot Fleet request launch parameters set encrypted to True for attached EBS volumes</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/14-8.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>14.9</strong></td>
+      <td>
+          <a href="/controls/canon_01492.html">Enable integrity validation for CloudTrail log file</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/14-9.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>16.2</strong></td>
+      <td>
+          <a href="/controls/canon_00949.html">Checks if Amazon MQ ActiveMQ brokers use the LDAP authentication strategy to secure the broker</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/16-2.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>16.3</strong></td>
+      <td>
+          <a href="/controls/canon_00558.html">MFA should be enabled for all IAM users that have a console password</a>
+      </td>
+      <td>
+          <span class="muted">1 other item</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/16-3.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>16.4</strong></td>
+      <td>
+          <a href="/controls/canon_01219.html">Require any AWS CodeBuild project environment variable to encrypt credentials in environment variables</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/16-4.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>16.9</strong></td>
+      <td>
+          <a href="/controls/canon_00834.html">IAM user credentials unused for 45 days should be removed</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/16-9.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>18.1</strong></td>
+      <td>
+          <a href="/controls/canon_01415.html">Checks if AWS Amplify apps automatically disconnect a branch in Amplify Hosting when you delete a branch from your Git repository</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/18-1.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>18.10</strong></td>
+      <td>
+          <a href="/controls/canon_01431.html">Require an AWS WAF web ACL to be non-empty</a>
+      </td>
+      <td>
+          <span class="muted">1 other item</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/18-10.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>18.11</strong></td>
+      <td>
+          <a href="/controls/canon_01394.html">Checks if an Amazon Redshift Serverless namespace has changed its database name from the default value</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/18-11.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>18.2</strong></td>
+      <td>
+          <a href="/controls/canon_00634.html">Checks if Amazon Simple Queue Service (Amazon SQS) queues have configuration to use dead-letter queue (DLQ)</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/18-2.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>18.3</strong></td>
+      <td>
+          <a href="/controls/canon_01342.html">Checks if the currently set default version of an Amazon EC2 Launch Template requires new launched instances to use V2 of the Amazon EC2 Instance Metadata Service (IMDSv2)</a>
+      </td>
+      <td>
+          <span class="muted">3 other items</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/18-3.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>18.4</strong></td>
+      <td>
+          <a href="/controls/canon_01342.html">Checks if the currently set default version of an Amazon EC2 Launch Template requires new launched instances to use V2 of the Amazon EC2 Instance Metadata Service (IMDSv2)</a>
+      </td>
+      <td>
+          <span class="muted">3 other items</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/18-4.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>18.5</strong></td>
+      <td>
+          <a href="/controls/canon_01075.html">Require that Amazon S3 bucket requests use Secure Sockets Layer</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/18-5.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>2.1</strong></td>
+      <td>
+          <a href="/controls/canon_01269.html">Require that Amazon ECS task definitions do not share the host&#39;s process namespace</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/2-1.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>2.10</strong></td>
+      <td>
+          <a href="/controls/canon_01354.html">Require an Amazon RDS database instance to have a VPC configuration</a>
+      </td>
+      <td>
+          <span class="muted">1 other item</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/2-10.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>2.2</strong></td>
+      <td>
+          <a href="/controls/canon_01342.html">Checks if the currently set default version of an Amazon EC2 Launch Template requires new launched instances to use V2 of the Amazon EC2 Instance Metadata Service (IMDSv2)</a>
+      </td>
+      <td>
+          <span class="muted">3 other items</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/2-2.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>3.1</strong></td>
+      <td>
+          <a href="/controls/canon_01402.html">Checks if a private Amazon Elastic Container Registry (ECR) repository has image scanning enabled</a>
+      </td>
+      <td>
+          <span class="muted">1 other item</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/3-1.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>3.2</strong></td>
+      <td>
+          <a href="/controls/canon_01402.html">Checks if a private Amazon Elastic Container Registry (ECR) repository has image scanning enabled</a>
+      </td>
+      <td>
+          <span class="muted">1 other item</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/3-2.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>3.4</strong></td>
+      <td>
+          <a href="/controls/canon_01036.html">Checks if AWS CodeDeploy deployment groups automatically update outdated instances</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/3-4.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>3.5</strong></td>
+      <td>
+          <a href="/controls/canon_01149.html">Checks if automatic minor version upgrades are enabled for Amazon MQ brokers</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/3-5.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>4.4</strong></td>
+      <td>
+          <a href="/controls/canon_01293.html">Checks if the account password policy for AWS Identity and Access Management (IAM) users meets the specified requirements indicated in the parameters</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/4-4.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>4.5</strong></td>
+      <td>
+          <a href="/controls/canon_00558.html">MFA should be enabled for all IAM users that have a console password</a>
+      </td>
+      <td>
+          <span class="muted">1 other item</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/4-5.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>4.9</strong></td>
+      <td>
+          <a href="/controls/canon_00161.html">A log metric filter and alarm should exist for usage of the &#34;root&#34; user</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/4-9.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>5.1</strong></td>
+      <td>
+          <a href="/controls/canon_01322.html">Checks if AWS Batch compute environments are managed</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/5-1.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>5.2</strong></td>
+      <td>
+          <a href="/controls/canon_01342.html">Checks if the currently set default version of an Amazon EC2 Launch Template requires new launched instances to use V2 of the Amazon EC2 Instance Metadata Service (IMDSv2)</a>
+      </td>
+      <td>
+          <span class="muted">3 other items</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/5-2.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>5.4</strong></td>
+      <td>
+          <a href="/controls/canon_00885.html">AWS Config should be enabled and use the service-linked role for resource recording</a>
+      </td>
+      <td>
+          <span class="muted">1 other item</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/5-4.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>5.5</strong></td>
+      <td>
+          <a href="/controls/canon_00885.html">AWS Config should be enabled and use the service-linked role for resource recording</a>
+      </td>
+      <td>
+          <span class="muted">1 other item</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/5-5.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>6.2</strong></td>
+      <td>
+          <a href="/controls/canon_01442.html">GuardDuty Malware Protection for EC2 should be enabled</a>
+      </td>
+      <td>
+          <span class="muted">2 other items</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/6-2.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>6.3</strong></td>
+      <td>
+          <a href="/controls/canon_01484.html">Athena workgroups should have logging enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/6-3.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>6.5</strong></td>
+      <td>
+          <a href="/controls/canon_01442.html">GuardDuty Malware Protection for EC2 should be enabled</a>
+      </td>
+      <td>
+          <span class="muted">2 other items</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/6-5.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>6.6</strong></td>
+      <td>
+          <a href="/controls/canon_00613.html">Require an AWS Step Functions state machine to have AWS X-Ray tracing activated</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/6-6.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>6.7</strong></td>
+      <td>
+          <a href="/controls/canon_01010.html">GuardDuty EKS Audit Log Monitoring should be enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/6-7.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>8.1</strong></td>
+      <td>
+          <a href="/controls/canon_01495.html">GuardDuty S3 Protection should be enabled</a>
+      </td>
+      <td>
+          <span class="muted">1 other item</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/8-1.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>8.2</strong></td>
+      <td>
+          <a href="/controls/canon_01442.html">GuardDuty Malware Protection for EC2 should be enabled</a>
+      </td>
+      <td>
+          <span class="muted">2 other items</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/8-2.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>8.7</strong></td>
+      <td>
+          <a href="/controls/canon_00660.html">Checks if DNS query logging is enabled for your Amazon Route 53 public hosted zones</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/8-7.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>9.2</strong></td>
+      <td>
+          <a href="/controls/canon_00816.html">Require an Elasticsearch Service domain to use a minimum TLS version of TLSv1.2</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/9-2.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>9.4</strong></td>
+      <td>
+          <a href="/controls/canon_01341.html">Require any AWS Network Firewall firewall policy to drop or forward fragmented packets by default when they do not match a stateless rule</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/9-4.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>9.5</strong></td>
+      <td>
+          <a href="/controls/canon_01431.html">Require an AWS WAF web ACL to be non-empty</a>
+      </td>
+      <td>
+          <span class="muted">1 other item</span>
+      </td>
+      <td><a href="/crosswalk/cis-v7-1/9-5.html">view</a></td>
+    </tr>
+  </tbody>
+</table>
 
 </main>
   <aside></aside>

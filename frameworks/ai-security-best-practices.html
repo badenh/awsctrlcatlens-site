@@ -118,98 +118,198 @@ links to a crosswalk page showing equivalents in other frameworks.</p>
   </p>
 </section>
 
-<ul class="framework-items">
-  <li>
-    <strong>BedrockAgentCore.1</strong>
-      &rarr; <a href="/controls/canon_00673.html">Bedrock AgentCore runtimes should be configured with VPC network mode</a>
-    &middot; <a href="/crosswalk/ai-security-best-practices/bedrockagentcore-1.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>BedrockAgentCore.2</strong>
-      &rarr; <a href="/controls/canon_00604.html">Bedrock AgentCore Gateways should require authorization for inbound requests</a>
-    &middot; <a href="/crosswalk/ai-security-best-practices/bedrockagentcore-2.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>SageMaker.1</strong>
-      &rarr; <a href="/controls/canon_00351.html">Amazon SageMaker notebook instances should not have direct internet access</a>
-    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-1.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>SageMaker.10</strong>
-      &rarr; <a href="/controls/canon_01023.html">SageMaker model explainability job definitions should have inter-container traffic encryption enabled</a>
-    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-10.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>SageMaker.11</strong>
-      &rarr; <a href="/controls/canon_00733.html">SageMaker data quality job definitions should have network isolation enabled</a>
-    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-11.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>SageMaker.12</strong>
-      &rarr; <a href="/controls/canon_00479.html">SageMaker model bias job definitions should have network isolation enabled</a>
-    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-12.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>SageMaker.13</strong>
-      &rarr; <a href="/controls/canon_01084.html">SageMaker model quality job definitions should have inter-container traffic encryption enabled</a>
-    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-13.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>SageMaker.14</strong>
-      &rarr; <a href="/controls/canon_00182.html">SageMaker monitoring schedules should have network isolation enabled</a>
-    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-14.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>SageMaker.15</strong>
-      &rarr; <a href="/controls/canon_00056.html">SageMaker model bias job definitions should have inter-container traffic encryption enabled</a>
-    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-15.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>SageMaker.16</strong>
-      &rarr; <a href="/controls/canon_00686.html">SageMaker models should use private registry in VPC for primary containers</a>
-    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-16.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>SageMaker.17</strong>
-      &rarr; <a href="/controls/canon_00648.html">SageMaker feature group offline stores should be encrypted with AWS KMS keys </a>
-    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-17.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>SageMaker.19</strong>
-      &rarr; <a href="/controls/canon_00418.html">SageMaker models should use private registry in VPC for multi-container inference pipelines</a>
-    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-19.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>SageMaker.2</strong>
-      &rarr; <a href="/controls/canon_01306.html">SageMaker notebook instances should be launched in a custom VPC</a>
-    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-2.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>SageMaker.3</strong>
-      &rarr; <a href="/controls/canon_00217.html">Users should not have root access to SageMaker notebook instances</a>
-    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-3.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>SageMaker.4</strong>
-      &rarr; <a href="/controls/canon_01157.html">SageMaker endpoint production variants should have an initial instance count greater than 1</a>
-    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-4.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>SageMaker.5</strong>
-      &rarr; <a href="/controls/canon_00231.html">Checks if an Amazon SageMaker model has network isolation enabled</a>
-    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-5.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>SageMaker.8</strong>
-      &rarr; <a href="/controls/canon_00073.html">SageMaker notebook instances should run on supported platforms</a>
-    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-8.html">crosswalk</a>
-  </li>
-  <li>
-    <strong>SageMaker.9</strong>
-      &rarr; <a href="/controls/canon_01135.html">SageMaker data quality job definitions should have inter-container traffic encryption enabled</a>
-    &middot; <a href="/crosswalk/ai-security-best-practices/sagemaker-9.html">crosswalk</a>
-  </li>
-</ul>
+<table class="data-table framework-items-table">
+  <thead>
+    <tr>
+      <th scope="col">Item</th>
+      <th scope="col">Canonical</th>
+      <th scope="col">Shared</th>
+      <th scope="col">Crosswalk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>BedrockAgentCore.1</strong></td>
+      <td>
+          <a href="/controls/canon_00673.html">Bedrock AgentCore runtimes should be configured with VPC network mode</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/ai-security-best-practices/bedrockagentcore-1.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>BedrockAgentCore.2</strong></td>
+      <td>
+          <a href="/controls/canon_00604.html">Bedrock AgentCore Gateways should require authorization for inbound requests</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/ai-security-best-practices/bedrockagentcore-2.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SageMaker.1</strong></td>
+      <td>
+          <a href="/controls/canon_00351.html">Amazon SageMaker notebook instances should not have direct internet access</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/ai-security-best-practices/sagemaker-1.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SageMaker.10</strong></td>
+      <td>
+          <a href="/controls/canon_01023.html">SageMaker model explainability job definitions should have inter-container traffic encryption enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/ai-security-best-practices/sagemaker-10.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SageMaker.11</strong></td>
+      <td>
+          <a href="/controls/canon_00733.html">SageMaker data quality job definitions should have network isolation enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/ai-security-best-practices/sagemaker-11.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SageMaker.12</strong></td>
+      <td>
+          <a href="/controls/canon_00479.html">SageMaker model bias job definitions should have network isolation enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/ai-security-best-practices/sagemaker-12.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SageMaker.13</strong></td>
+      <td>
+          <a href="/controls/canon_01084.html">SageMaker model quality job definitions should have inter-container traffic encryption enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/ai-security-best-practices/sagemaker-13.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SageMaker.14</strong></td>
+      <td>
+          <a href="/controls/canon_00182.html">SageMaker monitoring schedules should have network isolation enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/ai-security-best-practices/sagemaker-14.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SageMaker.15</strong></td>
+      <td>
+          <a href="/controls/canon_00056.html">SageMaker model bias job definitions should have inter-container traffic encryption enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/ai-security-best-practices/sagemaker-15.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SageMaker.16</strong></td>
+      <td>
+          <a href="/controls/canon_00686.html">SageMaker models should use private registry in VPC for primary containers</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/ai-security-best-practices/sagemaker-16.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SageMaker.17</strong></td>
+      <td>
+          <a href="/controls/canon_00648.html">SageMaker feature group offline stores should be encrypted with AWS KMS keys </a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/ai-security-best-practices/sagemaker-17.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SageMaker.19</strong></td>
+      <td>
+          <a href="/controls/canon_00418.html">SageMaker models should use private registry in VPC for multi-container inference pipelines</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/ai-security-best-practices/sagemaker-19.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SageMaker.2</strong></td>
+      <td>
+          <a href="/controls/canon_01306.html">SageMaker notebook instances should be launched in a custom VPC</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/ai-security-best-practices/sagemaker-2.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SageMaker.3</strong></td>
+      <td>
+          <a href="/controls/canon_00217.html">Users should not have root access to SageMaker notebook instances</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/ai-security-best-practices/sagemaker-3.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SageMaker.4</strong></td>
+      <td>
+          <a href="/controls/canon_01157.html">SageMaker endpoint production variants should have an initial instance count greater than 1</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/ai-security-best-practices/sagemaker-4.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SageMaker.5</strong></td>
+      <td>
+          <a href="/controls/canon_00231.html">Checks if an Amazon SageMaker model has network isolation enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/ai-security-best-practices/sagemaker-5.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SageMaker.8</strong></td>
+      <td>
+          <a href="/controls/canon_00073.html">SageMaker notebook instances should run on supported platforms</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/ai-security-best-practices/sagemaker-8.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SageMaker.9</strong></td>
+      <td>
+          <a href="/controls/canon_01135.html">SageMaker data quality job definitions should have inter-container traffic encryption enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/ai-security-best-practices/sagemaker-9.html">view</a></td>
+    </tr>
+  </tbody>
+</table>
 
 </main>
   <aside></aside>
