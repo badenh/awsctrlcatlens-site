@@ -33,6 +33,62 @@
   <span class="badge badge-extension"
         title="Synthesized from Security Hub standard; not published in AWS Control Catalog ListControlMappings">extension</span>
 </h1>
+
+<section class="attribution">
+  <h2>About this framework</h2>
+  <p>
+    The AWS Foundational Security Best Practices is an AWS-authored security standard published by AWS
+    Security Hub. The standard, its control membership, and all control text
+    are the intellectual property of Amazon Web Services, Inc. and its
+    affiliates. This page is a derived view: awsctrlcatlens overlays the
+    standard's control membership onto the AWS Control Catalog's canonical
+    controls to expose per-region deployability, per-service grouping, and
+    cross-framework crosswalk — none of which are published in the Security
+    Hub standard directly.
+  </p>
+</section>
+
+<section class="methodology">
+  <h2>Methodology</h2>
+  <p>
+    This framework page is derived from an AWS Security Hub standard, not from
+    <code>controlcatalog:ListControlMappings</code>. awsctrlcatlens fetches
+    the standard's docs page, parses the Security Hub control ids, and joins
+    each one to the Control Catalog canonical via
+    <code>controls_detailed[arn].Implementation.Identifier</code>.
+  </p>
+  <ul>
+    <li>
+      Source:
+      <a href="https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html" rel="external">https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html</a>
+    </li>
+    <li>Fetched: 2026-10-25T03:41:17+00:00</li>
+    <li>
+      <strong>368</strong> Security Hub control ids on the docs page (raw);
+      <strong>361</strong> resolved to Control Catalog canonicals.
+    </li>
+  </ul>
+  <p>
+    Unresolved Security Hub control ids
+    (7 total; first 7 shown).
+    These are AWS-authored Security Hub controls that are either not yet
+    published in the Control Catalog, or have been retired from it.
+  </p>
+  <ul class="unresolved-sh-ids">
+    <li><strong>BedrockAgentCore.5</strong> — Bedrock AgentCore custom browsers should not use public network mode</li>
+    <li><strong>BedrockAgentCore.6</strong> — Bedrock AgentCore custom browsers should have session recording enabled</li>
+    <li><strong>BedrockAgentCore.7</strong> — Bedrock AgentCore custom code interpreters should use a private network configuration</li>
+    <li><strong>ELB.1</strong> — Application Load Balancer should be configured to redirect all HTTP requests to HTTPS</li>
+    <li><strong>SageMaker.20</strong> — SageMaker model explainability job definitions should have network isolation enabled</li>
+    <li><strong>SageMaker.22</strong> — SageMaker monitoring schedules should have inter-container traffic encryption enabled</li>
+    <li><strong>SageMaker.25</strong> — SageMaker model quality job definitions should have network isolation enabled</li>
+  </ul>
+  <p class="muted">
+    See the <a href="/about/#extension-frameworks">overlay methodology</a>
+    for how this list was synthesised.
+  </p>
+</section>
+
 <p><span class="badge">361</span> items in this framework. Each item
 links to a crosswalk page showing equivalents in other frameworks.</p>
 
@@ -1864,60 +1920,6 @@ links to a crosswalk page showing equivalents in other frameworks.</p>
   </li>
 </ul>
 
-<section class="methodology">
-  <h2>Methodology</h2>
-  <p>
-    This framework page is derived from an AWS Security Hub standard, not from
-    <code>controlcatalog:ListControlMappings</code>. awsctrlcatlens fetches
-    the standard's docs page, parses the Security Hub control ids, and joins
-    each one to the Control Catalog canonical via
-    <code>controls_detailed[arn].Implementation.Identifier</code>.
-  </p>
-  <ul>
-    <li>
-      Source:
-      <a href="https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html" rel="external">https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html</a>
-    </li>
-    <li>Fetched: 2026-10-25T03:41:17+00:00</li>
-    <li>
-      <strong>368</strong> Security Hub control ids on the docs page (raw);
-      <strong>361</strong> resolved to Control Catalog canonicals.
-    </li>
-  </ul>
-  <p>
-    Unresolved Security Hub control ids
-    (7 total; first 7 shown).
-    These are AWS-authored Security Hub controls that are either not yet
-    published in the Control Catalog, or have been retired from it.
-  </p>
-  <ul class="unresolved-sh-ids">
-    <li><strong>BedrockAgentCore.5</strong> — Bedrock AgentCore custom browsers should not use public network mode</li>
-    <li><strong>BedrockAgentCore.6</strong> — Bedrock AgentCore custom browsers should have session recording enabled</li>
-    <li><strong>BedrockAgentCore.7</strong> — Bedrock AgentCore custom code interpreters should use a private network configuration</li>
-    <li><strong>ELB.1</strong> — Application Load Balancer should be configured to redirect all HTTP requests to HTTPS</li>
-    <li><strong>SageMaker.20</strong> — SageMaker model explainability job definitions should have network isolation enabled</li>
-    <li><strong>SageMaker.22</strong> — SageMaker monitoring schedules should have inter-container traffic encryption enabled</li>
-    <li><strong>SageMaker.25</strong> — SageMaker model quality job definitions should have network isolation enabled</li>
-  </ul>
-  <p class="muted">
-    See the <a href="/about/#extension-frameworks">overlay methodology</a>
-    for how this list was synthesised.
-  </p>
-</section>
-
-<section class="attribution">
-  <h2>About this framework</h2>
-  <p>
-    The AWS Foundational Security Best Practices is an AWS-authored security standard published by AWS
-    Security Hub. The standard, its control membership, and all control text
-    are the intellectual property of Amazon Web Services, Inc. and its
-    affiliates. This page is a derived view: awsctrlcatlens overlays the
-    standard's control membership onto the AWS Control Catalog's canonical
-    controls to expose per-region deployability, per-service grouping, and
-    cross-framework crosswalk — none of which are published in the Security
-    Hub standard directly.
-  </p>
-</section>
 </main>
   <aside></aside>
   <footer class="site-footer">
