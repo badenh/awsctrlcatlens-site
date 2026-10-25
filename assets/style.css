@@ -102,22 +102,6 @@ code, pre { font-family: var(--font-mono); }
   font-size: 0.8rem;
   color: var(--color-muted);
 }
-.site-header-bar .site-tagline {
-  font-size: 0.95rem;
-  color: var(--color-accent);
-  font-weight: 500;
-  letter-spacing: 0.2px;
-  line-height: 1.25;
-  margin-left: 0.5rem;
-  align-self: baseline;
-}
-@media (max-width: 42rem) {
-  .site-header-bar .site-tagline {
-    flex-basis: 100%;
-    margin-left: 0;
-    font-size: 0.85rem;
-  }
-}
 .site-provenance { font-size: 0.8rem; color: var(--color-muted); margin: 0 0 0.75rem; }
 
 .site-footer {
