@@ -48,6 +48,7 @@
     <li><a href="#analysis-hub-metrics">Analysis page: hub metrics</a></li>
     <li><a href="#build-determinism">Build determinism</a></li>
     <li><a href="#extension-frameworks">Extension frameworks (Security Hub)</a></li>
+    <li><a href="#lza-uc">Landing Zone Accelerator Universal Config overlay</a></li>
   </ul>
 </nav>
 
@@ -401,6 +402,83 @@
   overlay expression only — the per-region deployability, per-service
   grouping, and cross-framework crosswalk views — none of which are
   published by the Security Hub standards themselves.</p>
+</section>
+
+<section id="lza-uc">
+  <h2>Landing Zone Accelerator Universal Config overlay</h2>
+  <p>The <a href="/frameworks/landing-zone-accelerator-universal-config.html">Landing
+  Zone Accelerator Universal Config page</a> is a third extension framework on
+  this site. The Landing Zone Accelerator on AWS Universal Configuration
+  (LZA UC) is an AWS-authored reference bundle, published on GitHub as
+  <code>aws/lza-universal-configuration</code>, that groups a curated set of
+  AWS Config rule references, Security Hub control suppressions, Security
+  Hub standard activations, and Service Control Policies into a single
+  opinionated configuration for multi-account AWS landing zones.
+  awsctrlcatlens overlays those references onto the AWS Control Catalog's
+  canonical controls so the LZA UC's full control-reference set — mapped
+  and unmapped — can be browsed inside the lens.</p>
+
+  <p>The join uses three paths. (1) Each <code>awsConfig.ruleSets[*].rules[*].identifier</code>
+  entry in <code>security-config.yaml</code> is matched against
+  <code>controls_detailed[arn].Implementation.Identifier</code> on canonicals whose
+  <code>Implementation.Type</code> is <code>AWS::Config::ConfigRule</code>.
+  (2) Each Security Hub control id surfaced by the LZA automation rules
+  (<code>centralSecurityServices.securityHub.automationRules</code>) is matched
+  against <code>Implementation.Identifier</code> on canonicals whose
+  <code>Implementation.Type</code> is <code>AWS::SecurityHub::SecurityControl</code>,
+  reusing the same join machinery as the Phase 6 extension frameworks.
+  (3) Security Hub standard activations
+  (<code>centralSecurityServices.securityHub.standards[*].name</code>) are
+  <strong>not</strong> joined to canonicals — a standard activation names
+  the standard, not a control, so these rows are preserved as orphans and
+  linked out to the matching native framework page where one exists.</p>
+
+  <p>Orphan rows. LZA references that have no AWS Control Catalog counterpart
+  are kept as rows carrying <code>canonical_id</code> = <code>null</code>,
+  <code>source="lza-uc"</code>, and a mandatory <code>orphan_kind</code>
+  discriminator (<code>scp</code>, <code>sh-standard-reference</code>, or
+  <code>unresolved-config-rule</code>) rather than being dropped. The ten
+  Service Control Policy JSONs bundled with the LZA UC are orphan because
+  they are custom AWS-authored JSON policies with no Control Catalog join
+  key — their control content is not catalogued. The two currently
+  unresolvable Config rule identifiers
+  (<code>CODEBUILD_PROJECT_ARTIFACT_ENCRYPTION</code>,
+  <code>INSTANCES_IN_VPC</code>) are orphan because AWS has deprecated
+  the corresponding Config managed rules while the LZA UC still references
+  them; a future AWS Catalog refresh should resolve them automatically.
+  SH-standards references are orphan by construction (standard name,
+  not control id) and link out where the activated standard also exists
+  as a native framework page on this site.</p>
+
+  <p>AWS attribution. AWS authored the LZA UC and all of its referenced
+  configuration; the configuration files, their security control
+  definitions, and all metadata are the intellectual property of Amazon
+  Web Services, Inc. and its affiliates, released under the
+  <strong>Apache 2.0 License</strong>. awsctrlcatlens's contribution to
+  the LZA UC page is the overlay expression only — the join to Control
+  Catalog canonicals, the per-region deployability on resolved rows, and
+  the orphan-row grouping — none of which is published by the LZA UC
+  directly. The overlay is a derived view; it is neither a substitute for
+  the LZA UC source nor a statement of AWS support for any particular
+  deployment outcome.</p>
+
+  <p>Release-tag pinning. The LZA UC fetcher reads from a pinned release tag
+  (currently <code>v1.3.2</code>) rather than tracking <code>main</code>.
+  The pin is a module-level constant in
+  <code>pipeline/fetch_extension_frameworks.py</code>; bumping it is a
+  deliberate human edit tied to a review of the new tag's security-config
+  surface, not an automated detection. This keeps the overlay stable
+  across daily refreshes and makes the LZA upgrade cycle visible as a
+  single commit in the awsctrlcat repository.</p>
+
+  <p>See the <a href="/frameworks/landing-zone-accelerator-universal-config.html">Landing
+  Zone Accelerator Universal Config page</a> for the overlay itself,
+  including the orphan-row section grouped by <code>orphan_kind</code>.
+  The sealed-snapshot artifacts for a given day live under
+  <code>&lt;snapshot&gt;/lza_uc/</code>, which contains the pinned raw
+  <code>security-config.yaml</code>, the ten SCP JSONs, the parsed
+  intermediate (<code>parsed.json</code>), and the orphan-row intermediate
+  (<code>orphans.json</code>).</p>
 </section>
 </main>
   <aside></aside>
