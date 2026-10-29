@@ -241,17 +241,20 @@ framework overall, nor the whole official framework.</p>
   </tbody>
 </table>
 
-<h2>Extension frameworks (Security Hub)
+<h2>Extension frameworks
   <span class="badge badge-extension"
-        title="Synthesized from Security Hub standard; not published in AWS Control Catalog ListControlMappings">extension</span>
+        title="Synthesized from Security Hub standard or Landing Zone Accelerator Universal Config; not published in AWS Control Catalog ListControlMappings">extension</span>
 </h2>
 <p class="muted">
-  AWS-authored Security Hub standards overlaid onto the Control Catalog via
-  <a href="https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.html">the Security Hub standards reference</a>.
-  These standards are not published through
-  <code>controlcatalog:ListControlMappings</code>; awsctrlcatlens parses the
-  AWS docs HTML, joins each Security Hub control id to the Control Catalog
-  canonical, and surfaces the result as a first-class framework page here.
+  AWS-authored frameworks overlaid onto the Control Catalog. Security Hub
+  standards come from
+  <a href="https://docs.aws.amazon.com/securityhub/latest/userguide/standards-reference.html">the Security Hub standards reference</a>;
+  the Landing Zone Accelerator Universal Config comes from
+  <a href="https://github.com/aws/lza-universal-configuration">aws/lza-universal-configuration</a>.
+  Neither is published through <code>controlcatalog:ListControlMappings</code>;
+  awsctrlcatlens parses the source material, joins each identifier to the
+  Control Catalog canonical, and surfaces the result as a first-class
+  framework page here.
 </p>
 <table class="data-table framework-index-table">
   <thead>
@@ -267,13 +270,13 @@ framework overall, nor the whole official framework.</p>
       <td><a href="/frameworks/ai-security-best-practices.html">AI Security Best Practices</a></td>
       <td class="num">18</td>
       <td class="num">20</td>
-      <td><span class="badge badge-extension" title="Synthesized from Security Hub standard; not published in AWS Control Catalog ListControlMappings">extension</span></td>
+      <td><span class="badge badge-extension" title="Synthesized overlay; not published in AWS Control Catalog ListControlMappings">extension</span></td>
     </tr>
     <tr>
       <td><a href="/frameworks/aws-foundational-security-best-practices.html">AWS Foundational Security Best Practices</a></td>
       <td class="num">361</td>
       <td class="num">439</td>
-      <td><span class="badge badge-extension" title="Synthesized from Security Hub standard; not published in AWS Control Catalog ListControlMappings">extension</span></td>
+      <td><span class="badge badge-extension" title="Synthesized overlay; not published in AWS Control Catalog ListControlMappings">extension</span></td>
     </tr>
   </tbody>
 </table>

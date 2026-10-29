@@ -368,6 +368,10 @@ ul.controls-list li {
 .badge-opt-in { background: #fff4d6; color: #7a5a00; border: 1px solid #e8c974; }
 .badge-extension { background: #d8e5ef; color: #0f3651; border: 1px solid #4a6c85; }
 
+/* Phase 7 Plan 02 — orphan-rows palette (LZA framework page) */
+.orphan-rows h3 { margin-top: 1rem; }
+.orphan-list { list-style: disc; padding-left: 1.5rem; }
+
 /* Heat map (framework Jaccard) */
 .heat-map { margin: 1rem 0 1.5rem; }
 .heat-map-scroll { overflow-x: auto; max-width: 100%; }
