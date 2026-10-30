@@ -356,8 +356,10 @@ ul.controls-list li {
   border-radius: 2px;
   min-width: 1px;
 }
-/* Kind modifiers tint the bar to match the matching row badge. */
-.bar-chart li.kind-extension .bar-chart-bar { background: #4a6c85; }
+/* Kind modifiers tint the bar to match the matching row badge. Chosen for
+   high contrast against the default navy accent so extension/opt-in rows
+   are visually unambiguous. */
+.bar-chart li.kind-extension .bar-chart-bar { background: #5aa8d6; }
 .bar-chart li.kind-opt-in .bar-chart-bar { background: #e8c974; }
 .bar-chart .bar-chart-count {
   font-variant-numeric: tabular-nums;
