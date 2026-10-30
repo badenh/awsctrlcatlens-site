@@ -1,0 +1,775 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com; font-src 'self'; connect-src 'self' https://www.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'">
+  <meta name="fetched-at" content="2026-10-30T01:24:34+00:00">
+  <title>Landing Zone Accelerator Universal Config — Frameworks — awsctrlcatlens</title>
+  <link rel="stylesheet" href="/assets/style.css?v=2026-10-30">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9XRKG4GEHL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-9XRKG4GEHL');
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-bar">
+      <a href="/" class="site-title">awsctrlcatlens</a>
+    </div>
+    <p class="site-provenance">
+      Machine-generated analytical view, last data snapshot seal: 2026-10-30T01:24:34+00:00, last site build: 2026-10-30.
+    </p>
+    <div data-staleness-slot hidden role="alert"></div>
+<form class="site-search" role="search" action="/">
+      <input type="search" data-search-input placeholder="Search raw controls, canonical controls, aliases, services, regions, frameworks ..." autocomplete="off">
+      <ul data-search-results hidden></ul>
+    </form><nav aria-label="breadcrumb"><ol class="breadcrumb"><li><a href="/">Home</a></li><li><a href="/frameworks/">Frameworks</a></li><li><span aria-current="page">Landing Zone Accelerator Universal Config</span></li></ol></nav>  </header>
+  <main><h1>Landing Zone Accelerator Universal Config
+  <span class="badge badge-extension"
+        title="Synthesized from Security Hub standard; not published in AWS Control Catalog ListControlMappings">extension</span>
+</h1>
+
+<section class="attribution">
+  <h2>About this framework</h2>
+  <p>
+    The Landing Zone Accelerator Universal Config is an AWS-authored reference configuration
+    published by Amazon Web Services on GitHub.
+    The configuration files, their security control definitions,
+    and all metadata are the intellectual property of Amazon Web Services, Inc.
+    and its affiliates, released under the Apache 2.0 License.
+    This page is a derived view: awsctrlcatlens overlays the LZA UC's
+    referenced AWS Config rules, Security Hub control suppressions,
+    Security Hub standards activations, and Service Control Policies onto
+    the AWS Control Catalog's canonical controls to expose per-region
+    deployability, per-service grouping, and cross-framework crosswalk —
+    none of which are published in the LZA UC directly.
+  </p>
+  <p>
+    Source:
+    <a href="https://github.com/aws/lza-universal-configuration" rel="external">https://github.com/aws/lza-universal-configuration</a>
+    (release <code>v1.3.2</code>,
+    fetched 2026-10-30T01:19:18+00:00).
+  </p>
+</section>
+
+<section class="methodology">
+  <h2>Methodology</h2>
+  <p>
+    This framework page is derived from the Landing Zone Accelerator Universal
+    Config repository, not from <code>controlcatalog:ListControlMappings</code>.
+    awsctrlcatlens fetches <code>security-config.yaml</code> plus the
+    bundled Service Control Policy JSONs at the pinned release tag, parses
+    the referenced AWS Config rule identifiers and Security Hub control ids
+    from the automation rules, and joins each one to the Control Catalog
+    canonical via <code>controls_detailed[arn].Implementation.Identifier</code>.
+    LZA references with no catalog counterpart — the SCP files, Security
+    Hub standard activations, and Config rules AWS has deprecated —
+    render as orphan rows below rather than being dropped.
+  </p>
+  <ul>
+    <li>
+      Source:
+      <a href="https://github.com/aws/lza-universal-configuration" rel="external">https://github.com/aws/lza-universal-configuration</a>
+    </li>
+    <li>Release tag: <code>v1.3.2</code></li>
+    <li>Fetched: 2026-10-30T01:19:18+00:00</li>
+    <li>
+      <strong>71</strong> LZA items parsed (raw);
+      <strong>56</strong> resolved to Control Catalog canonicals.
+    </li>
+  </ul>
+  <p class="muted">
+    See the <a href="/about/#lza-uc">overlay methodology</a>
+    for how this list was synthesised.
+  </p>
+</section>
+
+<p><span class="badge">55</span> items in this framework. Each item
+links to a crosswalk page showing equivalents in other frameworks.</p>
+
+<section class="framework-stats">
+  <p>
+    <strong>56</strong> mapped items
+    reference
+    <strong>55</strong> unique canonical controls
+    (density <strong>1.02x</strong>);
+    <strong>1</strong> canonical
+    appears on more than one item in this framework.
+  </p>
+  <p class="muted">
+    Why the repetition? AWS maps the same canonical control to multiple framework
+    items by design — maturity-tier frameworks (ACSC Essential Eight) carry the
+    same requirement across every tier, pillar-structured frameworks (Well-Architected)
+    overlap best practices across pillars, and family-structured frameworks (CMMC,
+    NIST&nbsp;800-171) share controls across access-control, audit, and system-protection
+    domains. Items below with <em>(shared with N items)</em> indicate canonicals
+    AWS maps to more than one place in this framework.
+  </p>
+</section>
+
+<table class="data-table framework-items-table">
+  <thead>
+    <tr>
+      <th scope="col">Control IDs</th>
+      <th scope="col">Canonical</th>
+      <th scope="col">Shared</th>
+      <th scope="col">Crosswalk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>ACCOUNT_PART_OF_ORGANIZATIONS</strong></td>
+      <td>
+          <a href="/controls/canon_00377.html">AWS account should be part of an AWS Organizations organization</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/account_part_of_organizations.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>API_GW_CACHE_ENABLED_AND_ENCRYPTED</strong></td>
+      <td>
+          <a href="/controls/canon_00800.html">Checks if all methods in Amazon API Gateway stages have cache enabled and cache encrypted</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/api_gw_cache_enabled_and_encrypted.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>AURORA_RESOURCES_PROTECTED_BY_BACKUP_PLAN</strong></td>
+      <td>
+          <a href="/controls/canon_00498.html">Checks if Amazon Aurora DB clusters are protected by a backup plan</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/aurora_resources_protected_by_backup_plan.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>BACKUP_PLAN_MIN_FREQUENCY_AND_MIN_RETENTION_CHECK</strong></td>
+      <td>
+          <a href="/controls/canon_01247.html">Checks if a backup plan has a backup rule that satisfies the required frequency and retention period</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/backup_plan_min_frequency_and_min_retention_check.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>BACKUP_RECOVERY_POINT_ENCRYPTED</strong></td>
+      <td>
+          <a href="/controls/canon_01436.html">Checks if a recovery point is encrypted</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/backup_recovery_point_encrypted.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>BACKUP_RECOVERY_POINT_MANUAL_DELETION_DISABLED</strong></td>
+      <td>
+          <a href="/controls/canon_01223.html">Checks if a backup vault has an attached resource-based policy which prevents deletion of recovery points</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/backup_recovery_point_manual_deletion_disabled.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>CLOUDTRAIL_S3_DATAEVENTS_ENABLED</strong></td>
+      <td>
+          <a href="/controls/canon_00081.html">Checks if at least one AWS CloudTrail trail is logging Amazon Simple Storage Service (Amazon S3) data events for all S3 buckets</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/cloudtrail_s3_dataevents_enabled.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>CLOUDTRAIL_SECURITY_TRAIL_ENABLED</strong></td>
+      <td>
+          <a href="/controls/canon_01165.html">Checks that there is at least one AWS CloudTrail trail defined with security best practices</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/cloudtrail_security_trail_enabled.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>CLOUDWATCH_LOG_GROUP_ENCRYPTED</strong></td>
+      <td>
+          <a href="/controls/canon_00346.html">Require an Amazon CloudWatch log group to be encrypted at rest with an AWS KMS key</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/cloudwatch_log_group_encrypted.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>CLOUD_TRAIL_ENABLED</strong></td>
+      <td>
+          <a href="/controls/canon_00779.html">Detect whether an AWS account has at least one AWS CloudTrail trail enabled for a governed AWS Region.</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/cloud_trail_enabled.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>CloudWatch.15</strong></td>
+      <td>
+          <a href="/controls/canon_00366.html">CloudWatch alarms should have specified actions configured</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/cloudwatch-15.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>DYNAMODB_TABLE_ENCRYPTED_KMS</strong></td>
+      <td>
+          <a href="/controls/canon_00909.html">Checks whether Amazon DynamoDB table is encrypted with AWS Key Management Service (KMS)</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/dynamodb_table_encrypted_kms.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>DYNAMODB_THROUGHPUT_LIMIT_CHECK</strong></td>
+      <td>
+          <a href="/controls/canon_01357.html">Checks whether provisioned DynamoDB throughput is approaching the maximum limit for your account</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/dynamodb_throughput_limit_check.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>DynamoDB.4</strong></td>
+      <td>
+          <a href="/controls/canon_00198.html">DynamoDB tables should be present in a backup plan</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/dynamodb-4.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>DynamoDB.6</strong></td>
+      <td>
+          <a href="/controls/canon_00063.html">Checks if an Amazon DynamoDB table have deletion protection set to enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/dynamodb-6.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>EBS_IN_BACKUP_PLAN</strong></td>
+      <td>
+          <a href="/controls/canon_00010.html">Check if Amazon Elastic Block Store (Amazon EBS) volumes are added in backup plans of AWS Backup</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/ebs_in_backup_plan.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>EBS_OPTIMIZED_INSTANCE</strong></td>
+      <td>
+          <a href="/controls/canon_00188.html">Disallow launch of EC2 instance types that are not EBS optimized</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/ebs_optimized_instance.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>EC2.10</strong></td>
+      <td>
+          <a href="/controls/canon_00165.html">Amazon EC2 should be configured to use VPC endpoints that are created for the Amazon EC2 service</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/ec2-10.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>EC2.172</strong></td>
+      <td>
+          <a href="/controls/canon_00203.html">EC2 VPC Block Public Access settings should block internet gateway traffic</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/ec2-172.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>EC2.23</strong></td>
+      <td>
+          <a href="/controls/canon_01265.html">EC2 Transit Gateways should not automatically accept VPC attachment requests</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/ec2-23.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>EC2.56</strong></td>
+      <td>
+          <a href="/controls/canon_01200.html">VPCs should be configured with an interface endpoint for Docker Registry</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/ec2-56.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>EC2.57</strong></td>
+      <td>
+          <a href="/controls/canon_01106.html">VPCs should be configured with an interface endpoint for Systems Manager</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/ec2-57.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>EC2.58</strong></td>
+      <td>
+          <a href="/controls/canon_00595.html">VPCs should be configured with an interface endpoint for Systems Manager Incident Manager Contacts</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/ec2-58.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>EC2.60</strong></td>
+      <td>
+          <a href="/controls/canon_00114.html">VPCs should be configured with an interface endpoint for Systems Manager Incident Manager</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/ec2-60.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>EC2_INSTANCE_DETAILED_MONITORING_ENABLED</strong></td>
+      <td>
+          <a href="/controls/canon_00158.html">Require an Amazon EC2 instance to have detailed monitoring enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/ec2_instance_detailed_monitoring_enabled.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>EC2_INSTANCE_PROFILE_ATTACHED</strong></td>
+      <td>
+          <a href="/controls/canon_01437.html">Checks if an EC2 instance has an AWS Identity and Access Management (IAM) profile attached to it</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/ec2_instance_profile_attached.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>EC2_RESOURCES_PROTECTED_BY_BACKUP_PLAN</strong></td>
+      <td>
+          <a href="/controls/canon_00983.html">Checks if Amazon Elastic Compute Cloud (Amazon EC2) instances are protected by a backup plan</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/ec2_resources_protected_by_backup_plan.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>EC2_VOLUME_INUSE_CHECK</strong></td>
+      <td>
+          <a href="/controls/canon_00737.html">Disallow EBS volumes that are unattached to an EC2 instance</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/ec2_volume_inuse_check.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>ELB_LOGGING_ENABLED</strong></td>
+      <td>
+          <a href="/controls/canon_00732.html">Checks whether the Application Load Balancers and the Classic Load Balancers have logging enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/elb_logging_enabled.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>EMR_KERBEROS_ENABLED</strong></td>
+      <td>
+          <a href="/controls/canon_00352.html">The rule is NON_COMPLIANT if a security configuration is not attached to the cluster or the security configuration does not satisfy the specified rule parameters</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/emr_kerberos_enabled.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>GUARDDUTY_NON_ARCHIVED_FINDINGS</strong></td>
+      <td>
+          <a href="/controls/canon_01248.html">Checks if Amazon GuardDuty has findings that are non-archived</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/guardduty_non_archived_findings.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>IAM_GROUP_HAS_USERS_CHECK</strong></td>
+      <td>
+          <a href="/controls/canon_00265.html">Checks whether IAM groups have at least one IAM user</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/iam_group_has_users_check.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>IAM_NO_INLINE_POLICY_CHECK</strong></td>
+      <td>
+          <a href="/controls/canon_01069.html">Checks if the inline policy feature is not in use</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/iam_no_inline_policy_check.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>IAM_USER_GROUP_MEMBERSHIP_CHECK</strong></td>
+      <td>
+          <a href="/controls/canon_00235.html">Checks whether IAM users are members of at least one IAM group</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/iam_user_group_membership_check.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>INTERNET_GATEWAY_AUTHORIZED_VPC_ONLY</strong></td>
+      <td>
+          <a href="/controls/canon_00045.html">Checks if internet gateways are attached to an authorized virtual private cloud (Amazon VPC)</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/internet_gateway_authorized_vpc_only.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>KMS.1</strong></td>
+      <td>
+          <a href="/controls/canon_01014.html">IAM customer managed policies should not allow decryption actions on all KMS keys</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/kms-1.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>KMS.2</strong></td>
+      <td>
+          <a href="/controls/canon_00226.html">IAM principals should not have IAM inline policies that allow decryption actions on all KMS keys</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/kms-2.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>Kinesis.3</strong></td>
+      <td>
+          <a href="/controls/canon_01085.html">Kinesis streams should have an adequate data retention period</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/kinesis-3.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>LAMBDA_DLQ_CHECK</strong></td>
+      <td>
+          <a href="/controls/canon_01284.html">Checks if a Lambda function is configured with a dead-letter queue</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/lambda_dlq_check.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>Lambda.3</strong></td>
+      <td>
+          <a href="/controls/canon_00567.html">Lambda functions should be in a VPC</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/lambda-3.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>Lambda.7</strong></td>
+      <td>
+          <a href="/controls/canon_00633.html">Lambda functions should have AWS X-Ray active tracing enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/lambda-7.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>NO_UNRESTRICTED_ROUTE_TO_IGW</strong></td>
+      <td>
+          <a href="/controls/canon_01042.html">Detect whether public routes exist in the route table for an Internet Gateway (IGW)</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/no_unrestricted_route_to_igw.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>RDS_IN_BACKUP_PLAN</strong></td>
+      <td>
+          <a href="/controls/canon_00530.html">Checks if Amazon Relational Database Service (Amazon RDS) databases are present in AWS Backup plans</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/rds_in_backup_plan.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>S3.11</strong></td>
+      <td>
+          <a href="/controls/canon_00526.html">Require an Amazon S3 bucket to have event notifications configured</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/s3-11.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>S3.15</strong></td>
+      <td>
+          <a href="/controls/canon_00354.html">S3 general purpose buckets should have Object Lock enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/s3-15.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>S3.17</strong></td>
+      <td>
+          <a href="/controls/canon_00234.html">S3 general purpose buckets should be encrypted at rest with AWS KMS keys</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/s3-17.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>S3.20</strong></td>
+      <td>
+          <a href="/controls/canon_01382.html">S3 general purpose buckets should have MFA delete enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/s3-20.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>S3.6</strong></td>
+      <td>
+          <a href="/controls/canon_00941.html">S3 general purpose bucket policies should restrict access to other AWS accounts</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/s3-6.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>S3.7</strong></td>
+      <td>
+          <a href="/controls/canon_00899.html">S3 general purpose buckets should use cross-Region replication</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/s3-7.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>S3.9</strong></td>
+      <td>
+          <a href="/controls/canon_00681.html">S3 general purpose buckets should have server access logging enabled</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/s3-9.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>S3_BUCKET_POLICY_GRANTEE_CHECK</strong></td>
+      <td>
+          <a href="/controls/canon_00551.html">Checks that the access granted by the Amazon S3 bucket is restricted to any of the AWS principals, federated users, service principals, IP addresses, or VPCs that you provide</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/s3_bucket_policy_grantee_check.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SAGEMAKER_ENDPOINT_CONFIGURATION_KMS_KEY_CONFIGURED</strong></td>
+      <td>
+          <a href="/controls/canon_01448.html">Checks if AWS Key Management Service (AWS KMS) key is configured for an Amazon SageMaker endpoint configuration</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/sagemaker_endpoint_configuration_kms_key_configured.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SAGEMAKER_NOTEBOOK_INSTANCE_KMS_KEY_CONFIGURED</strong></td>
+      <td>
+          <a href="/controls/canon_00247.html">Checks if an AWS Key Management Service (AWS KMS) key is configured for an Amazon SageMaker notebook instance</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/sagemaker_notebook_instance_kms_key_configured.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SECRETSMANAGER_USING_CMK</strong></td>
+      <td>
+          <a href="/controls/canon_01207.html">Checks if all secrets in AWS Secrets Manager are encrypted using an AWS Key Management Service (AWS KMS) customer master key (CMK)</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/secretsmanager_using_cmk.html">view</a></td>
+    </tr>
+    <tr>
+      <td><strong>SECURITYHUB_ENABLED</strong></td>
+      <td>
+          <a href="/controls/canon_00074.html">Checks if AWS Security Hub is enabled for an AWS Account</a>
+      </td>
+      <td>
+          <span class="muted">&mdash;</span>
+      </td>
+      <td><a href="/crosswalk/landing-zone-accelerator-universal-config/securityhub_enabled.html">view</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<section class="orphan-rows">
+  <h2>Items not published in the AWS Control Catalog</h2>
+  <p class="muted">
+    The following LZA references do not resolve to an AWS Control Catalog
+    canonical. Service Control Policy (SCP) files are custom LZA JSON
+    policies with no catalog join key; Security Hub standards references
+    point at other frameworks (linked where available); unresolved Config
+    rule identifiers are expected to resolve once AWS publishes the
+    corresponding Catalog control.
+  </p>
+  <h3>Service Control Policies <span class="badge">10</span></h3>
+  <ul class="orphan-list">
+    <li>
+      <strong>lza-core-guardrails-1.json</strong>
+    </li>
+    <li>
+      <strong>lza-core-guardrails-2.json</strong>
+    </li>
+    <li>
+      <strong>lza-core-sandbox-guardrails-1.json</strong>
+    </li>
+    <li>
+      <strong>lza-core-security-guardrails-1.json</strong>
+    </li>
+    <li>
+      <strong>lza-core-workloads-guardrails-1.json</strong>
+    </li>
+    <li>
+      <strong>lza-deployment-guardrails-1.json</strong>
+    </li>
+    <li>
+      <strong>lza-deployment-guardrails-2.json</strong>
+    </li>
+    <li>
+      <strong>lza-infrastructure-guardrails-1.json</strong>
+    </li>
+    <li>
+      <strong>lza-quarantine.json</strong>
+    </li>
+    <li>
+      <strong>lza-suspended-guardrails.json</strong>
+    </li>
+  </ul>
+  <h3>Security Hub standard references <span class="badge">4</span></h3>
+  <ul class="orphan-list">
+    <li>
+      <strong>AWS Foundational Security Best Practices v1.0.0</strong>
+    </li>
+    <li>
+      <strong>CIS AWS Foundations Benchmark v1.2.0</strong>
+    </li>
+    <li>
+      <strong>CIS AWS Foundations Benchmark v3.0.0</strong>
+    </li>
+    <li>
+      <strong>NIST Special Publication 800-53 Revision 5</strong>
+    </li>
+  </ul>
+  <h3>Unresolved Config rules <span class="badge">2</span></h3>
+  <ul class="orphan-list">
+    <li>
+      <strong>CODEBUILD_PROJECT_ARTIFACT_ENCRYPTION</strong>
+    </li>
+    <li>
+      <strong>INSTANCES_IN_VPC</strong>
+    </li>
+  </ul>
+</section>
+
+</main>
+  <aside></aside>
+  <footer class="site-footer">
+    <p class="footer-legal">
+      awsctrlcatlens is not affiliated with or endorsed by Amazon Web Services. All AWS
+      service and region names are trademarks of Amazon.com, Inc. or
+      its affiliates. 
+    </p>
+    <p class="footer-legal">Data derived from the public AWS Control Catalog
+      API and AWS Account service endpoints; analysis + presentation
+      are machine-generated and may contain errors based on inconsistency in original source data.
+    </p>
+    <p class="footer-about">
+      awsctrlcatlens is an analytical tool and publication by Baden Hughes,
+      an independent security and compliance engineer. Contact him at
+      <a href="mailto:hello@awsctrlcatlens.com">hello@awsctrlcatlens.com</a>
+      or sign up to the
+      <a href="mailto:hello@awsctrlcatlens.com?subject=subscribe">low-volume
+      announcements list</a>.
+    </p>
+    <p class="footer-copyright">
+      Pipeline, analysis, and site generator &copy; 2026 Baden Hughes.
+    </p>
+  </footer>
+  <script src="/assets/minisearch.min.js" defer></script>
+  <script src="/assets/search.js" defer></script>
+  <script src="/assets/enhance.js" defer></script>
+</body>
+</html>
