@@ -1,11 +1,11 @@
 {
-  "built_from_sealed_at": "2026-11-13T14:21:38+00:00",
+  "built_from_sealed_at": "2026-11-14T13:19:40+00:00",
   "canonicalize_config_hash": "48d271dceb05c7eb015028815234bd0f2be4dc2c2c254d3628c55f1471e1cf17",
   "control_counts": {
     "canonical": 1495,
     "raw": 1613
   },
-  "git_sha": "972fcdb93294a359ef5d1d1cd0db2e69581b5a10",
+  "git_sha": "6cb6e0de7c4f74d41c4462779c0e074371b7d29d",
   "overrides_sha": "77bdcb42e1948c867d78a0c32335fcd24305aaad7c7d6a6fa2e308964479a1c9",
-  "snapshot_date": "2026-11-13"
+  "snapshot_date": "2026-11-14"
 }
